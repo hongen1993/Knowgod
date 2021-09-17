@@ -1,0 +1,142 @@
+body{
+  margin:0;
+}
+main{
+  height:155vh;
+}
+.signUpForm {
+	position: relative;
+	left:10%;
+  height: 139vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 30px 15px 20px 15px;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}
+
+.signUpForm h2 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.signUpForm input {
+	display: block;
+	border: 2px solid #ccc;
+	height: 3em;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.signUpForm label {
+	color: #888;
+	padding: 10px;
+}
+
+.signUpForm button {
+	position: relative;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	font-size: 1em;
+}
+.signUpForm button:hover{
+	opacity: .7;
+}
+.formError .error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.formError .success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.signUpForm .ca {
+	left: 7em;
+  position: absolute;
+  font-size: .75em;
+	display: inline-block;
+	padding-top: 1.3em;
+	text-decoration: none;
+	color: #444;
+}
+.signUpForm .ca:hover {
+	text-decoration: underline;
+} 
+
+/* Effect Styles Start Here */
+
+/* input:valid ~ label,
+textarea:valid ~ label, input:focus ~ label,
+textarea:focus ~ label {
+  font-size: 0.75em;
+  color: #8e44ad;
+  top: -2.25rem;
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+}
+
+.styled-input {
+  float: left;
+  width: 33.3333%;
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+.styled-input label {
+  color: #999;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+  pointer-events: none;
+}
+.styled-input.wide {
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 1rem 1rem;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+input ~ span,
+textarea ~ span {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #8e44ad;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+}
+input:focus,
+textarea:focus {
+  outline: 0;
+}
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);
+}
+textarea {
+  width: 100%;
+  min-height: 15em;
+} */

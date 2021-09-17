@@ -1,0 +1,229 @@
+body {  
+  margin: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 2em;
+  background-color: transparent;
+  min-height: 100vh;
+  color: black;  
+  background-image: linear-gradient(55deg, #00aae4 0%, white 55%);
+}
+
+.contact-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 0.17em solid white;
+  border-radius:2em ;
+  padding: 3em;
+  margin-top: 4em;
+  width: 40vw;
+  min-width: 17em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  flex-flow: column wrap;
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 0.63em;
+  margin-bottom: 0.32em;
+}
+
+.input-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.94rem;
+  color: #000;
+  background-color: white;
+  width: 33vw;
+  min-width: 13.5em;
+  margin: 1em 0;
+  padding: 1em;
+  border: none;
+  border-radius: 2em;
+  text-align: center;
+}
+
+#message {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.94rem;
+  background-color: white;
+  color: #000;
+  border-radius: 1em;
+  width: 33vw;
+  min-width: 14em;
+  margin: 0.5em 0;
+  padding: 1em;
+}
+
+::placeholder {
+  font-family: 'Libre Baskerville', sans-serif;
+}
+
+.formButton {
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  background-color: rgba(255,255,255,0.1);
+  color: black;
+  font-size: 0.94rem;
+  margin-top: 1em;
+  padding: 0.63em 0.94em;
+  border: none;
+  cursor: pointer;
+}
+
+.formButton:hover {
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+.formButton:active {
+    background-color: white;
+}
+.next{
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  text-align: center;
+  margin: .5em;
+}
+.nextB{
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  text-align: center;
+  margin-top: 1em;
+}
+.back{
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  text-align: center;
+}
+.backB{
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+  text-align: center;
+  margin-top: 1em;
+}
+.stepOne{
+  text-align: center;
+}
+.stepOneB{
+  opacity: 0;
+}
+.stepTwo{
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+}
+.stepTwoB{
+  position: relative;
+  opacity: 1;
+  margin-top: -10em;
+}
+.stepThree{
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+}
+.stepThreeB{
+  position: relative;
+  opacity: 1;
+  margin-top: -10em;
+}
+.stepFour{
+  position: absolute;
+  opacity: 0;
+}
+.stepFourB{
+  opacity: 1;
+}
+
+/* number complete */
+.step-bar-wrapper{
+  font-size:0;
+  background:#fff;
+  text-align:center;padding:50px 0 0;
+  box-shadow:5px 5px 24px 0px rgba(0, 0, 0, 0.2);
+  width:600px;
+  margin:30px auto 0;
+  position:relative;
+  z-index:10;
+  border-radius:10px
+}
+
+.step-wrapper{
+  padding:0;
+  margin:0;
+  font-size:0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  counter-reset: step;
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+.step-wrapper li{
+  width:20vw;
+}
+.step-wrapper li > a:before {
+	content:'';
+	width: 36px;
+	height: 36px;
+	display: block;
+	font-size: 16px;
+  font-weight:700;
+  background-color: transparent;
+	border-radius: 100%;
+  z-index:1;
+  text-align:center;
+}
+.step-wrapper li > a:after {
+	content: counter(step);
+	counter-increment: step;
+	width: 36px;
+	line-height: 36px;
+	display: block;
+	font-size: 16px;
+  color:#bbb;
+  font-weight:700;
+  background-color: transparent;
+	border-radius: 100%;
+  z-index:1;
+  position:absolute;
+  text-align:center;
+}
+.step-wrapper li.completed > a:after {
+  content:'\2713';
+  color: greenyellow;
+}
+
+.step-wrapper li.active > a:before{
+  background-color: dodgerblue;
+  -webkit-box-shadow:0px 0px 0px 0px rgba(0,0,0,0.15), inset 0px 0px 0px 0px rgba(0,0,0,0.15), 0px 0px 9px 0px white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 247, 247,0.5)), to(rgba(231, 231, 231,.01)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 247, 247,0.5)), to(rgba(231, 231, 231,.01)));
+  background-image: -webkit-linear-gradient(top, rgba(247, 247, 247,0.5), rgba(231, 231, 231,.01));
+  background-image: -moz-linear-gradient(top, rgba(247, 247, 247,0.5), rgba(231, 231, 231,.01));
+  background-image: -ms-linear-gradient(top, rgba(247, 247, 247,0.5), rgba(231, 231, 231,.01));
+  background-image: -o-linear-gradient(top, rgba(247, 247, 247,0.5), rgba(231, 231, 231,.01));
+}
+.step-wrapper li.active > a:after{
+  color:#fff;
+}
+
+.step-wrapper li > a{
+  display: flex;
+  align-items: center;
+  overflow:hidden;
+  height:48px
+}
+
+
