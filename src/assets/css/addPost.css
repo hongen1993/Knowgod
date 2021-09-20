@@ -1,0 +1,82 @@
+body{
+    margin:0;
+  }
+  main{
+    height:85vh;
+  }
+  .addPostForm {
+      position: relative;
+      left:10%;
+      height: 75vh;
+      width: 80vw;
+      border: 2px solid #ccc;
+      padding: 30px 15px 20px 15px;
+      background: #fff;
+      border-radius: 15px;
+      font-size: 1em;
+  }
+  
+  .addPostForm h2 {
+      text-align: center;
+      margin-bottom: 1em;
+  }
+  
+  .addPostForm input {
+      display: block;
+      border: 2px solid #ccc;
+      height: 3em;
+      width: 95%;
+      padding: 10px;
+      margin: 10px auto;
+      border-radius: 5px;
+  }
+  .addPostForm label {
+      color: #888;
+      padding: 10px;
+  }
+  
+  .addPostForm button {
+      position: relative;
+      background: #555;
+      padding: 10px 15px;
+      color: #fff;
+      border-radius: 5px;
+      margin-right: 10px;
+      border: none;
+      font-size: 1em;
+  }
+  .addPostForm button:hover{
+      opacity: .7;
+  }
+  .postFormError .error {
+     background: #F2DEDE;
+     color: #A94442;
+     padding: 10px;
+     width: 95%;
+     border-radius: 5px;
+     margin: 20px auto;
+     text-align: center;
+  }
+  
+  .postFormError .success {
+     background: #D4EDDA;
+     color: #40754C;
+     padding: 10px;
+     width: 95%;
+     border-radius: 5px;
+     margin: 20px auto;
+     text-align: center;
+  }
+  
+  .addPostForm .ca {
+      left: 7em;
+    position: absolute;
+    font-size: .75em;
+      display: inline-block;
+      padding-top: 1.3em;
+      text-decoration: none;
+      color: #444;
+  }
+  .addPostForm .ca:hover {
+      text-decoration: underline;
+  } 
