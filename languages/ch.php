@@ -43,6 +43,25 @@ $lang = array(
     "password" => "密码",
     "loginB" => "确认",
     "perfil" => "帐号",
+    "logout" => "退出",
+
+    /* Editar */ 
+
+    "editPerfil" => "编辑",
+    "oldPass" => "编辑",
+    "newPass" => "新密码",
+    "confirmNewPass" => "确认新密码",
+    "edit" => "更改",
+    "cancel" => "取消",
+
+    /* Crear Posts */
+
+    "admin" => "行政人员",
+    "addPredication" => "加新的讲道",
+    "titleForPredication" => "讲道标题",
+    "linkForPredication" => "链接网址",
+    "descriptionForPredication" => "讲道细节",
+    "addPost" => "添加",
 
     /* Errores */
 

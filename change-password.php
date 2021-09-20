@@ -12,7 +12,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title><?php echo $lang['Change Password'] ?></title>
+     <title><?php echo $lang['editPerfil'] ?></title>
 	 <link rel="stylesheet" type="text/css" href="login.css">
      <link rel="stylesheet" type="text/css" href="/src/assets/css/footer.css" media="screen"/>
      <link rel="stylesheet" type="text/css" href="/src/assets/css/header.css" media="screen"/>
@@ -23,7 +23,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
     </header>
 	<main>
 		<form action="change-p.php" method="post">
-			<h2>Change Password</h2>
+			<h2><?php echo $lang['editPerfil'] ?></h2>
 			<?php if (isset($_GET['error'])) { ?>
 				<p class="error"><?php echo $_GET['error']; ?></p>
 			<?php } ?>
@@ -32,26 +32,23 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 				<p class="success"><?php echo $_GET['success']; ?></p>
 			<?php } ?>
 
-			<label>Old Password</label>
+			<label><?php echo $lang['oldPass'] ?></label>
 			<input type="password" 
-				name="op" 
-				placeholder="Old Password">
+				name="op" >
 				<br>
 
-			<label>New Password</label>
+			<label><?php echo $lang['newPass'] ?></label>
 			<input type="password" 
-				name="np" 
-				placeholder="New Password">
+				name="np" >
 				<br>
 
-			<label>Confirm New Password</label>
+			<label><?php echo $lang['newPass'] ?></label>
 			<input type="password" 
-				name="c_np" 
-				placeholder="Confirm New Password">
+				name="c_np" >
 				<br>
 
-			<button type="submit">CHANGE</button>
-			<a href="perfil.php" class="ca">PERFIL</a>
+			<button type="submit"><?php echo $lang['edit'] ?></button>
+			<a href="perfil.php" class="ca"><?php echo $lang['cancel'] ?></a>
 		</form>
 	</main>
 	<footer class="main-footer">

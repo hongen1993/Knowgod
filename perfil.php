@@ -30,7 +30,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                          echo "
                               <div class='profile'>
                                    <div class='profileContent'>
-                                   <h1>Perfil</h1>
+                                   <h1>".$lang['perfil']."</h1>
                               <div>
                               ";
                          echo "<p>".$lang['signUpUsername'].":<br>".$row['user_name']."</p>";
@@ -38,7 +38,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                          echo "<p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>";
                          echo "<p>".$lang['signUpAddress'].":<br>".$row['address']."</p>";
                          echo "<p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
+                         echo "<a href='addPost.php'>".$lang['addPredication']."</a>";
                          echo "</div>";
+
                     }
                     // Free result set
                     mysqli_free_result($result);
@@ -53,8 +55,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                mysqli_close($conn);
           ?>       
           <nav class="home-nav">
-     	<a href="change-password.php">Change Password</a>
-        <a href="logout.php">Logout</a>
+     	<a href="change-password.php"><?php echo $lang['editPerfil'] ?></a>
+        <a href="logout.php"><?php echo $lang['logout'] ?></a>
      </nav>     
 <!--      <div class="profile">
           <div class="content">

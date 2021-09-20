@@ -45,7 +45,25 @@ $lang = array(
     "password" => "Contraseña",
     "loginB" => "Acceder",
     "perfil" => "Perfil",
+    "logout" => "Cerrar Sesión",
 
+    /* Editar */
+
+    "editPerfil" => "Editar Perfil",
+    "oldPass" => "Contraseña anterior",
+    "newPass" => "Nueva contraseña",
+    "confirmNewPass" => "Confirmar nueva contraseña",
+    "edit" => "Editar",
+    "cancel" => "Cancelar",
+
+    /* Crear Posts */
+
+    "admin" => "Administrador",
+    "addPredication" => "Añadir nueva predicación",
+    "titleForPredication" => "Titulo de la predicación",
+    "linkForPredication" => "URL del enlace",
+    "descriptionForPredication" => "Descripción de la predicación",
+    "addPost" => "Añadir",
 
     /* Errores */
 
