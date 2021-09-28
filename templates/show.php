@@ -6,7 +6,7 @@
  <body>
   <h1><?php echo $post['title'] ?></h1>
    <div><?php echo $post['date'] ?></div>
-   <div><?php echo $post['author'] ?></div>
+   <div><?php echo $post['link'] ?></div>
    <br>
    <div>
     <?php echo $post['content'] ?>

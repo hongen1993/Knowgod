@@ -50,9 +50,9 @@ include "db_conn.php";
             $pass = md5($pass);
 
             $sql = "SELECT * FROM users WHERE user_name='$uname' ";
-            $result = mysqli_query($conn, $sql);
+            $resulta = mysqli_query($conn, $sql);
 
-            if (mysqli_num_rows($result) > 0) {
+            if (mysqli_num_rows($resulta) > 0) {
                 header("Location:signup.php?error=The username is taken try another&$user_data");
                 exit();
             } else {

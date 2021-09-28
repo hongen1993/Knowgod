@@ -24,9 +24,9 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
           <?php 
                // Attempt select query execution
                $sql = "SELECT * FROM users";
-               if($result = mysqli_query($conn, $sql)){
-               if(mysqli_num_rows($result) > 0){
-                    while($row = mysqli_fetch_array($result)){
+               if($resulta = mysqli_query($conn, $sql)){
+               if(mysqli_num_rows($resulta) > 0){
+                    while($row = mysqli_fetch_array($resulta)){
                          echo "
                               <div class='profile'>
                                    <div class='profileContent'>
@@ -43,7 +43,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
                     }
                     // Free result set
-                    mysqli_free_result($result);
+                    mysqli_free_result($resulta);
                } else{
                     echo "No records matching your query were found.";
                }

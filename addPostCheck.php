@@ -1,6 +1,9 @@
 <?php 
 include "languages/configuration.php"; 
-include "db_conn.php";
+include "config.php";
+
+$conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME); 
+
 
     if (isset($_POST['title']) && isset($_POST['content'])
     && isset($_POST['link'])) {
@@ -26,8 +29,28 @@ include "db_conn.php";
             header("Location:addPost.php?error=Escriba el link de la predicación");
             exit();
         }
+     else {
 
-    } else {
+
+        $mysqli = ("SELECT * FROM post WHERE title='$title' " );
+        $result = mysqli_query($conex, $mysqli);
+
+        if (mysqli_num_rows($result) > 0) {
+            header("Location:addPost.php?error=El título escogido ya existe");
+            exit();
+        } else {
+            $mysqli2 = "INSERT INTO post(title, content, link) VALUES('$title', '$content', '$link')";
+            $result2 = mysqli_query($conex, $mysqli2);
+            if ($result2) {
+                header("Location:addPost.php?success=Su predicación ha sido añadido exitosamente");
+                exit();
+            } else {
+                header("Location:addPost.php?error=Error desconocido");
+                exit();
+            }
+        }
+    }
+ } else {
         header("Location:addPost.php");
         exit();
     }

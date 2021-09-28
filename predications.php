@@ -17,7 +17,12 @@ include "languages/configuration.php";
     <header>
         <?php include('dropdownMenu.php') ?>
     </header>
-    
+    <?php 
+// index.php 
+require_once 'model.php'; 
+$posts = getPosts(); 
+require './templates/list.php'; 
+?>
     <div class="predicationOfTheDayTitle">
         <h1 class="mostRecent"><?php echo $lang['predicationTitle'] ?></h1>
         <?php echo $lang['p1'] ?>

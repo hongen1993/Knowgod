@@ -1,6 +1,6 @@
 <?php 
 include "languages/configuration.php"; 
-include "db_conn.php";
+include "config.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">

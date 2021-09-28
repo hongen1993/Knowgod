@@ -37,8 +37,8 @@ if (isset($_POST['op']) && isset($_POST['np'])
         $sql = "SELECT password
                 FROM users WHERE 
                 id='$id' AND password='$op'";
-        $result = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($result) === 1){
+        $resulta = mysqli_query($conn, $sql);
+        if(mysqli_num_rows($resulta) === 1){
         	
         	$sql_2 = "UPDATE users
         	          SET password='$np'
