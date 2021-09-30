@@ -1,5 +1,5 @@
 <?php 
-include "languages/configuration.php"; 
+include "./languages/configuration.php"; 
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -14,7 +14,7 @@ include "languages/configuration.php";
 </head>
 <body>
     <header>
-        <?php include('dropdownMenu.php') ?>
+        <?php include('./header.php') ?>
     </header>
     <main>
     <div class="whoIsPage">

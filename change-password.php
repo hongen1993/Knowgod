@@ -19,7 +19,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 </head>
 <body>
 	<header>
-        <?php include('dropdownMenu.php') ?>
+        <?php include('header.php') ?>
     </header>
 	<main>
 		<form action="change-p.php" method="post">

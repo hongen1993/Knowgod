@@ -1,5 +1,5 @@
 <?php 
-include "languages/configuration.php"; 
+include "./languages/configuration.php"; 
 include "db_conn.php";
 if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
@@ -17,7 +17,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 </head>
 <body>
      <header>
-        <?php include('dropdownMenu.php') ?>
+        <?php include('header.php') ?>
     </header>
     <main>
          
@@ -38,7 +38,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                          echo "<p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>";
                          echo "<p>".$lang['signUpAddress'].":<br>".$row['address']."</p>";
                          echo "<p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
-                         echo "<a href='addPost.php'>".$lang['addPredication']."</a>";
+                         echo "<a href='../addPost.php'>".$lang['addPredication']."</a>";
                          echo "</div>";
 
                     }

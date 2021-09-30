@@ -1,5 +1,5 @@
 <?php 
-include "languages/configuration.php"; 
+include "./languages/configuration.php"; 
 include "db_conn.php";
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ include "db_conn.php";
 </head>
 <body>
      <header>
-          <?php include('dropdownMenu.php') ?>
+          <?php include('header.php') ?>
     </header>
     <main>
          <div class="formError">

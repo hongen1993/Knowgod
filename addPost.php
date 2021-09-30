@@ -1,5 +1,5 @@
 <?php 
-include "languages/configuration.php"; 
+include "./languages/configuration.php"; 
 include "config.php";
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ include "config.php";
 </head>
 <body>
      <header>
-          <?php include('dropdownMenu.php') ?>
+          <?php include('./header.php') ?>
     </header>
     <main>
          <div class="postFormError">
@@ -75,7 +75,7 @@ include "config.php";
           </div>
     </main>
     <footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('./footer.php') ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

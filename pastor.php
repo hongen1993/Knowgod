@@ -14,7 +14,7 @@ include "languages/configuration.php";
 </head>
 <body>
     <header>
-        <?php include('dropdownMenu.php') ?>
+        <?php include('header.php') ?>
     </header>
     <div class=""><?php echo $lang['pastorImage']?></div>
     <footer class="main-footer">

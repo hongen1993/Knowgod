@@ -1,5 +1,5 @@
 <?php 
-include "languages/configuration.php"; 
+include "./languages/configuration.php"; 
 include "config.php";
 
 $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME); 
@@ -51,6 +51,6 @@ $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME);
         }
     }
  } else {
-        header("Location:addPost.php");
+        header("Location:./addPost.php");
         exit();
     }

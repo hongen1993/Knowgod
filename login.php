@@ -1,5 +1,5 @@
 <?php 
-include "languages/configuration.php"; 
+include "./languages/configuration.php"; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@ include "languages/configuration.php";
 </head>
 <body>
 	<header>
-        <?php include('dropdownMenu.php') ?>
+        <?php include('./header.php') ?>
     </header>
 	<main>
 		<div class="signInForm">
@@ -35,7 +35,7 @@ include "languages/configuration.php";
 		</div>
 	</main>
 	<footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('./footer.php') ?>
     </footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

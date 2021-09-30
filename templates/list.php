@@ -5,7 +5,7 @@
    <?php foreach($posts as $post): ?>
    <li>
     <h2>
-     <a href="templates/show.php?id=<?php echo $post['id'] ?>">
+     <a href="/predications/templates/show.php?id=<?php echo $post['id'] ?>">
       <?php echo $post['title'] ?>
      </a>
     <h2>

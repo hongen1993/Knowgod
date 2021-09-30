@@ -15,13 +15,13 @@ include "languages/configuration.php";
 </head>
 <body>
     <header>
-        <?php include('dropdownMenu.php') ?>
+        <?php include('header.php') ?>
     </header>
     <?php 
 // index.php 
 require_once 'model.php'; 
 $posts = getPosts(); 
-require './templates/list.php'; 
+require 'templates/list.php'; 
 ?>
     <div class="predicationOfTheDayTitle">
         <h1 class="mostRecent"><?php echo $lang['predicationTitle'] ?></h1>

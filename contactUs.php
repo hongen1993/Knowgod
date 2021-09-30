@@ -12,7 +12,7 @@ include "languages/configuration.php";
     <link rel="stylesheet" type="text/css" href="/src/assets/css/contactUs.css" media="screen"/></head>
 <body>
     <header>
-        <?php include('dropdownMenu.php') ?>
+        <?php include('header.php') ?>
     </header>
   <div class="wrapper">
     <h1><?php echo $lang['contactUs'] ?></h1>
