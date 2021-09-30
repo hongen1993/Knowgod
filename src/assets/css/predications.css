@@ -1,12 +1,24 @@
-
-.mostRecent{
-    font-size: 1.5em;
+.predicationsTitle{
+    font-size: 1.75em;
     text-align: center;
     padding: 2.5em;
 }
+
+.predications{
+    margin: 1em;
+    text-align: center;
+}
+
+.predicationTitle{
+    margin: 1.5em;
+}
+
 .predicationDate{
+    font-size: .7em;
     text-align: end;
 }
-.predicationOfTheDayTitle{
-    margin: 1em;
+
+.predicationContent{
+    text-align: center;
+    font-size: 1.2em;
 }

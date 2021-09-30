@@ -126,8 +126,6 @@ $lang = array(
     /* Predicaciones */
 
     "predicationTitle" => "讲到",
-    "predicationDate" => "04/04/2021",
-    "p1" => "<iframe id='audio_73034536' frameborder='0' allowfullscreen='' scrolling='no' height='200' src='https://www.ivoox.com/player_ej_73034536_6_1.html?c1=0075ff' style='border:1px solid #EEE; box-sizing:border-box; width:100%;'></iframe>",
     
     /* Contactanos */
 

@@ -1,6 +1,8 @@
 <?php 
 include "./languages/configuration.php"; 
 include "config.php";
+if (isset($_SESSION['id']) && isset($_SESSION['user_name']) && ['user_type']!="NULL") {
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -14,6 +16,7 @@ include "config.php";
     <link rel="stylesheet" type="text/css" href="/src/assets/css/footer.css" media="screen"/>
 </head>
 <body>
+   
      <header>
           <?php include('./header.php') ?>
     </header>
@@ -81,3 +84,10 @@ include "config.php";
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
 </body>
 </html>
+
+<?php 
+}else{
+     header("Location:login.php");
+     exit();
+}
+ ?>

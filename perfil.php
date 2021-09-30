@@ -23,30 +23,36 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
          
           <?php 
                // Attempt select query execution
-               $sql = "SELECT * FROM users";
+               $user = $_SESSION['user_name'];
+               $sql = "SELECT * FROM users WHERE user_name ='$user' ";
                if($resulta = mysqli_query($conn, $sql)){
-               if(mysqli_num_rows($resulta) > 0){
-                    while($row = mysqli_fetch_array($resulta)){
-                         echo "
-                              <div class='profile'>
-                                   <div class='profileContent'>
-                                   <h1>".$lang['perfil']."</h1>
-                              <div>
-                              ";
-                         echo "<p>".$lang['signUpUsername'].":<br>".$row['user_name']."</p>";
-                         echo "<p>".$lang['signUpName'].":<br>".$row['name']."</p>";
-                         echo "<p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>";
-                         echo "<p>".$lang['signUpAddress'].":<br>".$row['address']."</p>";
-                         echo "<p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
-                         echo "<a href='../addPost.php'>".$lang['addPredication']."</a>";
-                         echo "</div>";
+                    if(mysqli_num_rows($resulta) > 0){
+                         while($row = mysqli_fetch_array($resulta)){
+                              echo "
+                                   <div class='profile'>
+                                        <div class='profileContent'>
+                                        <h1>".$lang['perfil']."</h1>
+                                   <div>
+                                   ";
+                              echo "<p>".$lang['signUpUsername'].":<br>".$row['user_name']."</p>";
+                              echo "<p>".$lang['signUpName'].":<br>".$row['name']."</p>";
+                              echo "<p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>";
+                              echo "<p>".$lang['signUpAddress'].":<br>".$row['address']."</p>";
+                              echo "<p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
+                              if($row['user_type']=="admin"){
+                                   echo "<a href='../addPost.php'>".$lang['addPredication']."</a>";
+                              }else{
 
+                              }
+
+                              echo "</div>";
+
+                         }
+                         // Free result set
+                         mysqli_free_result($resulta);
+                     }else{
+                         echo "No records matching your query were found.";
                     }
-                    // Free result set
-                    mysqli_free_result($resulta);
-               } else{
-                    echo "No records matching your query were found.";
-               }
                } else{
                echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
                }

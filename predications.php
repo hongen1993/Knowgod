@@ -18,23 +18,12 @@ include "languages/configuration.php";
         <?php include('header.php') ?>
     </header>
     <?php 
-// index.php 
-require_once 'model.php'; 
-$posts = getPosts(); 
-require 'templates/list.php'; 
-?>
-    <div class="predicationOfTheDayTitle">
-        <h1 class="mostRecent"><?php echo $lang['predicationTitle'] ?></h1>
-        <?php echo $lang['p1'] ?>
-        <p class="predicationDate"><?php echo $lang['predicationDate'] ?></p>
-        <?php 
-            if(isset($_POST['submit'])){
-                $fname=$_POST['fname'];
 
-                echo "Your First Name is : ".$fname."<br>"; 
-            }
-        ?>
-    </div>
+    require_once 'model.php'; 
+    $posts = getPosts(); 
+    require 'list.php'; 
+    ?>
+    
     <footer class="main-footer">
         <?php include('footer.php') ?>
     </footer>
