@@ -35,5 +35,7 @@ $(document).ready( function enterB(){
     $('.contactUs').delay(19000).queue(function(menuC){$(this).css('display', 'block');menuC();});
     $('.aboutUs').delay(19500).queue(function(menuD){$(this).css('display', 'block');menuD();});
     
+    $('#skipB').delay(18000).queue(function(menuE){$(this).css('display', 'none');menuE();});
+
     }
 )

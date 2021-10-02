@@ -41,6 +41,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                               echo "<p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
                               if($row['user_type']=="admin"){
                                    echo "<a href='../addPost.php'>".$lang['addPredication']."</a>";
+                              }else if($row['user_type']=="adminch"){
+                                   echo "<a href='../addPostCH.php'>".$lang['addPredication']."</a>";
                               }else{
 
                               }

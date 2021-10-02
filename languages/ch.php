@@ -23,6 +23,9 @@ $lang = array(
     "menu-C" => "联系我们",
     "menu-D" => "许摩西",
 
+    "menu-BB" => "<a href='/predicationsCH.php'>讲道</a>",
+    "skip" => "跳过",
+
     /* Crear Cuenta */
 
     "signUp" => "注册",

@@ -21,6 +21,12 @@ body{
 .user a{
   color: black;
 }
+.language{
+  display: none;
+  position: absolute;
+  top: 0.9em;
+  right: 5.5em;
+}
 .logo img{
     height: 6em;
     margin-left: -1em;
@@ -68,6 +74,6 @@ body{
     border-radius: .5em;
     text-align: center;
   }
-  .dropdown:hover .user {
+  .dropdown:hover .user, .dropdown:hover .language{
     display: block;
   }

@@ -35,6 +35,9 @@ $(document).ready( function enter(){
     $('.listenTo').delay(18500).queue(function(menuB){$(this).css('display', 'block');menuB();});
     $('.contactUs').delay(19000).queue(function(menuC){$(this).css('display', 'block');menuC();});
     $('.aboutUs').delay(19500).queue(function(menuD){$(this).css('display', 'block');menuD();});
+
+    $('#skip').delay(18000).queue(function(menuE){$(this).css('display', 'none');menuE();});
+
     
     })
     

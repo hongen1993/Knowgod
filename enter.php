@@ -104,6 +104,11 @@ include "languages/configuration.php";
       <p class="lineFour lineborderFour anim-typewriterFour" id="textWritterFour"><?php echo $lang['salmos-D'] ?></p>
   </div>
   <div class="spanishVerse">
+
+  <div id="skip">
+    <?php echo $lang['skip'] ?>
+  </div>
+
 <!--     <div class="spanish-A">Aunque</div>
     <div class="spanish-A2">ande en valle de </div>
 
@@ -136,6 +141,8 @@ include "languages/configuration.php";
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/src/assets/js/enter.js"></script>
     <script src="/src/assets/js/menu.js"></script>
+    <script src="/src/assets/js/skip.js"></script>
+
     <!--Start of Tawk.to Script-->
 <!--     <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

@@ -25,6 +25,11 @@ $lang = array(
     "menu-C" => "Contactanos",
     "menu-D" => "Francisco Pereñon",
 
+    "menu-BB" => "<a href='/predications.php'>Predicaciones</a>",
+
+    "skip" => "Saltar",
+
+
     /* Crear Cuenta */
 
     "signUp" => "Registrarse",
@@ -127,8 +132,6 @@ $lang = array(
     /* Predicaciones */
 
     "predicationTitle" => "Predicaciones",
-    "predicationDate" => "04/04/2021",
-    "p1" => "<iframe id='audio_73034536' frameborder='0' allowfullscreen='' scrolling='no' height='200' style='width:100%;' src='https://www.ivoox.com/player_ej_73034536_6_1.html'></iframe>",
 
     /* Contactanos */
 
