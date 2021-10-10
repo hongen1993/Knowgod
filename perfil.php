@@ -1,8 +1,7 @@
 <?php 
 include "./languages/configuration.php"; 
-include "db_conn.php";
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
-
+include "config.php";
+if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 ?>  
 <!DOCTYPE html>
 <html>
@@ -20,21 +19,20 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
         <?php include('header.php') ?>
     </header>
     <main>
-         
           <?php 
                // Attempt select query execution
-               $user = $_SESSION['user_name'];
-               $sql = "SELECT * FROM users WHERE user_name ='$user' ";
-               if($resulta = mysqli_query($conn, $sql)){
-                    if(mysqli_num_rows($resulta) > 0){
-                         while($row = mysqli_fetch_array($resulta)){
+               $user = $_SESSION['userid'];
+               $sql = "SELECT * FROM users WHERE userid ='$user' ";
+               if($result = mysqli_query($conn, $sql)){
+                    if(mysqli_num_rows($result) > 0){
+                         while($row = mysqli_fetch_array($result)){
                               echo "
                                    <div class='profile'>
                                         <div class='profileContent'>
                                         <h1>".$lang['perfil']."</h1>
                                    <div>
                                    ";
-                              echo "<p>".$lang['signUpUsername'].":<br>".$row['user_name']."</p>";
+                              echo "<p>".$lang['signUpUsername'].":<br>".$row['userid']."</p>";
                               echo "<p>".$lang['signUpName'].":<br>".$row['name']."</p>";
                               echo "<p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>";
                               echo "<p>".$lang['signUpAddress'].":<br>".$row['address']."</p>";
@@ -51,7 +49,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
                          }
                          // Free result set
-                         mysqli_free_result($resulta);
+                         mysqli_free_result($result);
                      }else{
                          echo "No records matching your query were found.";
                     }
@@ -63,7 +61,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
                mysqli_close($conn);
           ?>       
           <nav class="home-nav">
-     	<a href="change-password.php"><?php echo $lang['editPerfil'] ?></a>
+     	<a href="update-profile.php"><?php echo $lang['editPerfil'] ?></a>
         <a href="logout.php"><?php echo $lang['logout'] ?></a>
      </nav>     
 <!--      <div class="profile">

@@ -41,6 +41,7 @@ $lang = array(
     "signUpEmail" => "Correo electronico",
     "signUpPass" => "Contraseña",
     "signUpPassB" => "Confirmar contraseña",
+    "signUpGender" => "Género",
     "signUpAlreadyACC" => "¿Ya tienes una cuenta?",
     
     /* Ingresar */

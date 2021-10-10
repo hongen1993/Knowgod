@@ -37,12 +37,12 @@ if (isset($_POST['op']) && isset($_POST['np'])
         $sql = "SELECT password
                 FROM users WHERE 
                 id='$id' AND password='$op'";
-        $resulta = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($resulta) === 1){
+        $result = mysqli_query($conn, $sql);
+        if(mysqli_num_rows($result) === 1){
         	
         	$sql_2 = "UPDATE users
         	          SET password='$np'
-        	          WHERE ='$id'";
+        	          WHERE id='$id'";
         	mysqli_query($conn, $sql_2);
         	header("Location:change-password.php?success=Your password has been changed successfully");
 	        exit();

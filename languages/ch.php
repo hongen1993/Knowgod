@@ -35,6 +35,7 @@ $lang = array(
     "signUpSurname" => "姓",
     "signUpAddress" => "地址",
     "signUpEmail" => "电子邮件",
+    "signUpGender" => "性别",
     "signUpPass" => "密码",
     "signUpPassB" => "确认密码",
     "signUpAlreadyACC" => "已经有一个帐户？ ",
