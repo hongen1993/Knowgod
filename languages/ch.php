@@ -52,9 +52,11 @@ $lang = array(
     /* Editar */ 
 
     "editPerfil" => "编辑",
+    "changePassword"=>"更改密码",
     "oldPass" => "编辑",
     "newPass" => "新密码",
     "confirmNewPass" => "确认新密码",
+    "confirm"=>"确认",
     "edit" => "更改",
     "cancel" => "取消",
 

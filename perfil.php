@@ -32,6 +32,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                                         <h1>".$lang['perfil']."</h1>
                                    <div>
                                    ";
+                                   ;if (isset($_GET['success'])){
+                                        echo
+                                        "<p class='success'>". $_GET['success']; echo "</p>
+                                    "; }
                               echo "<p>".$lang['signUpUsername'].":<br>".$row['userid']."</p>";
                               echo "<p>".$lang['signUpName'].":<br>".$row['name']."</p>";
                               echo "<p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>";
@@ -61,7 +65,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                mysqli_close($conn);
           ?>       
           <nav class="home-nav">
-     	<a href="update-profile.php"><?php echo $lang['editPerfil'] ?></a>
+          <a href="update-profile.php"><?php echo $lang['editPerfil'] ?></a>
         <a href="logout.php"><?php echo $lang['logout'] ?></a>
      </nav>     
 <!--      <div class="profile">

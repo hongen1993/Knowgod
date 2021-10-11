@@ -1,15 +1,15 @@
 <?Php
-include "config.php"; // database connection details stored here
-// Collect the data from post method of form submission //
+include "config.php";
+
 $userid=$_POST['userid'];
 $password=$_POST['password'];
 $password2=$_POST['password2'];
 $agree=$_POST['agree'];
 $todo=$_POST['todo'];
-$email=$_POST['email'];
 $name=$_POST['name'];
 $surname=$_POST['surname'];
 $address=$_POST['address'];
+$email=$_POST['email'];
 $gender=$_POST['gender'];
 
 ?>

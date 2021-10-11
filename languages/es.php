@@ -56,9 +56,11 @@ $lang = array(
     /* Editar */
 
     "editPerfil" => "Editar Perfil",
+    "changePassword"=>"Cambiar contraseña",
     "oldPass" => "Contraseña anterior",
     "newPass" => "Nueva contraseña",
     "confirmNewPass" => "Confirmar nueva contraseña",
+    "confirm"=>"Confirmar",
     "edit" => "Editar",
     "cancel" => "Cancelar",
 
@@ -73,10 +75,16 @@ $lang = array(
 
     /* Errores */
 
-    "Error1" => "",
-    "Error2" => "",
-    "Error3" => "",
-    "Error4" => "",
+    "Error1" => "La contraseña anterior no coincide",
+    "Error2" => "La contraseña debe tener más de 3 caracteres",
+    "Error3" => "Las nuevas contraseñas no coinciden",
+    "Error4" => "Error desconocido contacte con el Administrador",
+    "Error5" => "Se requiere introducir el nombre",
+    "Error6" => "Se requiere introducir los apellidos",
+    "Error7" => "Se requiere introducir su dirección",
+    "Error8" => "Se requiere introducir su correo electrónico",
+    "Success"=> "Su contraseña se ha cambiado con exito",
+    "Success2"=> "Su perfil ha sido editado con exito",
 
     /* ¿Quien es? */
 
