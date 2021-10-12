@@ -1,20 +1,18 @@
 <?Php
 include "languages/configuration.php"; 
-include "include/session.php";
 include "config.php";
-?>
-<?Php
 
-    $todo=$_POST['todo'];
-    $name=$_POST['name'];
-    $surname=$_POST['surname'];
-    $address=$_POST['address'];
-    $email=$_POST['email'];
-    $gender=$_POST['gender'];
+$todo=$_POST['todo'];
+$name=$_POST['name'];
+$surname=$_POST['surname'];
+$address=$_POST['address'];
+$email=$_POST['email'];
+$gender=$_POST['gender'];
 
     if (isset($todo) and $todo=="update-profile") {
 
         $status = "OK";
+
         if (strlen($name) < 1) {
             header("Location:update-profile.php?error=". $lang['Error5']);
             $status= "NOTOK";
@@ -43,6 +41,7 @@ include "config.php";
 
             if ($sql->execute()) {
                 header("Location:perfil.php?success=". $lang['Success2']);
+                exit();    
             }
             else {
                 print_r($sql->errorInfo());

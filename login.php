@@ -1,6 +1,6 @@
 <?Php
-include "config.php";
 include "./languages/configuration.php"; 
+include "config.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,17 +18,33 @@ include "./languages/configuration.php";
         <?php include('./header.php') ?>
     </header>
     <main>
-    <div class="signInForm">
-      <form action='loginck.php' method=post>
-        <h2><?php echo $lang['login'] ?></h2>
-        <label><?php echo $lang['account'] ?></label>
-        <input type ='text' name='userid' placeholder="<?php echo $lang['account'] ?>">
-        <input type ='password' name='password' placeholder="<?php echo $lang['password'] ?>">
-        <button type="submit"><?php echo $lang['loginB'] ?></button>
-        <a href='signup.php' class="ca"><?php echo $lang['createACC'] ?></a>
-        <a href=forgot-password.php class="ca">Forgot Password</a>
-      </form>
-    </div>
+
+      <?php if (isset($_GET['success'])) { ?>
+        <p class="success"><?php echo $_GET['success']; ?></p>
+      <?php } ?>
+      <?php if (isset($_GET['error'])) { ?>
+        <p class="error"><?php echo $_GET['error']; ?></p>
+      <?php } ?>
+
+      <div class="signInForm">
+
+        <form action='loginck.php' method=post>
+
+          <h2><?php echo $lang['login'] ?></h2>
+
+          <label><?php echo $lang['account'] ?></label>
+          <input type ='text' name='userid' placeholder="<?php echo $lang['account'] ?>" required>
+
+          <input type ='password' name='password' placeholder="<?php echo $lang['password'] ?>" required>
+          <button type="submit"><?php echo $lang['loginB'] ?></button>
+          
+          <a href='signup.php' class="ca"><?php echo $lang['createACC'] ?></a>
+          <a href=forgot-password.php class="ca">Forgot Password</a>
+        
+        </form>
+
+      </div>
+
     </main>
     <footer class="main-footer">
       <?php include('footer.php') ?>

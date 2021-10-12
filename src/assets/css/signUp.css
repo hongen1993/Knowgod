@@ -2,12 +2,12 @@ body{
   margin:0;
 }
 main{
-  height:155vh;
+  height:200vh;
 }
 .signUpForm {
 	position: relative;
 	left:10%;
-  height: 139vh;
+  height: 180vh;
 	width: 80vw;
 	border: 2px solid #ccc;
 	padding: 30px 15px 20px 15px;
@@ -71,7 +71,7 @@ main{
 }
 
 .signUpForm .ca {
-	left: 7em;
+	left: 11.5em;
   position: absolute;
   font-size: .75em;
 	display: inline-block;
@@ -82,6 +82,33 @@ main{
 .signUpForm .ca:hover {
 	text-decoration: underline;
 } 
+.gender{
+  position: relative;
+  left: 5%;
+}
+#gender{
+  display: inline;
+  width: 8%;
+}
+#genderLabel{
+  position: relative;
+  top: -2.3vh;
+}
+.terms{
+  position: relative;
+  left: 2%;
+}
+#inputTerms{
+  display: inline;
+  width: 6%;
+}
+#terms{
+  position: relative;
+  top: -2.5vh;
+}
+.signUpButton{
+  padding: 1em 0em;
+}
 
 /* Effect Styles Start Here */
 

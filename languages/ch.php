@@ -30,14 +30,17 @@ $lang = array(
 
     "signUp" => "注册",
     "createACC" => "创建账户",
-    "signUpUsername" => "帐号",
-    "signUpName" => "名字",
-    "signUpSurname" => "姓",
-    "signUpAddress" => "地址",
-    "signUpEmail" => "电子邮件",
-    "signUpGender" => "性别",
-    "signUpPass" => "密码",
-    "signUpPassB" => "确认密码",
+    "signUpUsername" => "帐号:",
+    "signUpName" => "名字:",
+    "signUpSurname" => "姓:",
+    "signUpAddress" => "地址:",
+    "signUpEmail" => "电子邮件:",
+    "signUpPass" => "密码:",
+    "signUpPassB" => "确认密码:",
+    "signUpGender" => "性别:",
+    "signUpMale" => "男",
+    "signUpFemale" => "女",
+    "signUpTerms" => "我接受条款和条件",
     "signUpAlreadyACC" => "已经有一个帐户？ ",
 
     /* Ingresar */
@@ -72,9 +75,25 @@ $lang = array(
     /* Errores */
 
     "Error1" => "输入名称&",
-    "Error2" => "",
-    "Error3" => "",
-    "Error4" => "",
+    "Error2" => "密码必须超过3个字符",
+    "Error3" => "新密码不相同",
+    "Error4" => "未知错误联系管理员",
+    "Error5" => "需要输入姓名",
+    "Error6" => "必须输入姓氏",
+    "Error7" => "您的地址为必填项",
+    "Error8" => "需要输入您的电子邮件",
+    "Error9" => "用户名必须为 3 个或更多字符",
+    "Error10" => "用户名只能包含字母数字字符",
+    "Error11" => "用户名已存在.",
+    "Error12" => "输入的邮箱已被使用.",
+    "Error13" => "输入的电子邮件无效.",
+    "Error14" => "您必须同意条款和条件",
+    "Error15" => "输入的用户名不存在",
+    "Error16" => "输入的密码错误",
+
+    "Success"=> "你已经成功更改密码",
+    "Success2"=> "您的个人资料已成功编辑",
+    "Success3"=> "您创建的帐户已成功",
 
     /* ¿Quien es? */
 

@@ -26,7 +26,6 @@ $lang = array(
     "menu-D" => "Francisco Pereñon",
 
     "menu-BB" => "<a href='/predications.php'>Predicaciones</a>",
-
     "skip" => "Saltar",
 
 
@@ -34,14 +33,17 @@ $lang = array(
 
     "signUp" => "Registrarse",
     "createACC" => "Crear cuenta",
-    "signUpUsername" => "Nombre de Usuario",
-    "signUpName" => "Nombre",
-    "signUpSurname" => "Apellidos",
-    "signUpAddress" => "Dirección",
-    "signUpEmail" => "Correo electronico",
-    "signUpPass" => "Contraseña",
-    "signUpPassB" => "Confirmar contraseña",
-    "signUpGender" => "Género",
+    "signUpUsername" => "Nombre de Usuario:",
+    "signUpName" => "Nombre:",
+    "signUpSurname" => "Apellidos:",
+    "signUpAddress" => "Dirección:",
+    "signUpEmail" => "Correo electronico:",
+    "signUpPass" => "Contraseña:",
+    "signUpPassB" => "Confirmar contraseña:",
+    "signUpGender" => "Género:",
+    "signUpMale" => "Masculino",
+    "signUpFemale" => "Femenino",
+    "signUpTerms" => "Acepto los términos y condiciones",
     "signUpAlreadyACC" => "¿Ya tienes una cuenta?",
     
     /* Ingresar */
@@ -83,8 +85,18 @@ $lang = array(
     "Error6" => "Se requiere introducir los apellidos",
     "Error7" => "Se requiere introducir su dirección",
     "Error8" => "Se requiere introducir su correo electrónico",
-    "Success"=> "Su contraseña se ha cambiado con exito",
-    "Success2"=> "Su perfil ha sido editado con exito",
+    "Error9" => "El nombre de usuario debe tener 3 o más caracteres",
+    "Error10" => "El nombre de usuario solo puede contener caracteres alfanuméricos",
+    "Error11" => "El nombre de usuario ya existe.",
+    "Error12" => "El correo electronico introducido ya ha sido utilizado.",
+    "Error13" => "El correo electronico introducido no es válido.",
+    "Error14" => "Debes aceptar los terminos y condiciones",
+    "Error15" => "El nombre de usuario introducido no existe",
+    "Error16" => "La contraseña introducida es errónea",
+
+    "Success"=> "Su contraseña se ha cambiado con éxito",
+    "Success2"=> "Su perfil ha sido editado con éxito",
+    "Success3"=> "Su cuenta ha sido creada con éxito",
 
     /* ¿Quien es? */
 

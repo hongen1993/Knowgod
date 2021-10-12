@@ -20,18 +20,17 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
     </header>
     <main>
           <?php 
-               // Attempt select query execution
+
                $user = $_SESSION['userid'];
                $sql = "SELECT * FROM users WHERE userid ='$user' ";
+               
                if($result = mysqli_query($conn, $sql)){
                     if(mysqli_num_rows($result) > 0){
                          while($row = mysqli_fetch_array($result)){
                               echo "
                                    <div class='profile'>
                                         <div class='profileContent'>
-                                        <h1>".$lang['perfil']."</h1>
-                                   <div>
-                                   ";
+                                        <h1>".$lang['perfil']."</h1>                                   ";
                                    ;if (isset($_GET['success'])){
                                         echo
                                         "<p class='success'>". $_GET['success']; echo "</p>
@@ -41,33 +40,33 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                               echo "<p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>";
                               echo "<p>".$lang['signUpAddress'].":<br>".$row['address']."</p>";
                               echo "<p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
-                              if($row['user_type']=="admin"){
+                              if($row['user_type']=="1"){
                                    echo "<a href='../addPost.php'>".$lang['addPredication']."</a>";
-                              }else if($row['user_type']=="adminch"){
+                              }else if($row['user_type']=="1"){
                                    echo "<a href='../addPostCH.php'>".$lang['addPredication']."</a>";
                               }else{
 
                               }
-
-                              echo "</div>";
-
                          }
-                         // Free result set
+
                          mysqli_free_result($result);
+
                      }else{
+
                          echo "No records matching your query were found.";
                     }
                } else{
+
                echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
                }
                
-               // Close connection
                mysqli_close($conn);
+
           ?>       
-          <nav class="home-nav">
-          <a href="update-profile.php"><?php echo $lang['editPerfil'] ?></a>
-        <a href="logout.php"><?php echo $lang['logout'] ?></a>
-     </nav>     
+               <a href="update-profile.php"><?php echo $lang['editPerfil'] ?></a>
+               <a href="logout.php"><?php echo $lang['logout'] ?></a>
+          </div>
+     </div>
 <!--      <div class="profile">
           <div class="content">
           <h1>Perfil</h1>
@@ -88,9 +87,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
           </div>
      </div> -->
 
-
-<!-- http://www.smashingmagazine.com/2013/08/08/release-livestyle-css-live-reload/ -->
-     
     </main>
      <footer class="main-footer">
         <?php include('footer.php') ?>

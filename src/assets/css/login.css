@@ -9,7 +9,7 @@ body{
 	width: 80vw;
 	border: 2px solid #ccc;
 	padding: 30px 15px 20px 15px;
-	margin: 5em 0em 5em 0em;
+	margin: 4em 0em 5em 0em;
 	background: #fff;
 	border-radius: 15px;
 	font-size: 1em;
@@ -79,3 +79,11 @@ body{
 .signInForm .ca:hover {
 	text-decoration: underline;
 } 
+.success{
+	text-align: center;
+    color:green;
+}
+.error{
+	text-align: center;
+    color: red;
+}

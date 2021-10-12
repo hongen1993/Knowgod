@@ -17,78 +17,78 @@ include "./languages/configuration.php";
         <?php include('./header.php') ?>
     </header>
     <main>
-    <div class="whoIsPage">
-        <div class="background"></div>
-        <h1><?php echo $lang['whoIsGod?'] ?></h1>
-        <div class="backgroundOverLayer"></div>
-        <div class="animation-element slide-left testimonial hecho">
-            <div class="header">
-                <div class="left"></div>
-                <div class="right">
-                    <h2><?php echo $lang['whoIsTitle1'] ?></h2>
+        <div class="whoIsPage">
+            <div class="background"></div>
+            <h1><?php echo $lang['whoIsGod?'] ?></h1>
+            <div class="backgroundOverLayer"></div>
+            <div class="animation-element slide-left testimonial hecho">
+                <div class="header">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2><?php echo $lang['whoIsTitle1'] ?></h2>
+                    </div>
                 </div>
-            </div>
-            <div class="content">
-                <p><?php echo $lang['whoIsP1'] ?></p>
-            </div>
+                <div class="content">
+                    <p><?php echo $lang['whoIsP1'] ?></p>
+                </div>
 
-        </div>
-        <div class="animation-element slide-right testimonial">
-            <div class="header">
-                <div class="left"></div>
-                <div class="right">
-                    <h2><?php echo $lang['whoIsTitle2'] ?></h2>
+            </div>
+            <div class="animation-element slide-right testimonial">
+                <div class="header">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2><?php echo $lang['whoIsTitle2'] ?></h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <p><?php echo $lang['whoIsP2'] ?></p>
                 </div>
             </div>
-            <div class="content">
-            <p><?php echo $lang['whoIsP2'] ?></p>
+            <div class="animation-element slide-left testimonial">
+                <div class="header">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2><?php echo $lang['whoIsTitle3'] ?></h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <p><?php echo $lang['whoIsP3'] ?></p>
+                </div>       
             </div>
-        </div>
-        <div class="animation-element slide-left testimonial">
-            <div class="header">
-                <div class="left"></div>
-                <div class="right">
-                <h2><?php echo $lang['whoIsTitle3'] ?></h2>
+            <div class="animation-element slide-right testimonial">
+                <div class="header">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2><?php echo $lang['whoIsTitle4'] ?></h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <p><?php echo $lang['whoIsP4'] ?></p>
                 </div>
             </div>
-            <div class="content">
-            <p><?php echo $lang['whoIsP3'] ?></p>
-            </div>       
-        </div>
-        <div class="animation-element slide-right testimonial">
-            <div class="header">
-                <div class="left"></div>
-                <div class="right">
-                <h2><?php echo $lang['whoIsTitle4'] ?></h2>
+            <div class="animation-element slide-left testimonial">
+                <div class="header">
+                    <div class="left"></div>
+                    <div class="right">
+                    <h2><?php echo $lang['whoIsTitle5'] ?></h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <p><?php echo $lang['whoIsP5'] ?></p>
                 </div>
             </div>
-            <div class="content">
-            <p><?php echo $lang['whoIsP4'] ?></p>
-            </div>
-        </div>
-        <div class="animation-element slide-left testimonial">
-            <div class="header">
-                <div class="left"></div>
-                <div class="right">
-                <h2><?php echo $lang['whoIsTitle5'] ?></h2>
+            <div class="animation-element slide-right testimonial">
+                <div class="header">
+                    <div class="left"></div>
+                    <div class="right">
+                        <h2><?php echo $lang['whoIsTitle6'] ?></h2>
+                    </div>
+                </div>
+                <div class="content">
+                <p><?php echo $lang['whoIsP6'] ?></p>
                 </div>
             </div>
-            <div class="content">
-            <p><?php echo $lang['whoIsP5'] ?></p>
-            </div>
         </div>
-        <div class="animation-element slide-right testimonial">
-        <div class="header">
-                <div class="left"></div>
-                <div class="right">
-                <h2><?php echo $lang['whoIsTitle6'] ?></h2>
-                </div>
-            </div>
-            <div class="content">
-            <p><?php echo $lang['whoIsP6'] ?></p>
-            </div>
-        </div>
-    </div>
     </main>
     <footer class="main-footer">
         <?php include('footer.php') ?>
