@@ -9,7 +9,7 @@ $userid=$_GET['userid'];
 ?>
 <!doctype html public "-//w3c//dtd html 3.2//en">
 
-<html>
+<html lang="es">
 
 <head>
 <title>Activate Passwrd for plus Signup script of plus2net.com</title>

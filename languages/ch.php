@@ -50,7 +50,10 @@ $lang = array(
     "password" => "密码",
     "loginB" => "确认",
     "perfil" => "帐号",
+    "forgotPass" => "忘了你的密码?",
+    "enterEmail" => "输入你的电子邮箱:",
     "logout" => "退出",
+    "send" => "发送",
 
     /* Editar */ 
 
@@ -90,6 +93,8 @@ $lang = array(
     "Error14" => "您必须同意条款和条件",
     "Error15" => "输入的用户名不存在",
     "Error16" => "输入的密码错误",
+    "Error17" => "La contraseña introducida es errónea",
+    "Error18" => "El correo electrónico introducido es erróneo",
 
     "Success"=> "你已经成功更改密码",
     "Success2"=> "您的个人资料已成功编辑",
@@ -170,8 +175,6 @@ $lang = array(
     "contactUsMessageButton" => "发消息 ",
     "contactUsMessageBack" => "上",
 
-    
-
     /* 许摩西 */
 
     "pastorTitle" => "许摩西",
@@ -191,6 +194,5 @@ $lang = array(
                 Málaga 29004 España<br>
                 <a href='tel:691594025'>691594025</a>
                 <a href='http://localhost:3000/contactUs.php'>教会电子邮件@gmail.com</a>"
-
     )
 ?>

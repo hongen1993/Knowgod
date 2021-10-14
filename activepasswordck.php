@@ -12,7 +12,7 @@ $password2=$_POST['password2'];
 ?>
 <!doctype html public "-//w3c//dtd html 3.2//en">
 
-<html>
+<html lang="es">
 
 <head>
 <title>(Type a title for your page here)</title>

@@ -4,7 +4,7 @@ include "config.php";
 if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
     ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">

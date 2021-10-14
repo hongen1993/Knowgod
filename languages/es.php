@@ -9,8 +9,6 @@ $lang = array(
     "contactUsTitle" => "Contáctanos",
     "aboutTitle" => "Francisco Pereñon",
 
-
-
     /* Versiculo Salmos */
 
     "salmos-A" => "Aunque ande en valle de sombra",
@@ -53,7 +51,10 @@ $lang = array(
     "password" => "Contraseña",
     "loginB" => "Acceder",
     "perfil" => "Perfil",
+    "forgotPass" => "¿Has olvidado tu contraseña?",
+    "enterEmail" => "Introduce tu correo electrónico:",
     "logout" => "Cerrar Sesión",
+    "send" => "Enviar",
 
     /* Editar */
 
@@ -93,10 +94,17 @@ $lang = array(
     "Error14" => "Debes aceptar los terminos y condiciones",
     "Error15" => "El nombre de usuario introducido no existe",
     "Error16" => "La contraseña introducida es errónea",
+    "Error17" => "El correo electrónico introducido es erróneo",
+    "Error18" => "El correo electrónico introducido no existe",
+    "Error19" => "El codigo de activación ha sido enviado a su correo electrónico",
+    "Error20" => "El sistema esta teniendo problemas.Por favor contacte con el administrador.",
+
 
     "Success"=> "Su contraseña se ha cambiado con éxito",
     "Success2"=> "Su perfil ha sido editado con éxito",
     "Success3"=> "Su cuenta ha sido creada con éxito",
+    "Success4"=> "Su contraseña ha sido enviado a su correo electrónico",
+
 
     /* ¿Quien es? */
 
@@ -162,12 +170,10 @@ $lang = array(
     "contactUsNameInput" => "Introduzca su nombre",
     "contactUsNameNext" => "Siguiente",
 
-
     "contactUsEmail" => "Ahora necesito su correo electronico, para poder contactar con usted:",
     "contactUsEmailInput" => "Introduzca su correo electronico",
     "contactUsEmailNext" => "Siguiente",
     "contactUsEmailBack" => "Atras",
-
 
     "contactUsMessage" => "Su mensaje para mí",
     "contactUsMessageInput" => "Introduzca su mensaje",

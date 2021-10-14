@@ -3,7 +3,7 @@ include "./languages/configuration.php";
 include "config.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +39,7 @@ include "config.php";
           <button type="submit"><?php echo $lang['loginB'] ?></button>
           
           <a href='signup.php' class="ca"><?php echo $lang['createACC'] ?></a>
-          <a href=forgot-password.php class="ca">Forgot Password</a>
+          <a href=forgot-password.php class="ca"><?php echo $lang['forgotPass']?></a>
         
         </form>
 
