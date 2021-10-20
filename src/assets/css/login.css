@@ -160,3 +160,17 @@ body{
 	margin: 10px;
 	border-radius: 5px;
 }
+.forgotPassLogged {
+	position: relative;
+	text-align: center;
+	top: 25%;
+	left:10%;
+  	height: 21vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 2.5em;
+	margin: 4em 0em 5em 0em;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}

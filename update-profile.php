@@ -54,19 +54,19 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                     echo 
                         "</p>";} 
                     echo"
-                        <label>". $lang['signUpName'] ."</label>
+                        <label>". $lang['signUpName'] .":</label>
                         <input type=text name=name value='$row->name'><br>
                             
-                        <label>". $lang['signUpSurname'] ."</label>
+                        <label>". $lang['signUpSurname'] .":</label>
                         <input type=text name=surname value='$row->surname'><br>
 
-                        <label>". $lang['signUpAddress'] ."</label>
+                        <label>". $lang['signUpAddress'] .":</label>
                         <input type=text name=address value='$row->address'><br>
                             
-                        <label>". $lang['signUpEmail'] ."</label>
+                        <label>". $lang['signUpEmail'] .":</label>
                         <input type=text name=email value='$row->email'><br>
 
-                        <label>". $lang['signUpGender'] ."</label><br>
+                        <label>". $lang['signUpGender'] .":</label><br>
                         $ckb<br>
                         <a href='change-password.php'>". $lang['changePassword'] ."</a><br>
                             

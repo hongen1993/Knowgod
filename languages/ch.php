@@ -30,14 +30,14 @@ $lang = array(
 
     "signUp" => "注册",
     "createACC" => "创建账户",
-    "signUpUsername" => "帐号:",
+    "signUpUsername" => "帐号",
     "signUpName" => "名字:",
-    "signUpSurname" => "姓:",
-    "signUpAddress" => "地址:",
-    "signUpEmail" => "电子邮件:",
-    "signUpPass" => "密码:",
-    "signUpPassB" => "确认密码:",
-    "signUpGender" => "性别:",
+    "signUpSurname" => "姓",
+    "signUpAddress" => "地址",
+    "signUpEmail" => "电子邮件",
+    "signUpPass" => "密码",
+    "signUpPassB" => "确认密码",
+    "signUpGender" => "性别",
     "signUpMale" => "男",
     "signUpFemale" => "女",
     "signUpTerms" => "我接受条款和条件",
@@ -54,6 +54,8 @@ $lang = array(
     "enterEmail" => "输入你的电子邮箱:",
     "logout" => "退出",
     "send" => "发送",
+    "alreadyLogged" => "您已经以 ",
+    "alreadyLogged2" => " 的身份登录，请单击 <a href=logout.php>此处 </a> 注销。",
 
     /* Editar */ 
 

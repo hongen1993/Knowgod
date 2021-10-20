@@ -33,13 +33,13 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                 echo "
                     <input type=hidden name=todo value=change-password>
 
-                    <label>". $lang['oldPass'] ."</label>
+                    <label>". $lang['oldPass'] .":</label>
                     <input type ='password' class='bginput' name='old_password'><br>
 
-                    <label>". $lang['newPass'] ."</label>
+                    <label>". $lang['newPass'] .":</label>
                     <input type ='password' class='bginput' name='password'><br>
 
-                    <label>". $lang['confirmNewPass'] ."</label>
+                    <label>". $lang['confirmNewPass'] .":</label>
                     <input type ='password' class='bginput' name='password2'><br>
 
                     <input type=submit value='". $lang['confirm'] ."'>

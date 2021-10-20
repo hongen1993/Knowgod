@@ -2,6 +2,7 @@
 include "./languages/configuration.php"; 
 include "config.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,32 +20,37 @@ include "config.php";
     </header>
     <main>
 <?Php
-if(isset($_SESSION['userid'])){
-echo " You have login as $_SESSION[userid], you can <a href=logout.php>logout</a> here";
-}else {
+  if(isset($_SESSION['userid'])){
+    echo 
+    "<div class='forgotPassLogged'>
+        <p> "
+          .$lang['alreadyLogged'] . $_SESSION['userid'] . $lang['alreadyLogged2'].
+        "</p>
+      </div>";
+    }else {
 
- if (isset($_GET['error'])) { 
-  echo "<p class='error'>". $_GET['error']; "</p>";
- } echo "
+    if (isset($_GET['error'])) { 
+      echo "<p class='error'>". $_GET['error']; "</p>";
+    } echo "
 
-<div class='forgotPassForm'>
+    <div class='forgotPassForm'>
 
-  <form action='forgot-passwordck.php' method=post>
+      <form action='forgot-passwordck.php' method=post>
 
-    <h2>". $lang['forgotPass'] ."</h2>
-    
-    <h4>". $lang['enterEmail'] ."</h4><br>
+        <h2>". $lang['forgotPass'] ."</h2>
+        
+        <h4>". $lang['enterEmail'] ."</h4><br>
 
-    <label>". $lang['signUpEmail'] ."</label>
-    <input type ='text' class='bginput' name='email' ><br>
+        <label>". $lang['signUpEmail'] ."</label>
+        <input type ='text' class='bginput' name='email' ><br>
 
-    <input id='forgotPassSubmit' type='submit' value='". $lang['send'] ."'>
-    <a href=login.php>". $lang['cancel'] ."</a>
+        <input id='forgotPassSubmit' type='submit' name='check-email' value='". $lang['send'] ."'>
+        <a href=login.php>". $lang['cancel'] ."</a>
 
-  <form>
+      <form>
 
-</div>";
-}
+    </div>";
+  }
 ?>
 
 </main>

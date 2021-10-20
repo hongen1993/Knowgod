@@ -31,14 +31,14 @@ $lang = array(
 
     "signUp" => "Registrarse",
     "createACC" => "Crear cuenta",
-    "signUpUsername" => "Nombre de Usuario:",
-    "signUpName" => "Nombre:",
-    "signUpSurname" => "Apellidos:",
-    "signUpAddress" => "Dirección:",
-    "signUpEmail" => "Correo electronico:",
-    "signUpPass" => "Contraseña:",
-    "signUpPassB" => "Confirmar contraseña:",
-    "signUpGender" => "Género:",
+    "signUpUsername" => "Nombre de Usuario",
+    "signUpName" => "Nombre",
+    "signUpSurname" => "Apellidos",
+    "signUpAddress" => "Dirección",
+    "signUpEmail" => "Correo electronico",
+    "signUpPass" => "Contraseña",
+    "signUpPassB" => "Confirmar contraseña",
+    "signUpGender" => "Género",
     "signUpMale" => "Masculino",
     "signUpFemale" => "Femenino",
     "signUpTerms" => "Acepto los términos y condiciones",
@@ -55,6 +55,8 @@ $lang = array(
     "enterEmail" => "Introduce tu correo electrónico:",
     "logout" => "Cerrar Sesión",
     "send" => "Enviar",
+    "alreadyLogged" => "Ya has iniciado sesión como ",
+    "alreadyLogged2" =>", pulse <a href=logout.php>aquí</a> para cerrar sesión.",
 
     /* Editar */
 

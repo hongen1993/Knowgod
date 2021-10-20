@@ -41,7 +41,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                               echo "<p>".$lang['signUpAddress'].":<br>".$row['address']."</p>";
                               echo "<p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
                               if($row['user_type']=="1"){
-                                   echo "<a href='../addPost.php'>".$lang['addPredication']."</a>";
+                                   echo "<a href='../addPost.php'>".$lang['addPredication']."</a><br>";
                               }else if($row['user_type']=="1"){
                                    echo "<a href='../addPostCH.php'>".$lang['addPredication']."</a>";
                               }else{
