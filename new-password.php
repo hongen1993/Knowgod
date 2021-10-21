@@ -1,10 +1,11 @@
 <?php 
-    include "./languages/configuration.php"; 
-    include "config.php";
-    $email = $_SESSION['email'];
-    if($email == false){
-    header('Location: login.php');
-    }
+include "./languages/configuration.php"; 
+include "config.php";
+
+$email = $_SESSION['email'];
+if($email == false){
+  header('Location: login.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,15 +29,26 @@
         ?>
             <p class="success"><?php echo $_GET['success']; ?></p>
         <?php 
-            }
+            }  if (isset($_GET['error'])) { 
         ?>
-        <div class="resetCode">
+            <p class="error"><?php echo $_GET['error']; ?></p>
+        <?php 
+            } 
+        ?>
+        <div class="newPass">
             <form action="forgot-passwordck.php" method="POST" autocomplete="off">
-                <h2 class="text-center"><?php echo $lang['verificationCode']?></h2>
-                <input  type="number" name="otp" placeholder="<?php echo $lang['enterCode']?>" required>
-                <input class="form-control button" type="submit" name="check-reset-otp" value="<?php echo $lang['confirm']?>">
+                <h2 class="text-center"><?php echo $lang['newPass'] ?></h2>
+
+                <label><?php echo $lang['newPass'] ?></label>
+                <input class="form-control" type="password" name="password" required>
+
+                <label><?php echo $lang['confirmNewPass'] ?></label>
+                <input class="form-control" type="password" name="password2" required>
+
+                <input class="form-control button" type="submit" name="change-password" value="<?php echo $lang['confirm'] ?>">
             </form>
-        </div>
+         </div>
+     </div>
     </main>
     <footer class="main-footer">
       <?php include('footer.php') ?>

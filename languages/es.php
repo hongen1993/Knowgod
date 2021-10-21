@@ -69,6 +69,11 @@ $lang = array(
     "edit" => "Editar",
     "cancel" => "Cancelar",
 
+    /* Verificación &&  */
+
+    "verificationCode" => "Codigo de verificación",
+    "enterCode" => "Introduce el codigo",
+
     /* Crear Posts */
 
     "admin" => "Administrador",
@@ -82,7 +87,7 @@ $lang = array(
 
     "Error1" => "La contraseña anterior no coincide",
     "Error2" => "La contraseña debe tener más de 3 caracteres",
-    "Error3" => "Las nuevas contraseñas no coinciden",
+    "Error3" => "Las contraseñas no coinciden",
     "Error4" => "Error desconocido contacte con el Administrador",
     "Error5" => "Se requiere introducir el nombre",
     "Error6" => "Se requiere introducir los apellidos",
@@ -98,14 +103,18 @@ $lang = array(
     "Error16" => "La contraseña introducida es errónea",
     "Error17" => "El correo electrónico introducido es erróneo",
     "Error18" => "El correo electrónico introducido no existe",
-    "Error19" => "El codigo de activación ha sido enviado a su correo electrónico",
+    "Error19" => "La actualización del codigo falló",
     "Error20" => "El sistema esta teniendo problemas.Por favor contacte con el administrador.",
-
+    "Error21" => "El código introducido es incorrecto",
+    "Error22" => "El envio del codigo de activación ha fallado",
 
     "Success"=> "Su contraseña se ha cambiado con éxito",
     "Success2"=> "Su perfil ha sido editado con éxito",
     "Success3"=> "Su cuenta ha sido creada con éxito",
     "Success4"=> "Su contraseña ha sido enviado a su correo electrónico",
+    "Success5" => "El codigo de activación ha sido enviado a su correo electrónico",
+    "Success6" => "Introduzca su nueva contraseña",
+
 
 
     /* ¿Quien es? */
