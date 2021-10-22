@@ -65,14 +65,27 @@ $lang = array(
     "oldPass" => "Contraseña anterior",
     "newPass" => "Nueva contraseña",
     "confirmNewPass" => "Confirmar nueva contraseña",
+    "resetPass" => "Resetear contraseña",
     "confirm"=>"Confirmar",
     "edit" => "Editar",
     "cancel" => "Cancelar",
 
-    /* Verificación &&  */
+    /* Verificación  */
 
+    "verificationUser" => "Verificación de cuenta de usuario",
     "verificationCode" => "Codigo de verificación",
-    "enterCode" => "Introduce el codigo",
+    "enterCode" => "Introduce el codigo de verificación",
+    "emailVerification1" => "<p>Bienvenido ",
+    "emailVerification2" => "<p>Su cuenta en nuestra pagina web KNOWGOD ha sido creada con éxito,<br>
+        solo falta verificar su cuenta introduciendo el siguiente codigo:",
+    "emailVerification3" => "<br><p>Si usted no ha creado ninguna cuenta con nosotros ignore este correo.</p>
+                            <br><p>KNOWGOD</p>",
+
+    /* Email sent */
+
+    "passResetCode" => "Solicitud de codigo para reseteo de contraseña ",
+    "passResetCodeBody" => "<p>El codigo de reseteo es ",
+
 
     /* Crear Posts */
 
@@ -103,17 +116,20 @@ $lang = array(
     "Error16" => "La contraseña introducida es errónea",
     "Error17" => "El correo electrónico introducido es erróneo",
     "Error18" => "El correo electrónico introducido no existe",
-    "Error19" => "La actualización del codigo falló",
+    "Error19" => "La verificación de la cuenta falló.Por favor contacte con el administrador.",
     "Error20" => "El sistema esta teniendo problemas.Por favor contacte con el administrador.",
     "Error21" => "El código introducido es incorrecto",
     "Error22" => "El envio del codigo de activación ha fallado",
 
     "Success"=> "Su contraseña se ha cambiado con éxito",
     "Success2"=> "Su perfil ha sido editado con éxito",
-    "Success3"=> "Su cuenta ha sido creada con éxito",
+    "Success3"=> "Se ha enviado el código de activación a su correo electrónico",
     "Success4"=> "Su contraseña ha sido enviado a su correo electrónico",
     "Success5" => "El codigo de activación ha sido enviado a su correo electrónico",
     "Success6" => "Introduzca su nueva contraseña",
+    "Success7" => "Su cuenta ha sido verificada con éxito",
+
+    
 
 
 

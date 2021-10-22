@@ -9,7 +9,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title><?php echo $lang['editPerfil'] ?></title>
+     <title><?php echo $lang['changePassword'] ?></title>
      <link rel="stylesheet" type="text/css" href="/src/assets/css/profile.css" media="screen"/>
      <link rel="stylesheet" type="text/css" href="/src/assets/css/footer.css" media="screen"/>
      <link rel="stylesheet" type="text/css" href="/src/assets/css/header.css" media="screen"/>

@@ -42,7 +42,7 @@ if(isset($_POST['check-email'])){
 				//Set gmail password
 				$mail->Password = "Jol@n520";
 				//Email subject
-				$mail->Subject = "Password Reset Code";
+				$mail->Subject = $lang['passResetCode'];
 				//Set sender email
 				$mail->setFrom('knowgodweb@gmail.com');
 				//Enable HTML
@@ -50,7 +50,7 @@ if(isset($_POST['check-email'])){
 				//Attachment
 				$mail->addAttachment('img/attachment.png');
 				//Email body
-				$mail->Body = "<p>Your password reset code is $code</p>";
+				$mail->Body = $lang['passResetCodeBody'] . "$code</p>";
 				//Add recipient
 				$mail->addAddress('hongen1993@gmail.com');
 				//Finally send email
