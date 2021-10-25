@@ -179,7 +179,7 @@ body{
 	position: relative;
 	top: 25%;
 	left:10%;
-  	height: 40vh;
+  	height: 50vh;
 	width: 80vw;
 	border: 2px solid #ccc;
 	padding: 30px 15px 20px 15px;
@@ -207,18 +207,20 @@ body{
 	padding: 10px;
 }
 
-.resetCode button {
-	float: right;
-	background: #555;
-	padding: 10px 15px;
-	color: #fff;
-	border-radius: 5px;
-	margin-right: 10px;
-	border: none;
-	font-size: 1em;
-}
 .resetCode button:hover{
 	opacity: .7;
+}
+
+.resetCode button {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.resetCode a {
+color: red;
 }
 
 .newPass {
@@ -271,7 +273,7 @@ body{
 	position: relative;
 	top: 25%;
 	left:10%;
-  	height: 40vh;
+  	height: 50vh;
 	width: 80vw;
 	border: 2px solid #ccc;
 	padding: 30px 15px 20px 15px;
@@ -294,20 +296,22 @@ body{
 	margin: 10px auto;
 	border-radius: 5px;
 }
+
 .codeVerification label {
 	color: #888;
 	padding: 10px;
 }
 
 .codeVerification button {
-	float: right;
-	background: #555;
-	padding: 10px 15px;
-	color: #fff;
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
 	border-radius: 5px;
-	margin-right: 10px;
-	border: none;
-	font-size: 1em;
+}
+.codeVerification a {
+color: red;
 }
 .codeVerification button:hover{
 	opacity: .7;

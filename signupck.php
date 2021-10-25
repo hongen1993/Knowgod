@@ -143,7 +143,7 @@ $gender=$_POST['gender'];
         //Finally send email
 
         if ($mailVerification->send()) {
-          $_SESSION['email'] = $email;
+          $_SESSION['userid'] = $userid;
           $_SESSION['password'] = $password;
           header("location: user-verification.php?success=".$lang['Success3']);
           exit();

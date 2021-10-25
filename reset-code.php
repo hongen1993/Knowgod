@@ -36,6 +36,12 @@
                 <input  type="number" name="otp" placeholder="<?php echo $lang['enterCode']?>" required>
                 <input class="form-control button" type="submit" name="check-reset-otp" value="<?php echo $lang['confirm']?>">
             </form>
+            <form action="user-verificationck.php" method="POST">
+                <input type="submit" style="color:blue" name="checkB" value="<?php echo $lang['resend']?>">
+            </form>
+            <button>
+              <a href='perfil.php'><?php echo $lang['cancel']?></a>
+            </button>
         </div>
     </main>
     <footer class="main-footer">

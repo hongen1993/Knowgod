@@ -32,3 +32,7 @@ $(".whoIs").click(function(){
       }, 2000); //will call the function after 2 secs.
   
     });
+    $(".verify").click(function(){
+        window.location.href= '/user-verification.php';
+        //will redirect to your blog page
+      });

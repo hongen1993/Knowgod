@@ -75,6 +75,9 @@ $lang = array(
     "verificationUser" => "Verificación de cuenta de usuario",
     "verificationCode" => "Codigo de verificación",
     "enterCode" => "Introduce el codigo de verificación",
+    "notVerified" => "Su cuenta no ha sido verificada",
+    "verifyButton"=>"Verificar",
+    "resend" => "Reenviar",
     "emailVerification1" => "<p>Bienvenido ",
     "emailVerification2" => "<p>Su cuenta en nuestra pagina web KNOWGOD ha sido creada con éxito,<br>
         solo falta verificar su cuenta introduciendo el siguiente codigo:",

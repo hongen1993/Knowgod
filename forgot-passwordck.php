@@ -117,5 +117,64 @@ if(isset($_POST['check-email'])){
             }
         }
     }
+	
+	if(isset($_POST['check-email'])){
+		$email = mysqli_real_escape_string($conn, $_POST['email']);
+		$check_email = "SELECT * FROM users WHERE email='$email'";
+		$run_sql = mysqli_query($conn, $check_email);
+		if(mysqli_num_rows($run_sql) > 0){
+			$code = rand(999999, 111111);
+			$insert_code = "UPDATE users SET code = $code WHERE email = '$email'";
+			$run_query =  mysqli_query($conn, $insert_code);
+			if($run_query){
     
+                    //Create instance of PHPMailer
+                $mail = new PHPMailer();
+                //Set mailer to use smtp
+                $mail->isSMTP();
+                //Define smtp host
+                $mail->Host = "smtp.gmail.com";
+                //Enable smtp authentication
+                $mail->SMTPAuth = true;
+                //Set smtp encryption type (ssl/tls)
+                $mail->SMTPSecure = "tls";
+                //Port to connect smtp
+                $mail->Port = "587";
+                //Set gmail username
+                $mail->Username = "knowgodweb@gmail.com";
+                //Set gmail password
+                $mail->Password = "Jol@n520";
+                //Email subject
+                $mail->Subject = $lang['passResetCode'];
+                //Set sender email
+                $mail->setFrom('knowgodweb@gmail.com');
+                //Enable HTML
+                $mail->isHTML(true);
+                //Attachment
+                $mail->addAttachment('img/attachment.png');
+                //Email body
+                $mail->Body = $lang['passResetCodeBody'] . "$code</p>";
+                //Add recipient
+                $mail->addAddress('hongen1993@gmail.com');
+                //Finally send email
+                if ($mail->send()) {
+                    $_SESSION['email'] = $email;
+                    header("location:reset-code.php?success=". $lang['Success5']);
+                    exit();
+                } else {
+                    header("location:forgot-password.php?error=". $lang['Error22']);
+                }
+                //Closing smtp connection
+                $mail->smtpClose();
+            } else {
+                header("location:forgot-password.php?error=". $lang['Error20']);
+                exit();
+            }
+        } else {
+            header("Location:forgot-password.php?error=". $lang['Error18']);
+            exit();
+        }
+    }
+	
+	
 ?>

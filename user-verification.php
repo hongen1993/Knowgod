@@ -1,11 +1,12 @@
 <?Php
 include "./languages/configuration.php"; 
 include "config.php";
-  $email = $_SESSION['email'];
 
-    if($email == false){
+  $userid = $_SESSION['userid'];
+
+  if($userid == false){
         header('Location: login.php');
-  }
+    }
 ?>
 
 <!DOCTYPE html>
@@ -28,13 +29,22 @@ include "config.php";
       <?php if (isset($_GET['success'])) { ?>
         <p class="success"><?php echo $_GET['success']; ?></p>
       <?php } ?>
+      <?php if (isset($_GET['error'])) { ?>
+        <p class="error"><?php echo $_GET['error']; ?></p>
+      <?php } ?>
 
       <div class="codeVerification">
             <form action="user-verificationck.php" method="POST" autocomplete="off">
                 <h2 class="text-center"><?php echo $lang['verificationCode'] ?></h2>
                 <input type="number" name="otp" placeholder="<?php echo $lang['enterCode']?>" required>
-                <input type="submit" name="check" value="<?php echo $lang['confirm']?>">
+                <input type="submit" style="color:green" name="check" value="<?php echo $lang['confirm']?>">
             </form>
+            <form action="user-verificationck.php" method="POST">
+                <input type="submit" style="color:blue" name="checkB" value="<?php echo $lang['resend']?>">
+            </form>
+            <button>
+              <a href='perfil.php'><?php echo $lang['cancel']?></a>
+            </button>
         </div>
     </main>
     <footer class="main-footer">
