@@ -10,34 +10,49 @@ include "languages/configuration.php";
     <title><?php echo $lang['contactUsTitle'] ?></title>
     <link rel="stylesheet" type="text/css" href="/src/assets/css/header.css" media="screen"/></head>
     <link rel="stylesheet" type="text/css" href="/src/assets/css/contactUs.css" media="screen"/></head>
+    <link rel="stylesheet" type="text/css" href="/src/assets/css/footer.css" media="screen"/></head>
+
 <body>
     <header>
         <?php include('header.php') ?>
     </header>
-  <div class="wrapper">
-    <h1><?php echo $lang['contactUs'] ?></h1>
-    <form class="contact-box" action="/action.php" target="_self" method="post">
-      <ul>
-        <li class="stepOne">
-          <label for="name"><?php echo $lang['contactUsName'] ?></label>
-          <input type="text" id="name" class="input-text" placeholder="<?php echo $lang['contactUsNameInput'] ?>" required></input>
-          <div class="button next "><?php echo $lang['contactUsNameNext'] ?></div>
-        </li>
-        <li class="stepTwo">
-          <label for="email"><?php echo $lang['contactUsEmail'] ?></label>
-          <input type="email" id="email" class="input-text" placeholder="<?php echo $lang['contactUsEmailInput'] ?>" required></input>
-          <div class="button back"><?php echo $lang['contactUsEmailBack'] ?></div>
-          <div class="button nextB"><?php echo $lang['contactUsEmailNext'] ?></div>
-        </li>
-        <li class="stepThree">
-          <label label="message"><?php echo $lang['contactUsMessage'] ?></label><br>
-          <textarea rows="6" id="message" placeholder="<?php echo $lang['contactUsMessageInput'] ?>" required></textarea>
-          <div class="button backB"><?php echo $lang['contactUsEmailBack'] ?></div>
-          <button class="formButton"><?php echo $lang['contactUsMessageButton'] ?></button>
-        </li>
-      </ul>
-    </form>
-  </div>
+    <main>
+      <div class="wrapper">
+        <div class="contactWithUs">
+          <?php if (isset($_GET['success'])) { ?>
+            <p class="success"><?php echo $_GET['success']; ?></p>
+          <?php } ?>
+          <?php if (isset($_GET['error'])) { ?>
+            <p class="error"><?php echo $_GET['error']; ?></p>
+          <?php } ?>
+          <h1><?php echo $lang['contactUs'] ?></h1>
+          <form class="contact-box" action="/contactUsck.php" method="post">
+            <ul>
+              <li class="stepOne">
+                <label for="name"><?php echo $lang['contactUsName'] ?></label>
+                <input type="text" name="name" id="name" class="input-text" placeholder="<?php echo $lang['contactUsNameInput'] ?>" required></input>
+                <div class="button next "><?php echo $lang['contactUsNameNext'] ?></div>
+              </li>
+              <li class="stepTwo">
+                <label for="email"><?php echo $lang['contactUsEmail'] ?></label>
+                <input type="email" name="email" id="email" class="input-text" placeholder="<?php echo $lang['contactUsEmailInput'] ?>" required></input>
+                <div class="button back"><?php echo $lang['contactUsEmailBack'] ?></div>
+                <div class="button nextB"><?php echo $lang['contactUsEmailNext'] ?></div>
+              </li>
+              <li class="stepThree">
+                <label label="message"><?php echo $lang['contactUsMessage'] ?></label><br>
+                <textarea rows="6" name="message" id="message" placeholder="<?php echo $lang['contactUsMessageInput'] ?>" required></textarea>
+                <div class="button backB"><?php echo $lang['contactUsEmailBack'] ?></div>
+                <input class="formButton" type='submit' name='contactUs' value="<?php echo $lang['contactUsMessageButton']?>">
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <?php include('footer.php') ?>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
     <script src="/src/assets/js/languageSelect.js"></script>

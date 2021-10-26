@@ -128,6 +128,7 @@ $lang = array(
     "Error20" => "El sistema esta teniendo problemas.Por favor contacte con el administrador.",
     "Error21" => "El código introducido es incorrecto",
     "Error22" => "El envio del codigo de activación ha fallado",
+    "Error23" => "No ha sido posible enviar el mensaje, por favor pruebe de nuevo",
 
     "Success"=> "Su contraseña se ha cambiado con éxito",
     "Success2"=> "Su perfil ha sido editado con éxito",
@@ -136,9 +137,7 @@ $lang = array(
     "Success5" => "El codigo de activación ha sido enviado a su correo electrónico",
     "Success6" => "Introduzca su nueva contraseña",
     "Success7" => "Su cuenta ha sido verificada con éxito",
-
-    
-
+    "Success8" => "Su mensaje ha sido enviado con éxito, en breve contactaremos con usted",
 
 
     /* ¿Quien es? */
