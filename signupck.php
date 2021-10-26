@@ -123,6 +123,10 @@ $gender=$_POST['gender'];
         $mailVerification->Username = "knowgodweb@gmail.com";
         //Set gmail password
         $mailVerification->Password = "Jol@n520";
+        //Set UTF8
+        $subject = utf8_decode($subject);
+        $mail->Subject = $subject;
+        $mail->CharSet = 'UTF-8';
         //Email subject
         $mailVerification->Subject = $lang['verificationCode'];
         //Set sender email

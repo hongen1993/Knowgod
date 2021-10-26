@@ -69,6 +69,11 @@ $lang = array(
     "confirm"=>"Confirmar",
     "edit" => "Editar",
     "cancel" => "Cancelar",
+    "emailPass" => "Su contrase&ntilde;a se ha cambiado con éxito",
+    "emailPassBody" => "<p>Su solicitud de cambio de contrase&ntilde;a ha sido finalizada con éxito</p><br>",
+    "emailPassBody2" => "<p>Si no ha solicitado cambio de contraseña contacte con el administrador.</p>
+                        <br><p>&copy;KNOWGOD</p>",
+
 
     /* Verificación  */
 
@@ -80,9 +85,9 @@ $lang = array(
     "resend" => "Reenviar",
     "emailVerification1" => "<p>Bienvenido ",
     "emailVerification2" => "<p>Su cuenta en nuestra pagina web KNOWGOD ha sido creada con éxito,<br>
-        solo falta verificar su cuenta introduciendo el siguiente codigo:",
+        solo falta verificar su cuenta introduciendo el siguiente código:",
     "emailVerification3" => "<br><p>Si usted no ha creado ninguna cuenta con nosotros ignore este correo.</p>
-                            <br><p>KNOWGOD</p>",
+                            <br><p>&copy;KNOWGOD</p>",
 
     /* Email sent */
 

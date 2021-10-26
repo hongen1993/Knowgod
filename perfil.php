@@ -41,22 +41,24 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                                             echo "</p>
                                             ";
                                         }
+
                                     echo "<p>".$lang['signUpUsername'].":<br>".$row['userid']."</p>
                                             <p>".$lang['signUpName'].":<br>".$row['name']."</p>
                                             <p>".$lang['signUpSurname'].":<br>".$row['surname']."</p>
                                             <p>".$lang['signUpAddress'].":<br>".$row['address']."</p>
-                                            <p>".$lang['signUpEmail'].":<br>".$row['email']."</p>
-                                            <a href='update-profile.php'>". $lang['editPerfil'] ."</a>
+                                            <p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
+                                            if ($row['user_type']=="1") {
+                                                echo "<a href='../addPost.php'>".$lang['addPredication']."</a><br>";
+                                            } elseif ($row['user_type']=="3") {
+                                                echo "<a href='../addPostCH.php'>".$lang['addPredication']."</a><br>";
+                                            } else {
+                                            }   
+                                        echo
+                                            "<a href='update-profile.php'>". $lang['editPerfil'] ."</a>
                                             <a href='logout.php'>". $lang['logout'] ."</a>
                                        </div>
                                   </div>";
                                     
-                                        if ($row['user_type']=="1") {
-                                            echo "<a href='../addPost.php'>".$lang['addPredication']."</a><br>";
-                                        } elseif ($row['user_type']=="1") {
-                                            echo "<a href='../addPostCH.php'>".$lang['addPredication']."</a>";
-                                        } else {
-                                        }   
                                 }else{
                                     echo "
                                             <div class='profile'>

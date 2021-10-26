@@ -63,6 +63,10 @@ if(isset($_POST['checkB'])){
 				$mail->Username = "knowgodweb@gmail.com";
 				//Set gmail password
 				$mail->Password = "Jol@n520";
+				//Set UTF8
+                $subject = utf8_decode($subject);
+                $mail->Subject = $subject;
+                $mail->CharSet = 'UTF-8';
 				//Email subject
 				$mail->Subject = $lang['verificationCode'];
 				//Set sender email

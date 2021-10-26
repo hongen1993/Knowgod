@@ -41,6 +41,10 @@ if(isset($_POST['check-email'])){
 				$mail->Username = "knowgodweb@gmail.com";
 				//Set gmail password
 				$mail->Password = "Jol@n520";
+                //Set UTF8
+                $subject = utf8_decode($subject);
+                $mail->Subject = $subject;
+                $mail->CharSet = 'UTF-8';
 				//Email subject
 				$mail->Subject = $lang['passResetCode'];
 				//Set sender email
@@ -145,6 +149,10 @@ if(isset($_POST['check-email'])){
                     $mail->Username = "knowgodweb@gmail.com";
                     //Set gmail password
                     $mail->Password = "Jol@n520";
+                    //Set UTF8
+                    $subject = utf8_decode($subject);
+                    $mail->Subject = $subject;
+                    $mail->CharSet = 'UTF-8';
                     //Email subject
                     $mail->Subject = $lang['passResetCode'];
                     //Set sender email
