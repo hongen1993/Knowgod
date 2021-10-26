@@ -1,7 +1,9 @@
 <?php 
     include "./languages/configuration.php"; 
     include "config.php";
+    
     $email = $_SESSION['email'];
+
     if($email == false){
     header('Location: login.php');
     }
@@ -30,14 +32,21 @@
         <?php 
             }
         ?>
+         <?php 
+            if (isset($_GET['error'])) { 
+        ?>
+            <p class="error"><?php echo $_GET['error']; ?></p>
+        <?php 
+            }
+        ?>
         <div class="resetCode">
             <form action="forgot-passwordck.php" method="POST" autocomplete="off">
                 <h2 class="text-center"><?php echo $lang['verificationCode']?></h2>
                 <input  type="number" name="otp" placeholder="<?php echo $lang['enterCode']?>" required>
                 <input class="form-control button" type="submit" name="check-reset-otp" value="<?php echo $lang['confirm']?>">
             </form>
-            <form action="user-verificationck.php" method="POST">
-                <input type="submit" style="color:blue" name="checkB" value="<?php echo $lang['resend']?>">
+            <form action="forgot-passwordck.php" method="POST">
+                <input type="submit" style="color:blue" name="checkC" value="<?php echo $lang['resend']?>">
             </form>
             <button>
               <a href='perfil.php'><?php echo $lang['cancel']?></a>

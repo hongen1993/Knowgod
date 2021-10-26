@@ -35,10 +35,10 @@ if(isset($_POST['check'])){
   exit();
     }
 }
+
 if(isset($_POST['checkB'])){
     $userid = $_SESSION['userid'];
 
-	$email = mysqli_real_escape_string($conn, $_SESSION['userid']);
 	$checkUser = "SELECT * FROM users WHERE userid='$userid'";
 	$run_sql = mysqli_query($conn, $checkUser);
 	if(mysqli_num_rows($run_sql) > 0){
@@ -64,7 +64,7 @@ if(isset($_POST['checkB'])){
 				//Set gmail password
 				$mail->Password = "Jol@n520";
 				//Email subject
-				$mail->Subject = $lang['passResetCode'];
+				$mail->Subject = $lang['verificationCode'];
 				//Set sender email
 				$mail->setFrom('knowgodweb@gmail.com');
 				//Enable HTML
@@ -72,7 +72,12 @@ if(isset($_POST['checkB'])){
 				//Attachment
 				$mail->addAttachment('img/attachment.png');
 				//Email body
-				$mail->Body = $lang['passResetCodeBody'] . "$code</p>";
+				$mail->Body = 
+					$lang['emailVerification1'] . 
+					"$userid,</p>" . 
+					$lang['emailVerification2'] .
+					"$code</p>" .
+					$lang['emailVerification3'];
 				//Add recipient
 				$mail->addAddress('hongen1993@gmail.com');
 				//Finally send email
@@ -94,6 +99,7 @@ if(isset($_POST['checkB'])){
 		exit();
 	}
 }
+
 
 
 ?>
