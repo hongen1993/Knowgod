@@ -29,9 +29,9 @@ include "languages/configuration.php";
           <form class="contact-box" action="/contactUsck.php" method="post">
             <ul>
               <li class="stepOne">
-                <label for="name"><?php echo $lang['contactUsName'] ?></label>
-                <input type="text" name="name" id="name" class="input-text" placeholder="<?php echo $lang['contactUsNameInput'] ?>" required></input>
-                <div class="button next "><?php echo $lang['contactUsNameNext'] ?></div>
+                <label for="subject"><?php echo $lang['contactUsSubject'] ?></label>
+                <input type="text" name="subject" class="input-text" placeholder="<?php echo $lang['contactUsSubjectInput'] ?>" required></input>
+                <div class="button next "><?php echo $lang['contactUsSubjectNext'] ?></div>
               </li>
               <li class="stepTwo">
                 <label for="email"><?php echo $lang['contactUsEmail'] ?></label>
@@ -40,7 +40,6 @@ include "languages/configuration.php";
                 <div class="button nextB"><?php echo $lang['contactUsEmailNext'] ?></div>
               </li>
               <li class="stepThree">
-                <label label="message"><?php echo $lang['contactUsMessage'] ?></label><br>
                 <textarea rows="6" name="message" id="message" placeholder="<?php echo $lang['contactUsMessageInput'] ?>" required></textarea>
                 <div class="button backB"><?php echo $lang['contactUsEmailBack'] ?></div>
                 <input class="formButton" type='submit' name='contactUs' value="<?php echo $lang['contactUsMessageButton']?>">

@@ -69,11 +69,19 @@ $lang = array(
     "confirm"=>"Confirmar",
     "edit" => "Editar",
     "cancel" => "Cancelar",
-    "emailPass" => "Su contrase&ntilde;a se ha cambiado con éxito",
-    "emailPassBody" => "<p>Su solicitud de cambio de contrase&ntilde;a ha sido finalizada con éxito</p><br>",
+    "emailPass" => "Su contraseña se ha cambiado con éxito",
+    "emailPassBody" => "<p>Su solicitud de cambio de contraseña ha sido finalizada con éxito</p><br>",
     "emailPassBody2" => "<p>Si no ha solicitado cambio de contraseña contacte con el administrador.</p>
                         <br><p>&copy;KNOWGOD</p>",
 
+    /* Crear Posts */
+
+    "admin" => "Administrador",
+    "addPredication" => "Añadir nueva predicación",
+    "titleForPredication" => "Titulo de la predicación",
+    "linkForPredication" => "URL del enlace",
+    "descriptionForPredication" => "Descripción de la predicación",
+    "addPost" => "Añadir",
 
     /* Verificación  */
 
@@ -85,7 +93,7 @@ $lang = array(
     "resend" => "Reenviar",
     "emailVerification1" => "<p>Bienvenido ",
     "emailVerification2" => "<p>Su cuenta en nuestra pagina web KNOWGOD ha sido creada con éxito,<br>
-        solo falta verificar su cuenta introduciendo el siguiente código:",
+                                solo falta verificar su cuenta introduciendo el siguiente código:",
     "emailVerification3" => "<br><p>Si usted no ha creado ninguna cuenta con nosotros ignore este correo.</p>
                             <br><p>&copy;KNOWGOD</p>",
 
@@ -93,16 +101,6 @@ $lang = array(
 
     "passResetCode" => "Solicitud de codigo para reseteo de contraseña ",
     "passResetCodeBody" => "<p>El codigo de reseteo es ",
-
-
-    /* Crear Posts */
-
-    "admin" => "Administrador",
-    "addPredication" => "Añadir nueva predicación",
-    "titleForPredication" => "Titulo de la predicación",
-    "linkForPredication" => "URL del enlace",
-    "descriptionForPredication" => "Descripción de la predicación",
-    "addPost" => "Añadir",
 
     /* Errores */
 
@@ -133,12 +131,10 @@ $lang = array(
     "Success"=> "Su contraseña se ha cambiado con éxito",
     "Success2"=> "Su perfil ha sido editado con éxito",
     "Success3"=> "Se ha enviado el código de activación a su correo electrónico",
-    "Success4"=> "Su contraseña ha sido enviado a su correo electrónico",
+    "Success4" => "Su mensaje ha sido enviado con éxito, en breve contactaremos con usted",
     "Success5" => "El codigo de activación ha sido enviado a su correo electrónico",
     "Success6" => "Introduzca su nueva contraseña",
     "Success7" => "Su cuenta ha sido verificada con éxito",
-    "Success8" => "Su mensaje ha sido enviado con éxito, en breve contactaremos con usted",
-
 
     /* ¿Quien es? */
 
@@ -200,9 +196,9 @@ $lang = array(
 
     "contactUs" => "Contactanos",
 
-    "contactUsName" => "Por favor indíqueme su nombre",
-    "contactUsNameInput" => "Introduzca su nombre",
-    "contactUsNameNext" => "Siguiente",
+    "contactUsSubject" => "Por favor indíqueme el asunto del mensaje",
+    "contactUsSubjectInput" => "Introduzca el asunto",
+    "contactUsSubjectNext" => "Siguiente",
 
     "contactUsEmail" => "Ahora necesito su correo electronico, para poder contactar con usted:",
     "contactUsEmailInput" => "Introduzca su correo electronico",

@@ -15,12 +15,12 @@ use PHPMailer\PHPMailer\Exception;
     if (isset($_POST['contactUs'])) {
     $mail = new PHPMailer(true);
 
-    $name = $_POST['name'];
+    $subject = $_POST['subject'];
     $email = $_POST['email'];
     $message = $_POST['message'];
 
     //Create instance of PHPMailer
-    $mailVerification = new PHPMailer();
+    $mail = new PHPMailer();
     //Set mailer to use smtp
     $mail->isSMTP();
     //Define smtp host
@@ -40,29 +40,29 @@ use PHPMailer\PHPMailer\Exception;
     $mail->Subject = $subject;
     $mail->CharSet = 'UTF-8';
     //Set sender email
-    $mailVerification->setFrom('knowgodweb@gmail.com');
+    $mail->setFrom('knowgodweb@gmail.com');
     //Enable HTML
-    $mailVerification->isHTML(true);
+    $mail->isHTML(true);
     //Attachment
-    $mailVerification->addAttachment('img/attachment.png');
+    $mail->addAttachment('img/attachment.png');
     //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
+    $mail->isHTML(true);                                  
+    //Set email format to HTML
     $mail->Body    = $message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     //Add recipient
-    $mailVerification->addAddress('hongen1993@gmail.com');
+    $mail->addAddress('hongen1993@gmail.com');
     //Finally send email
 
-    if ($mailVerification->send()) {
-      header("location: contactUs.php?success=".$lang['Success8']);
+    if ($mail->send()) {
+      header("location: contactUs.php?success=".$lang['Success4']);
       exit();
     } else {
       header("location: contactUs.php?error=".$lang['Error23']);
     }
     //Closing smtp connection
-    $mailVerification->smtpClose();
+    $mail->smtpClose();
     }else{
         header('location:contactUs.php');
     }

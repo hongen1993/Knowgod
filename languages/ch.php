@@ -64,9 +64,14 @@ $lang = array(
     "oldPass" => "编辑",
     "newPass" => "新密码",
     "confirmNewPass" => "确认新密码",
+    "resetPass" => "重设密码",
     "confirm"=>"确认",
     "edit" => "更改",
     "cancel" => "取消",
+    "emailPass" => "你已经成功更改密码",
+    "emailPassBody" => "<p>您的密码更改请求已成功完成</p><br>",
+    "emailPassBody2" => "<p>如果您没有要求更改密码，请联系管理员.</p>
+                        <br><p>&copy;KNOWGOD</p>",
 
     /* Crear Posts */
 
@@ -76,10 +81,29 @@ $lang = array(
     "linkForPredication" => "链接网址",
     "descriptionForPredication" => "讲道细节",
     "addPost" => "添加",
+    
+    /* Verificación  */
+
+    "verificationUser" => "用户帐号验证",
+    "verificationCode" => "验证码",
+    "enterCode" => "输入验证码",
+    "notVerified" => "您的帐户尚未经过验证",
+    "verifyButton"=>"验证",
+    "resend" => "重发",
+    "emailVerification1" => "<p>欢迎 ",
+    "emailVerification2" => "<p>您在我们的 KNOWGOD 网站上的帐户已成功创建,<br>
+                                您需要做的就是通过输入以下代码来验证您的帐户:",
+    "emailVerification3" => "<br><p>如果您尚未在我们这里创建帐户，请忽略此电子邮件.</p>
+                            <br><p>&copy;KNOWGOD</p>",
+    
+    /* Email sent */
+
+    "passResetCode" => "密码重置的代码请求 ",
+    "passResetCodeBody" => "<p>重置代码是 ",
 
     /* Errores */
 
-    "Error1" => "输入名称&",
+    "Error1" => "旧密码不匹配",
     "Error2" => "密码必须超过3个字符",
     "Error3" => "新密码不相同",
     "Error4" => "未知错误联系管理员",
@@ -95,12 +119,21 @@ $lang = array(
     "Error14" => "您必须同意条款和条件",
     "Error15" => "输入的用户名不存在",
     "Error16" => "输入的密码错误",
-    "Error17" => "La contraseña introducida es errónea",
-    "Error18" => "El correo electrónico introducido es erróneo",
+    "Error17" => "输入的邮箱有误",
+    "Error18" => "输入的电子邮件不存在",
+    "Error19" => "账号验证失败，请联系管理员.",
+    "Error20" => "系统出现问题，请联系管理员.",
+    "Error21" => "插入的代码有误",
+    "Error22" => "发送激活码失败",
+    "Error23" => "无法发送消息，请重试",
 
     "Success"=> "你已经成功更改密码",
     "Success2"=> "您的个人资料已成功编辑",
-    "Success3"=> "您创建的帐户已成功",
+    "Success3"=> "激活码已发送至您的邮箱",
+    "Success4" => "您的信息已发送成功，我们会尽快与您联系",
+    "Success5" => "激活码已发送至您的邮箱",
+    "Success6" => "输入您的新密码",
+    "Success7" => "您的帐户已成功验证",
 
     /* ¿Quien es? */
 
@@ -163,9 +196,9 @@ $lang = array(
 
     "contactUs" => "联系我们",
 
-    "contactUsName" => "请您告诉我您的名字",
-    "contactUsNameInput" => "输入您的名字",
-    "contactUsNameNext" => "下",
+    "contactUsSubject" => "请告诉我消息的主题",
+    "contactUsSubjectInput" => "输入主题",
+    "contactUsSubjectNext" => "下",
 
     "contactUsEmail" => "现在我需要您的电子邮件，能够你联系:",
     "contactUsEmailInput" => "输入您的电子邮件",
