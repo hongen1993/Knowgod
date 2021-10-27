@@ -210,6 +210,23 @@ $lang = array(
     "contactUsMessageButton" => "发消息 ",
     "contactUsMessageBack" => "上",
 
+    /* Terminos & Politica */
+
+    "termsTitle" => "服务条款和隐私政策",
+    "reserved" => "保留所有权利",
+    "serviceTerms" => "服务条款",
+    "policyPrivacy" => "隐私政策",
+    "termsH3" => "相关信息",
+    "termsP" => "用户可以随时选择和更改其帐户管理访问的密码，如果他已经注册并且有必要的话 用户可以随时选择和更改其帐户管理访问的密码, 如果已经注册并且有必要, 如果将所述密钥提供给第三方, Knowgod.es 不承担任何责任",
+    "termsH3B" => "执照",
+    "termsPB" => "KNOWGOD 通过其网站授予用户根据本文档中描述的条款和条件使用本网站的许可.",
+    "termsH3C" => "未经授权的使用",
+    "termsPC" => "如果适用(为了销售软件, 模板或其他设计和编程产品), 您不得将我们的任何文章（修改或未修改）放在 CD, 网站或任何其他媒体上, 并提供它们进行重新分发或转售种类.",
+    "termsH3D" => "财产",
+    "termsPD" => "您不能对我们的任何文章声明知识产权或专有财产, 无论修改或未修改.所有文章均为 KNOWGOD 的财产, 在任何情况下, 本公司均不对任何损害负责, 包括但不限于直接, 间接, 特殊损害, 因使用或无法使用我们的网站而造成的偶然或间接损失或其他损失.",
+    "termsH3E" => "隐私",
+    "termsPE" => "Knowgod.es 保证您发送的个人信息具有必要的安全性.用户输入的数据或需要验证订单的数据将不会交付给第三方, 除非必须根据法院命令或法律要求进行披露.KNOWGOD 保留更改或修改这些条款的权利恕不另行通知.",
+
     /* 许摩西 */
 
     "pastorTitle" => "许摩西",
@@ -225,7 +242,8 @@ $lang = array(
     "footerBTitle" => "联系我们",
     "footerBA" => "如果您有任何问题或疑问，会员将始终乐于提供帮助。请随时通过电话或电子邮件与我们联系，我们一定会尽快与您联系。",
     "footerBB" =>
-                "Ctra. de la Azucarera Intelhorce, 56<br>
+                "Knowgod®<br>
+                Ctra. de la Azucarera Intelhorce, 56<br>
                 Málaga 29004 España<br>
                 <a href='tel:691594025'>691594025</a>
                 <a href='http://localhost:3000/contactUs.php'>教会电子邮件@gmail.com</a>"

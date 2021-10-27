@@ -21,12 +21,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="footer-social">
+<!--                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-vimeo-v"></i></a>
                         <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -34,12 +34,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 column">
-                    <div class="copyright"><a href="#">KNOWGOD</a>&copy; 2021 All Right Reserved</div>
+                    <div class="copyright"><a href="#">KNOWGOD</a>&copy; 2021 <?php echo $lang['reserved'] ?></div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 column">
                     <ul class="footer-nav">
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="terms-policy.php"><?php echo $lang['serviceTerms'] ?></a></li>
+                        <li><a href="terms-policy.php"><?php echo $lang['policyPrivacy'] ?></a></li>
                     </ul>
                 </div>
             </div>

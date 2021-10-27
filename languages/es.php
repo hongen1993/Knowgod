@@ -210,6 +210,23 @@ $lang = array(
     "contactUsMessageButton" => "Enviar mensaje",
     "contactUsMessageBack" => "Atras",
 
+    /* Terminos & Politica */
+
+    "termsTitle" => "Terminos de Servicio y Política de privacidad",
+    "reserved" => "Todos los derechos reservados",
+    "serviceTerms" => "Términos de servicio",
+    "policyPrivacy" => "Política de privacidad",
+    "termsH3" => "INFORMACIÓN RELEVANTE",
+    "termsP" => "El usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesarioEl usuario puede elegir y cambiar la clave para su acceso de administración de la cuenta en cualquier momento, en caso de que se haya registrado y que sea necesario knowgod.es no asume la responsabilidad en caso de que entregue dicha clave a terceros",
+    "termsH3B" => "LICENCIA",
+    "termsPB" => "KNOWGOD a través de su sitio web concede una licencia para que los usuarios utilicen este sitio web de acuerdo a los Términos y Condiciones que se describen en este documento.",
+    "termsH3C" => "USO NO AUTORIZADO",
+    "termsPC" => "En caso de que aplique(para venta de software, templetes, u otro producto de diseño y programación) usted no puede colocar uno de nuestros artículos, modificados o sin modificar, en un CD, sitio web o ningún otro medio y ofrecerlos para la redistribución o la reventa de ningún tipo.",
+    "termsH3D" => "PROPIEDAD",
+    "termsPD" => "Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros artículos, modificados o sin modificar.Todos los artículos son propiedad de KNOWGOD.En ningún caso esta compañía será responsable de ningún daño incluyendo, pero no limitado a, daños directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes del uso o de la imposibilidad de utilizar nuestra web.",
+    "termsH3E" => "PRIVACIDAD",
+    "termsPE" => "Knowgod.es garantiza que la información personal que usted envía cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validación de los pedidos no serán entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o requerimientos legales.KNOWGOD se reserva los derechos de cambiar o de modificar estos términos sin previo aviso.",
+
     /* Franisco pereñon */
 
     "pastorTitle" => "Francisco Pereñon",
@@ -226,7 +243,7 @@ $lang = array(
     "footerBTitle" => "Contáctanos",
     "footerBA" => "Si tiene alguna duda, los miembros del staff siempre estarán encantados de ayudar. No dude en contactarnos por teléfono o correo electrónico, le responderemos lo antes posible.",
     "footerBB" =>
-                "knowgod®<br>
+                "Knowgod®<br>
                 Ctra. de la Azucarera Intelhorce, 56<br>
                 Málaga 29004<br>
                 <a href='tel:691594025'>691594025</a><br>
