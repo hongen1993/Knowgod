@@ -128,7 +128,7 @@ include "languages/configuration.php";
   <button id="whoIs" class="whoIs">
       <p><?php echo $lang['menu-A'] ?></p>
   </button>
-  <button class="listenTo">
+  <button class="listenToCH">
       <p><?php echo $lang['menu-B'] ?></p>
   </button>
   <button class="contactUs">

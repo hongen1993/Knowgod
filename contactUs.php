@@ -29,15 +29,15 @@ include "languages/configuration.php";
           <form class="contact-box" action="/contactUsck.php" method="post">
             <ul>
               <li class="stepOne">
-                <label for="subject"><?php echo $lang['contactUsSubject'] ?></label>
-                <input type="text" name="subject" class="input-text" placeholder="<?php echo $lang['contactUsSubjectInput'] ?>" required></input>
-                <div class="button next "><?php echo $lang['contactUsSubjectNext'] ?></div>
-              </li>
-              <li class="stepTwo">
                 <label for="email"><?php echo $lang['contactUsEmail'] ?></label>
                 <input type="email" name="email" id="email" class="input-text" placeholder="<?php echo $lang['contactUsEmailInput'] ?>" required></input>
+                <div class="button next "><?php echo $lang['contactUsEmailNext'] ?></div>
+              </li>
+              <li class="stepTwo">
+                <label for="subject"><?php echo $lang['contactUsSubject'] ?></label>
+                <input type="text" name="subject" class="input-text" placeholder="<?php echo $lang['contactUsSubjectInput'] ?>" required></input>
                 <div class="button back"><?php echo $lang['contactUsEmailBack'] ?></div>
-                <div class="button nextB"><?php echo $lang['contactUsEmailNext'] ?></div>
+                <div class="button nextB"><?php echo $lang['contactUsSubjectNext'] ?></div>
               </li>
               <li class="stepThree">
                 <textarea rows="6" name="message" id="message" placeholder="<?php echo $lang['contactUsMessageInput'] ?>" required></textarea>

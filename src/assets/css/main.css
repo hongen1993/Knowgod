@@ -1932,6 +1932,24 @@
   text-align: center;
 }
 
+.listenToCH{
+  display:none;
+  opacity: 0;
+  position: absolute;
+  background:white;
+  height: 3em;
+  width: 10em;
+  top: 37%;
+  left: 31.4%;
+  border: 1px solid black;
+  animation: menuAppear 2s linear forwards;
+  font-family: 'Dancing Script', sans-serif;
+}
+.listenToCH p{
+  position: relative;
+  text-align: center;
+}
+
 .contactUs{
   display:none;
   opacity: 0;
@@ -1974,6 +1992,9 @@
 .listenTo:active{
   transform: scale(.8) !important;
 }
+.listenToCH:active{
+  transform: scale(.8) !important;
+}
 .contactUs:active{
   transform: scale(.8) !important;
 }
@@ -2001,6 +2022,18 @@
 }
 
 #enterListenTo{
+  transform: scale(1);
+  opacity: 1;
+  animation: menuA 2s linear forwards;
+  z-index:2;
+}
+
+@keyframes menuB{
+  0%{}100%{}
+
+}
+
+#enterListenToCH{
   transform: scale(1);
   opacity: 1;
   animation: menuA 2s linear forwards;

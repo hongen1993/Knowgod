@@ -1,4 +1,4 @@
-$(".whoIs").click(function(){
+  $(".whoIs").click(function(){
     $(".whoIs").attr('id', 'enterWhoIs');
     setTimeout(function () {
       window.location.href= '/whoIs.php';
@@ -6,11 +6,20 @@ $(".whoIs").click(function(){
       }, 2000); //will call the function after 2 secs.
   
     });
-
+  
   $(".listenTo").click(function(){
     $(".listenTo").attr('id', 'enterListenTo');
    setTimeout(function () {
     window.location.href= '/predications.php';
+    //will redirect to your blog page
+    }, 2000); //will call the function after 2 secs.
+
+  });
+
+  $(".listenToCH").click(function(){
+    $(".listenToCH").attr('id', 'enterListenToCH');
+   setTimeout(function () {
+    window.location.href= '/predicationsCH.php';
     //will redirect to your blog page
     }, 2000); //will call the function after 2 secs.
 

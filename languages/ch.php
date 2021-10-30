@@ -25,6 +25,7 @@ $lang = array(
 
     "menu-BB" => "<a href='/predicationsCH.php'>讲道</a>",
     "skip" => "跳过",
+    "predicationLocation" => "/predicationsCH.php",
 
     /* Crear Cuenta */
 
@@ -72,6 +73,8 @@ $lang = array(
     "emailPassBody" => "<p>您的密码更改请求已成功完成</p><br>",
     "emailPassBody2" => "<p>如果您没有要求更改密码，请联系管理员.</p>
                         <br><p>&copy;KNOWGOD</p>",
+    "emailPassFail" => "密码修改失败",
+
 
     /* Crear Posts */
 
@@ -81,6 +84,13 @@ $lang = array(
     "linkForPredication" => "链接网址",
     "descriptionForPredication" => "讲道细节",
     "addPost" => "添加",
+    "postError" => "写出讲道的标题",
+    "postError2" => "写简短的讲道内容",
+    "postError3" => "写讲道链接",
+    "postError4" => "所选标题已存在",
+    "postError5" => "未知错误",
+
+    "postSuccess" => "您的讲道已成功添加",
     
     /* Verificación  */
 
@@ -196,17 +206,17 @@ $lang = array(
 
     "contactUs" => "联系我们",
 
-    "contactUsSubject" => "请告诉我消息的主题",
+    "contactUsSubject" => "现在请告诉我你想发表的主题",
     "contactUsSubjectInput" => "输入主题",
     "contactUsSubjectNext" => "下",
 
-    "contactUsEmail" => "现在我需要您的电子邮件，能够你联系:",
+    "contactUsEmail" => "我需要您的电子邮件，能够你联系:",
     "contactUsEmailInput" => "输入您的电子邮件",
     "contactUsEmailNext" => "下",
     "contactUsEmailBack" => "上",
 
     "contactUsMessage" => "你给我的消息",
-    "contactUsMessageInput" => "输入您的消息",
+    "contactUsMessageInput" => "输入消息",
     "contactUsMessageButton" => "发消息 ",
     "contactUsMessageBack" => "上",
 
@@ -245,7 +255,7 @@ $lang = array(
                 "Knowgod®<br>
                 Ctra. de la Azucarera Intelhorce, 56<br>
                 Málaga 29004 España<br>
-                <a href='tel:691594025'>691594025</a>
+                <a href='tel:691594025'>691594025</a><br>
                 <a href='http://localhost:3000/contactUs.php'>教会电子邮件@gmail.com</a>"
     )
 ?>

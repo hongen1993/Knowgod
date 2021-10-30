@@ -20,13 +20,13 @@ $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME);
         $link = validate($_POST['link']);
 
         if (empty($title)) {
-            header("Location:addPostCH.php?error=Escriba el titúlo de la predicación");
+            header("Location:addPost.php?error=". $lang['postError']);
             exit();
         } elseif (empty($content)) {
-            header("Location:addPostCH.php?error=Escriba breve contenido de la predicación");
+            header("Location:addPost.php?error=". $lang['postError2']);
             exit();
         } elseif (empty($link)) {
-            header("Location:addPostCH.php?error=Escriba el link de la predicación");
+            header("Location:addPost.php?error=". $lang['postError3']);
             exit();
         }
      else {

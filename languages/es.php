@@ -25,6 +25,7 @@ $lang = array(
 
     "menu-BB" => "<a href='/predications.php'>Predicaciones</a>",
     "skip" => "Saltar",
+    "predicationLocation" => "/predications.php",
 
 
     /* Crear Cuenta */
@@ -73,6 +74,7 @@ $lang = array(
     "emailPassBody" => "<p>Su solicitud de cambio de contraseña ha sido finalizada con éxito</p><br>",
     "emailPassBody2" => "<p>Si no ha solicitado cambio de contraseña contacte con el administrador.</p>
                         <br><p>&copy;KNOWGOD</p>",
+    "emailPassFail" => "El cambio de contraseña ha fallado",
 
     /* Crear Posts */
 
@@ -82,7 +84,14 @@ $lang = array(
     "linkForPredication" => "URL del enlace",
     "descriptionForPredication" => "Descripción de la predicación",
     "addPost" => "Añadir",
+    "postError" => "Escriba el titúlo de la predicación",
+    "postError2" => "Escriba breve contenido de la predicación",
+    "postError3" => "Escriba el link de la predicación",
+    "postError4" => "El título escogido ya existe",
+    "postError5" => "Error desconocido",
 
+    "postSuccess" => "Su predicación ha sido añadido exitosamente",
+    
     /* Verificación  */
 
     "verificationUser" => "Verificación de cuenta de usuario",

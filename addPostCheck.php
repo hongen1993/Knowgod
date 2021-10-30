@@ -20,13 +20,13 @@ $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME);
         $link = validate($_POST['link']);
 
         if (empty($title)) {
-            header("Location:addPost.php?error=Escriba el titúlo de la predicación");
+            header("Location:addPost.php?error=". $lang['postError']);
             exit();
         } elseif (empty($content)) {
-            header("Location:addPost.php?error=Escriba breve contenido de la predicación");
+            header("Location:addPost.php?error=". $lang['postError2']);
             exit();
         } elseif (empty($link)) {
-            header("Location:addPost.php?error=Escriba el link de la predicación");
+            header("Location:addPost.php?error=". $lang['postError3']);
             exit();
         }
      else {
@@ -36,16 +36,16 @@ $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME);
         $result = mysqli_query($conex, $mysqli);
 
         if (mysqli_num_rows($result) > 0) {
-            header("Location:addPost.php?error=El título escogido ya existe");
+            header("Location:addPost.php?error=". $lang['postError4']);
             exit();
         } else {
             $mysqli2 = "INSERT INTO post(title, content, link) VALUES('$title', '$content', '$link')";
             $result2 = mysqli_query($conex, $mysqli2);
             if ($result2) {
-                header("Location:addPost.php?success=Su predicación ha sido añadido exitosamente");
+                header("Location:addPost.php?success=". $lang['postSuccess']);
                 exit();
             } else {
-                header("Location:addPost.php?error=Error desconocido");
+                header("Location:addPost.php?error=". $lang['postError5']);
                 exit();
             }
         }

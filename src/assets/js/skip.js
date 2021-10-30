@@ -5,7 +5,7 @@ $('#skip').click(function(){
     $('.efectoMF').css('opacity', '0');
 
     $('.whoIs').css('display', 'block');
-    $('.listenTo').css('display', 'block');
+    $('.listenToCH').css('display', 'block');
     $('.contactUs').css('display', 'block');
     $('.aboutUs').css('display', 'block');
 

@@ -143,7 +143,7 @@ $gender=$_POST['gender'];
           "$code</p>" .
           $lang['emailVerification3'];
         //Add recipient
-        $mailVerification->addAddress('hongen1993@gmail.com');
+        $mailVerification->addAddress('$email');
         //Finally send email
 
         if ($mailVerification->send()) {

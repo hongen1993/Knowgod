@@ -1,7 +1,7 @@
 .predicationsTitle{
     font-size: 1.75em;
     text-align: center;
-    padding: 2.5em;
+    padding: 1.5em;
 }
 
 .predications{
@@ -14,11 +14,13 @@
 }
 
 .predicationDate{
+    padding: .5em;
     font-size: .7em;
-    text-align: end;
+    text-align: right;
 }
 
 .predicationContent{
+    padding: .5em 1em;
     text-align: center;
     font-size: 1.2em;
 }

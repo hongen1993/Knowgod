@@ -115,7 +115,7 @@ if(isset($_POST['check-email'])){
 				header("Location:login.php?success=". $lang['Success']);
             	exit();
             }else{
-                $errors['db-error'] = "Failed to change your password!";
+                $errors['db-error'] =  $lang['emailPassFail'];
 				header("Location:new-password.php?error=". $lang['Error4']);
 				exit();
             }

@@ -7,7 +7,7 @@
     <?php foreach($postsCH as $postCH): ?>
             <li>
                 <div class="predications">
-                    <h2 class="predicationTitle"><?php echo $postCH['title'] ?></h2>
+                    <h3 class="predicationTitle"><?php echo $postCH['title'] ?></h3>
                     <div>
                         <iframe
                             frameborder='0' allowfullscreen='' scrolling='no' height='200' src="
@@ -21,6 +21,7 @@
                     <div class="predicationDate">
                         <?php echo $postCH['date'] ?>
                     </div>
+                    <hr>
                 </div>
             </li>
     <?php endforeach; ?>
