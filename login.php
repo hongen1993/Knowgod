@@ -1,7 +1,12 @@
 <?Php
 include "./languages/configuration.php"; 
 include "config.php";
-?>
+
+if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
+  header("Location:perfil.php");
+    $user = $_SESSION['userid'];
+  } else {
+?>  
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -53,3 +58,7 @@ include "config.php";
       <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
   </body>
 </html>
+<?php
+     exit();
+}
+ ?>

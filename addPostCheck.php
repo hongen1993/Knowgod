@@ -2,55 +2,64 @@
 include "./languages/configuration.php"; 
 include "config.php";
 
-$conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME); 
+$title = $_POST['title'];
+$link = $_POST['link'];
+$todo=$_POST['todo'];
+$content = $_POST['content'];
 
+    if (isset($todo) and $todo=="post") {
+        $status = "OK";
 
-    if (isset($_POST['title']) && isset($_POST['content'])
-    && isset($_POST['link'])) {
-        function validate($data)
-        {
-            $data = trim($data);
-            $data = stripslashes($data);
-            $data = htmlspecialchars($data);
-            return $data;
-        }
-
-        $title = validate($_POST['title']);
-        $content = validate($_POST['content']);
-        $link = validate($_POST['link']);
-
-        if (empty($title)) {
+        if (!isset($title)) {
             header("Location:addPost.php?error=". $lang['postError']);
             exit();
-        } elseif (empty($content)) {
+            $status= "NOTOK";
+        }
+
+        $count=$dbo->prepare("SELECT title FROM post WHERE title='$title'");
+        $count->bindParam(":title", $title);
+        $count->execute();
+        $no=$count->rowCount();
+
+        if (!isset($link)) {
             header("Location:addPost.php?error=". $lang['postError2']);
             exit();
-        } elseif (empty($link)) {
-            header("Location:addPost.php?error=". $lang['postError3']);
-            exit();
+            $status= "NOTOK";
         }
-     else {
 
+        $count=$dbo->prepare("SELECT link FROM post WHERE link='$link'");
+        $count->bindParam(":link", $link);
+        $count->execute();
+        $no=$count->rowCount();
 
-        $mysqli = ("SELECT * FROM post WHERE title='$title' " );
-        $result = mysqli_query($conex, $mysqli);
+        if (!isset($content)) {
+            header("Location:addPost.php?error=". $lang['postError2']);
+            exit();
+            $status= "NOTOK";
+        }
 
-        if (mysqli_num_rows($result) > 0) {
+        if ($no >0) {
             header("Location:addPost.php?error=". $lang['postError4']);
             exit();
-        } else {
-            $mysqli2 = "INSERT INTO post(title, content, link) VALUES('$title', '$content', '$link')";
-            $result2 = mysqli_query($conex, $mysqli2);
-            if ($result2) {
+            $status= "NOTOK";
+        }
+
+        if ($status=="OK") {
+            $sql=$dbo->prepare("insert into post(title, link, content)values(:title, :link, :content)");
+            $sql->bindParam(':title', $title, PDO::PARAM_STR);
+            $sql->bindParam(':link', $link, PDO::PARAM_STR);
+            $sql->bindParam(':content', $content, PDO::PARAM_STR);
+            
+            if ($sql->execute()) {
                 header("Location:addPost.php?success=". $lang['postSuccess']);
                 exit();
             } else {
                 header("Location:addPost.php?error=". $lang['postError5']);
                 exit();
             }
+        } else {
+            print_r($sql->errorInfo());
+            header("Location:./addPost.php");
+            exit();
         }
-    }
- } else {
-        header("Location:./addPost.php");
-        exit();
     }

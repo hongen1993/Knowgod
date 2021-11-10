@@ -84,7 +84,7 @@ if(isset($todo) and $todo=="change-password"){
                     $lang['emailPassBody'];
                     $lang['emailPassBody2'];
 				//Add recipient
-				$mail->addAddress('hongen1993@gmail.com');
+				$mail->addAddress($email);
 				//Finally send email
 				if ($mail->send()) {
 					header("Location:perfil.php?success=". $lang['Success']);

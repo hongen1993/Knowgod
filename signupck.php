@@ -38,7 +38,7 @@ $gender=$_POST['gender'];
       $status= "NOTOK";
     }
 
-    $count=$dbo->prepare("select userid from users where userid=:userid");
+    $count=$dbo->prepare("SELECT userid FROM users WHERE userid=:userid");
     $count->bindParam(":userid",$userid);
     $count->execute();
     $no=$count->rowCount();
@@ -49,7 +49,7 @@ $gender=$_POST['gender'];
       $status= "NOTOK";
     }
 
-    $count=$dbo->prepare("select email from users where email=:email");
+    $count=$dbo->prepare("SELECT email FROM users WHERE email=:email");
     $count->bindParam(":email",$email);
     $count->execute();
     $no=$count->rowCount();
@@ -90,8 +90,8 @@ $gender=$_POST['gender'];
       $code = rand(999999, 111111);
       $status = "notverified";
 
-      $sql=$dbo->prepare("insert into users(userid, password, email, name, surname, address, gender, code, status)
-                          values(:userid, :password, :email, :name, :surname, :address, :gender, :code, :status)");
+      $sql=$dbo->prepare("INSERT INTO users(userid, password, email, name, surname, address, gender, code, status)
+                          VALUES(:userid, :password, :email, :name, :surname, :address, :gender, :code, :status)");
       $sql->bindParam(':userid',$userid,PDO::PARAM_STR, 15);
       $sql->bindParam(':password',$password,PDO::PARAM_STR, 32);
       $sql->bindParam(':email',$email,PDO::PARAM_STR, 75);
@@ -107,7 +107,7 @@ $gender=$_POST['gender'];
       if($sql->execute()){
     /////////////////Posting confirmation mail ///////////////
 
-        //Create instance of PHPMailer
+    //Create instance of PHPMailer
         $mailVerification = new PHPMailer();
         //Set mailer to use smtp
         $mailVerification->isSMTP();
@@ -125,8 +125,8 @@ $gender=$_POST['gender'];
         $mailVerification->Password = "Jol@n520";
         //Set UTF8
         $subject = utf8_decode($subject);
-        $mail->Subject = $subject;
-        $mail->CharSet = 'UTF-8';
+        $mailVerification->Subject = $subject;
+        $mailVerification->CharSet = 'UTF-8';
         //Email subject
         $mailVerification->Subject = $lang['verificationCode'];
         //Set sender email
@@ -143,7 +143,7 @@ $gender=$_POST['gender'];
           "$code</p>" .
           $lang['emailVerification3'];
         //Add recipient
-        $mailVerification->addAddress('$email');
+        $mailVerification->addAddress($email);
         //Finally send email
 
         if ($mailVerification->send()) {

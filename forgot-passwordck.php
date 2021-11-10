@@ -56,7 +56,7 @@ if(isset($_POST['check-email'])){
 				//Email body
 				$mail->Body = $lang['passResetCodeBody'] . "$code</p>";
 				//Add recipient
-				$mail->addAddress('hongen1993@gmail.com');
+				$mail->addAddress($email);
 				//Finally send email
 				if ($mail->send()) {
 					$_SESSION['email'] = $email;

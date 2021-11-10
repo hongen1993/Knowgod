@@ -5,6 +5,7 @@ include "config.php";
 if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") {
 
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,7 +18,6 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") 
      <link rel="stylesheet" type="text/css" href="/src/assets/css/footer.css" media="screen"/>
 </head>
 <body>
-   
      <header>
           <?php include('./header.php') ?>
     </header>
@@ -32,46 +32,20 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") 
                     <?php } ?>
           </div>
      <div class="addPostForm">
-               <form action="addPostCheck.php" method="post">
+               <form name=form2 method=post action=addPostCheck.php onsubmit='return validate(this)'>
 
                     <h2><?php echo $lang['addPredication'] ?></h2>
+                    
+                    <input type=hidden name=todo value=post>
 
-                    <div class="styled-input">
-                         <label><?php echo $lang['titleForPredication'] ?></label>
-                         <?php if (isset($_GET['title'])) { ?>
-                              <input type="text" 
-                                   name="title"
-                                   value="<?php echo $_GET['title']; ?>"><br>
-                         <?php }else{ ?>
-                              <input type="text" 
-                                   name="title"><br>
-                         <?php }?>
-                    </div>
-
+                    <label><?php echo $lang['titleForPredication'] ?></label>
+                    <input type="text" name="title"><br>
                
-                    <div class="styled-input">
-                         <label><?php echo $lang['linkForPredication'] ?></label>
-                         <?php if (isset($_GET['link'])) { ?>
-                              <input type="text" 
-                                   name="link" 
-                                   value="<?php echo $_GET['link']; ?>"><br>
-                         <?php }else{ ?>
-                              <input type="text" 
-                                   name="link"><br>
-                         <?php }?>
-                    </div>
+                    <label><?php echo $lang['linkForPredication'] ?></label>
+                    <input type="text" name="link"><br>
 
-                    <div class="styled-input">
-                         <label><?php echo $lang['descriptionForPredication'] ?></label>
-                         <?php if (isset($_GET['content'])) { ?>
-                              <input type="text" 
-                                   name="content" 
-                                   value="<?php echo $_GET['content']; ?>"><br>
-                         <?php }else{ ?>
-                              <input type="text" 
-                                   name="content"><br>
-                         <?php }?>
-                    </div>
+                    <label><?php echo $lang['descriptionForPredication'] ?></label>
+                    <input type="text" name="content"><br>
 
                     <button type="submit"><?php echo $lang['addPost'] ?></button>
                     <a href="perfil.php" class="ca"><?php echo $lang['cancel'] ?></a>

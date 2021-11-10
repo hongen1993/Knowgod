@@ -3,7 +3,7 @@ include "languages/configuration.php";
 require  "config.php";
 if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
     $user = $_SESSION['userid'];
-    $sql = "SELECT * FROM users WHERE userid ='$user' ";
+    $sql = "SELECT * FROM users WHERE userid ='$user'";
 
     $result = mysqli_query($conn, $sql) or die(mysqli_error());
     $row = mysqli_fetch_array($result); ?>
@@ -44,7 +44,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                             break;
                             }
     $ckb="<input type='radio' value=male  name='gender' $ck1>Male
-                                <input type='radio' value=female  name='gender' $ck2>Female";
+          <input type='radio' value=female  name='gender' $ck2>Female";
 
     echo "<form action='update-profileck.php' method=post>
                                 <input type=hidden name=todo value=update-profile>

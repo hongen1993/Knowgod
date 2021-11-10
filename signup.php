@@ -1,7 +1,8 @@
-<?Php
+<?php
 include "./languages/configuration.php"; 
 include "config.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -41,7 +42,7 @@ include "config.php";
                 <input type=password name='password2'><br>
 
                 <label><?php echo $lang['signUpEmail'] ?></label>
-                <input type=text name=email><br>
+                <input type=email name=email><br>
 
                 <label><?php echo $lang['signUpName'] ?></label>
                 <input type=text name=name><br>

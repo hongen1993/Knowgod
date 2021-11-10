@@ -7,7 +7,9 @@
     <?php foreach($postsCH as $postCH): ?>
             <li>
                 <div class="predications">
-                    <h3 class="predicationTitle"><?php echo $postCH['title'] ?></h3>
+                    <a href="predicationCH.php?id=<?php echo $postCH['id']?>">
+                        <h3 class="predicationTitle"><?php echo $postCH['title'] ?></h3>
+                    </a>
                     <div>
                         <iframe
                             frameborder='0' allowfullscreen='' scrolling='no' height='200' src="
