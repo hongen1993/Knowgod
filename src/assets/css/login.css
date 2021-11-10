@@ -1,0 +1,318 @@
+body{
+	margin:0;
+}
+.signInForm {
+	position: relative;
+	top: 25%;
+	left:10%;
+  	height: 58vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 30px 15px 20px 15px;
+	margin: 4em 0em 5em 0em;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}
+
+.signInForm h2 {
+	text-align: center;
+	margin: .75em;
+}
+
+.signInForm input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.signInForm label {
+	color: #888;
+	padding: 10px;
+}
+
+.signInForm button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	font-size: 1em;
+}
+.signInForm button:hover{
+	opacity: .7;
+}
+.signInForm .error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.signInForm .success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.signInForm h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.signInForm .ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+}
+.signInForm .ca:hover {
+	text-decoration: underline;
+} 
+.success{
+	text-align: center;
+    color:green;
+}
+.error{
+	text-align: center;
+    color: red;
+}
+.forgotPassForm {
+	position: relative;
+	text-align: center;
+	top: 25%;
+	left:10%;
+  	height: 58vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 30px 15px 20px 15px;
+	margin: 4em 0em 5em 0em;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}
+.forgotPassForm h2 {
+	text-align: center;
+	margin: .75em;
+}
+
+.forgotPassForm input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.forgotPassForm label {
+	color: #888;
+	padding: 10px;
+}
+
+.forgotPassForm .error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.forgotPassForm .success {
+   background: #D4EDDA;
+   color: #40754C;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+
+.forgotPassForm h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.forgotPassForm .ca {
+	font-size: 14px;
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #444;
+}
+.forgotPassForm .ca:hover {
+	text-decoration: underline;
+} 
+#forgotPassSubmit{
+	display: inline;
+	border: 2px solid #ccc;
+	width: 45%;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+.forgotPassLogged {
+	position: relative;
+	text-align: center;
+	top: 25%;
+	left:10%;
+  	height: 21vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 2.5em;
+	margin: 4em 0em 5em 0em;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}
+
+.resetCode {
+	position: relative;
+	top: 25%;
+	left:10%;
+  	height: 50vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 30px 15px 20px 15px;
+	margin: 4em 0em 5em 0em;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}
+
+.resetCode h2 {
+	text-align: center;
+	margin: .75em;
+}
+
+.resetCode input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.resetCode label {
+	color: #888;
+	padding: 10px;
+}
+
+.resetCode button:hover{
+	opacity: .7;
+}
+
+.resetCode button {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.resetCode a {
+color: red;
+}
+
+.newPass {
+	position: relative;
+	top: 25%;
+	left:10%;
+  	height: 58vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 30px 15px 20px 15px;
+	margin: 4em 0em 5em 0em;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}
+
+.newPass h2 {
+	text-align: center;
+	margin: .75em;
+}
+
+.newPass input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.newPass label {
+	color: #888;
+	padding: 10px;
+}
+
+.newPass button {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	font-size: 1em;
+}
+.newPass button:hover{
+	opacity: .7;
+}
+
+.codeVerification {
+	position: relative;
+	top: 25%;
+	left:10%;
+  	height: 50vh;
+	width: 80vw;
+	border: 2px solid #ccc;
+	padding: 30px 15px 20px 15px;
+	margin: 4em 0em 5em 0em;
+	background: #fff;
+	border-radius: 15px;
+	font-size: 1em;
+}
+
+.codeVerification h2 {
+	text-align: center;
+	margin: .75em;
+}
+
+.codeVerification input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+
+.codeVerification label {
+	color: #888;
+	padding: 10px;
+}
+
+.codeVerification button {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
+}
+.codeVerification a {
+color: red;
+}
+.codeVerification button:hover{
+	opacity: .7;
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  margin:1em;
+}
+body{
+  font-family: Viaoda Libre;
+}
+.user{
+  display: none;
+  position: absolute;
+  top: 0.9em;
+  right: 3.5em;
+}
+.user a{
+  color: black;
+}
+.language{
+  display: none;
+  position: absolute;
+  top: 0.9em;
+  right: 5.5em;
+}
+.logo img{
+    height: 6em;
+    margin-left: -1em;
+}
+.menu{
+    position: absolute;
+    right: .5em;
+    top: 2.2em;
+}
+.dropbtn {
+    background-color: white;
+    color: rgba(0,0,0,0.7);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: -7em;
+    background-color: rgba(255,255,255,0.9);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: .5em;
+    text-align: center;
+  }
+  .dropdown:hover .user, .dropdown:hover .language{
+    display: block;
+  }
