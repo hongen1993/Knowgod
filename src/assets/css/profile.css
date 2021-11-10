@@ -48,7 +48,11 @@
 }
 .success{
     color:green;
+    text-align: center;
+    margin: 0em 2em;
 }
 .error{
     color: red;
+    text-align: center;
+    margin: 0em 2em;
 }

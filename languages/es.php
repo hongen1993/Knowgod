@@ -141,6 +141,8 @@ $lang = array(
     "Error24" => "Se requiere introducir el título de la predicación",
     "Error25" => "Se requiere introducir el link de la predicación",
     "Error26" => "Se requiere introducir el contenido de la predicación",
+    "Error27" => "Se requiere tener cuenta verificada para acceder al contenido",
+    "Error28" => "Se requiere iniciar sesión para acceder al contenido",
 
 
     "Success"=> "Su contraseña se ha cambiado con éxito",
@@ -208,6 +210,7 @@ $lang = array(
     /* Predicaciones */
 
     "predicationTitle" => "Predicaciones",
+    "mostRecent" => "Predicación más reciente",
 
     /* Contactanos */
 

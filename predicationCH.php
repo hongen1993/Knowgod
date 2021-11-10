@@ -6,7 +6,7 @@
         $sql = "SELECT * FROM users WHERE userid ='$user'";
 
         $id = mysqli_real_escape_string($conn, $_GET['id']);
-        $sqlPredication = "SELECT * FROM post WHERE id='$id'";
+        $sqlPredication = "SELECT * FROM postb WHERE id='$id'";
         $resultPredication = mysqli_query($conn, $sqlPredication) or die('Bad Query: $sqlPredication');
         $rowPredication = mysqli_fetch_array($resultPredication); 
 ?>
@@ -32,14 +32,18 @@
             <?php if ($result = mysqli_query($conn, $sql)) {
                 if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_array($result)) {
-                    if ($row['user_type']!=="2") {
+                    if ($row['status']=="verified") {
+                        if ($row['user_type']!=="2") {
                         echo "
                             <div class='predicationEdit'>
                                 <a href='editPredication.php?id=".$rowPredication['id']."'>
                                     <i class='far fa-edit'></i>                
                                 </a>
                             </div>";
-                    } else {
+                        } else {
+                        }
+                    }else{
+                        header("location:perfil.php?error=". $lang['Error27']);
                     }
                 }
                 mysqli_free_result($result);
@@ -94,7 +98,7 @@
 </html>
 <?php
         } else {
-            header("Location:login.php");
+            header("Location:login.php?error=". $lang['Error28']);
             exit();
         }
     }

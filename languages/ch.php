@@ -141,7 +141,8 @@ $lang = array(
     "Error24" => "需要输入讲道的标题",
     "Error25" => "需要介绍讲道链接",
     "Error26" => "需介绍讲道内容",
-
+    "Error27" => "需要经过验证的帐户才能访问内容",
+    "Error28" => "访问内容需要登录",
 
     "Success"=> "你已经成功更改密码",
     "Success2"=> "您的个人资料已成功编辑",
@@ -209,6 +210,8 @@ $lang = array(
     /* Predicaciones */
 
     "predicationTitle" => "讲到",
+    "mostRecent" => "最新的讲道",
+
     
     /* Contactanos */
 

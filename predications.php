@@ -17,13 +17,18 @@ include "languages/configuration.php";
     <header>
         <?php include('header.php') ?>
     </header>
+    <main>
+        
     <?php 
-
+    
     require_once 'model.php'; 
+    $lastPredications = lastPredication();
+    require 'lastPredication.php'; 
+
     $posts = getPosts(); 
     require 'list.php'; 
     ?>
-    
+    </main>
     <footer class="main-footer">
         <?php include('footer.php') ?>
     </footer>

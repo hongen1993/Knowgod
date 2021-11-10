@@ -25,7 +25,12 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
           <?php
 
                $sql = "SELECT * FROM users WHERE userid ='$user' ";
-               
+               if (isset($_GET['error'])) {
+                echo
+                    "<p class='error'>". $_GET['error'];
+                echo "</p>
+                ";
+            }
                     if ($result = mysqli_query($conn, $sql)) {
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_array($result)) {

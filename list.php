@@ -10,13 +10,6 @@
                     <a href="predication.php?id=<?php echo $post['id']?>">
                         <h3 class="predicationTitle"><?php echo $post['title'] ?></h3>
                     </a>
-                    <div>
-                        <iframe
-                            frameborder='0' allowfullscreen='' scrolling='no' height='200' src="
-                                <?php echo $post['link'] ?>
-                            " style='border:1px solid #EEE; box-sizing:border-box; width:100%;'>
-                        </iframe>
-                    </div>
                     <div class="predicationContent">
                         <?php echo $post['content'] ?>
                     </div>
