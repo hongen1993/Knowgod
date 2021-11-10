@@ -83,7 +83,9 @@ $lang = array(
     "titleForPredication" => "讲道标题",
     "linkForPredication" => "链接网址",
     "descriptionForPredication" => "讲道细节",
+    "dateForPredication" => "讲道日",
     "addPost" => "添加",
+    "editPredication" => "编辑讲道",
     "postError" => "写出讲道的标题",
     "postError2" => "写简短的讲道内容",
     "postError3" => "写讲道链接",
@@ -136,6 +138,10 @@ $lang = array(
     "Error21" => "插入的代码有误",
     "Error22" => "发送激活码失败",
     "Error23" => "无法发送消息，请重试",
+    "Error24" => "需要输入讲道的标题",
+    "Error25" => "需要介绍讲道链接",
+    "Error26" => "需介绍讲道内容",
+
 
     "Success"=> "你已经成功更改密码",
     "Success2"=> "您的个人资料已成功编辑",
@@ -144,6 +150,8 @@ $lang = array(
     "Success5" => "激活码已发送至您的邮箱",
     "Success6" => "输入您的新密码",
     "Success7" => "您的帐户已成功验证",
+    "Success8" => "讲道已成功编辑",
+
 
     /* ¿Quien es? */
 

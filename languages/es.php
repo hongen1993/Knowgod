@@ -83,7 +83,9 @@ $lang = array(
     "titleForPredication" => "Titulo de la predicación",
     "linkForPredication" => "URL del enlace",
     "descriptionForPredication" => "Descripción de la predicación",
+    "dateForPredication" => "Día de la predicación",
     "addPost" => "Añadir",
+    "editPredication" => "Editar predicación",
     "postError" => "Escriba el titúlo de la predicación",
     "postError2" => "Escriba breve contenido de la predicación",
     "postError3" => "Escriba el link de la predicación",
@@ -136,6 +138,10 @@ $lang = array(
     "Error21" => "El código introducido es incorrecto",
     "Error22" => "El envio del codigo de activación ha fallado",
     "Error23" => "No ha sido posible enviar el mensaje, por favor pruebe de nuevo",
+    "Error24" => "Se requiere introducir el título de la predicación",
+    "Error25" => "Se requiere introducir el link de la predicación",
+    "Error26" => "Se requiere introducir el contenido de la predicación",
+
 
     "Success"=> "Su contraseña se ha cambiado con éxito",
     "Success2"=> "Su perfil ha sido editado con éxito",
@@ -144,6 +150,8 @@ $lang = array(
     "Success5" => "El codigo de activación ha sido enviado a su correo electrónico",
     "Success6" => "Introduzca su nueva contraseña",
     "Success7" => "Su cuenta ha sido verificada con éxito",
+    "Success8" => "Su predicación ha sido editada con éxito",
+
 
     /* ¿Quien es? */
 
