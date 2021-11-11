@@ -7,7 +7,7 @@ function getPosts(){
 
 $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME); 
 
- $result = $conex->query('SELECT id, title, content, link, date FROM post ORDER BY id DESC LIMIT 10'); 
+ $result = $conex->query('SELECT id, title, content, link, date FROM post ORDER BY id DESC'); 
  
  return $result; 
 }
@@ -19,4 +19,5 @@ function lastPredication(){
      
      return $result; 
     }
+
 ?>

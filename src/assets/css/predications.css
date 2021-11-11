@@ -6,11 +6,11 @@
 
 .predications{
     margin: 1em;
-    text-align: center;
 }
 
 .predicationTitle{
     margin: 1.5em;
+    text-align: center;
 }
 
 .predicationDate{
@@ -50,4 +50,52 @@
 }
 .predicationEditForm form input{
     margin: 1em 0em;
+}
+
+.predicationTitleB{
+    margin:1em 0em;
+}
+
+.predicationDateB{
+    font-size: .7em;
+    text-align: right;
+}
+
+.predicationContentB{
+    margin:0em .5em;
+    font-size: 1.2em;
+}
+.predicationEdit{
+    position: relative;
+    top: -1em;
+    text-align: end;
+}
+.predicationEdit .fa-edit{
+    color: black;
+}
+.predicationEditForm{
+    position: relative;
+    width: 75%;
+    margin: 20px auto;
+    margin-bottom: 15vh;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2.5px 5px #ccc;
+    font-size: 1.15em;
+}
+.predicationEditFormContent{
+    padding: 1em;
+}
+.predicationEditForm h3{
+    margin: 1em;
+}
+.predicationEditForm form input{
+    margin: 1em 0em;
+}
+.predicationA{
+    color: inherit;
+    text-decoration: inherit;
+}
+.predicationA :hover{
+    color: blue;
 }

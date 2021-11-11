@@ -18,8 +18,11 @@ include "languages/configuration.php";
         <?php include('header.php') ?>
     </header>
     <?php 
-
+    
     require_once 'modelCH.php'; 
+    $lastPredicationsCH = lastPredicationCH();
+    require 'lastPredicationCH.php'; 
+
     $postsCH = getPostsCH(); 
     require 'listCH.php'; 
     ?>

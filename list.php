@@ -6,14 +6,15 @@
     <ul>
     <?php foreach($posts as $post): ?>
             <li>
+            
                 <div class="predications">
-                    <a href="predication.php?id=<?php echo $post['id']?>">
-                        <h3 class="predicationTitle"><?php echo $post['title'] ?></h3>
+                    <a class="predicationA" href="predication.php?id=<?php echo $post['id']?>">
+                            <h3 class="predicationTitleB"><?php echo $post['title'] ?></h3>
+                        <div class="predicationContentB">
+                            <?php echo $post['content'] ?>
+                        </div>
                     </a>
-                    <div class="predicationContent">
-                        <?php echo $post['content'] ?>
-                    </div>
-                    <div class="predicationDate">
+                    <div class="predicationDateB">
                         <?php echo $post['date'] ?>
                     </div>
                     <hr>
