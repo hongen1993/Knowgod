@@ -89,7 +89,7 @@ $('.content').delay(3300).queue(function(opaco){$(this).css('opacity', '0');opac
 */
 
 setTimeout(function () {
-    window.location.href = 'enter.php?lang=ch';
+    window.location.href = '/index/enter.php?lang=ch';
 }, 8000);
 
 }
@@ -184,7 +184,7 @@ $('.content').delay(3300).queue(function(opaco){$(this).css('opacity', '0');opac
 /*     $('.crossDisplayOn').delay(6300).queue(function(crossOn){$(this).css('display', 'block');crossOn();});
 */
 setTimeout(function () {
-    window.location.href= 'enterB.php?lang=es';
+    window.location.href= 'index/enterB.php?lang=es';
 }, 8000);
 
 }

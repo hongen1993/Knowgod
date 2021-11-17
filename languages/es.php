@@ -23,9 +23,9 @@ $lang = array(
     "menu-C" => "Contactanos",
     "menu-D" => "Francisco Pereñon",
 
-    "menu-BB" => "<a href='/predications.php'>Predicaciones</a>",
+    "menu-BB" => "<a href='../pages/predications.php'>Predicaciones</a>",
     "skip" => "Saltar",
-    "predicationLocation" => "/predications.php",
+    "predicationLocation" => "../pages/predications.php",
 
 
     /* Crear Cuenta */
@@ -216,11 +216,11 @@ $lang = array(
 
     "contactUs" => "Contactanos",
 
-    "contactUsSubject" => "Por favor indíqueme el asunto del mensaje",
+    "contactUsSubject" => "Ahora por favor indíqueme el asunto del mensaje",
     "contactUsSubjectInput" => "Introduzca el asunto",
     "contactUsSubjectNext" => "Siguiente",
 
-    "contactUsEmail" => "Ahora necesito su correo electronico, para poder contactar con usted:",
+    "contactUsEmail" => "Introduzca su correo electronico, para poder contactar con usted:",
     "contactUsEmailInput" => "Introduzca su correo electronico",
     "contactUsEmailNext" => "Siguiente",
     "contactUsEmailBack" => "Atras",
@@ -246,6 +246,7 @@ $lang = array(
     "termsPD" => "Usted no puede declarar propiedad intelectual o exclusiva a ninguno de nuestros artículos, modificados o sin modificar.Todos los artículos son propiedad de KNOWGOD.En ningún caso esta compañía será responsable de ningún daño incluyendo, pero no limitado a, daños directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes del uso o de la imposibilidad de utilizar nuestra web.",
     "termsH3E" => "PRIVACIDAD",
     "termsPE" => "Knowgod.es garantiza que la información personal que usted envía cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validación de los pedidos no serán entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o requerimientos legales.KNOWGOD se reserva los derechos de cambiar o de modificar estos términos sin previo aviso.",
+    "toEnter" => "../index/enterB.php",
 
     /* Franisco pereñon */
 
@@ -264,9 +265,9 @@ $lang = array(
     "footerBA" => "Si tiene alguna duda, los miembros del staff siempre estarán encantados de ayudar. No dude en contactarnos por teléfono o correo electrónico, le responderemos lo antes posible.",
     "footerBB" =>
                 "Knowgod®<br>
-                Ctra. de la Azucarera Intelhorce, 56<br>
-                Málaga 29004<br>
-                <a href='tel:691594025'>691594025</a><br>
-                <a href='http://localhost:3000/contactUs.php'>iglesiaespañola@gmail.com</a>"
+                Plaza de Andalucía, edificio Entreplazas<br>
+                Torremolinos 29620<br>
+                <a href='tel:644751012'>644751012</a><br>
+                <a href='http://localhost:3000/contactUs.php'>Knowgodweb@gmail.com</a>"
 )
 ?>

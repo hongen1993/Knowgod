@@ -23,9 +23,9 @@ $lang = array(
     "menu-C" => "联系我们",
     "menu-D" => "许摩西",
 
-    "menu-BB" => "<a href='/predicationsCH.php'>讲道</a>",
+    "menu-BB" => "<a href='../pages/predicationsCH.php'>讲道</a>",
     "skip" => "跳过",
-    "predicationLocation" => "/predicationsCH.php",
+    "predicationLocation" => "../pages/predicationsCH.php",
 
     /* Crear Cuenta */
 
@@ -247,6 +247,8 @@ $lang = array(
     "termsPD" => "您不能对我们的任何文章声明知识产权或专有财产, 无论修改或未修改.所有文章均为 KNOWGOD 的财产, 在任何情况下, 本公司均不对任何损害负责, 包括但不限于直接, 间接, 特殊损害, 因使用或无法使用我们的网站而造成的偶然或间接损失或其他损失.",
     "termsH3E" => "隐私",
     "termsPE" => "Knowgod.es 保证您发送的个人信息具有必要的安全性.用户输入的数据或需要验证订单的数据将不会交付给第三方, 除非必须根据法院命令或法律要求进行披露.KNOWGOD 保留更改或修改这些条款的权利恕不另行通知.",
+    "toEnter" => "../index/enter.php",
+
 
     /* 许摩西 */
 
@@ -267,6 +269,6 @@ $lang = array(
                 Ctra. de la Azucarera Intelhorce, 56<br>
                 Málaga 29004 España<br>
                 <a href='tel:691594025'>691594025</a><br>
-                <a href='http://localhost:3000/contactUs.php'>教会电子邮件@gmail.com</a>"
+                <a href='http://localhost:3000/contactUs.php'>Knowgodweb@gmail.com</a>"
     )
 ?>
