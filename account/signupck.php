@@ -1,11 +1,11 @@
 <?Php
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 //Include required PHPMailer files
-require 'includes/PHPMailer.php';
-require 'includes/SMTP.php';
-require 'includes/Exception.php';
+require '../includes/PHPMailer.php';
+require '../includes/SMTP.php';
+require '../includes/Exception.php';
 //Define name spaces
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -27,13 +27,13 @@ $gender=$_POST['gender'];
     $status = "OK";
 
     if(!isset($userid) or strlen($userid) <3){
-      header("Location:signup.php?error=". $lang['Error9']);
+      header("Location:../account/signup.php?error=". $lang['Error9']);
       exit();
       $status= "NOTOK";
     }
 
     if(!ctype_alnum($userid)){
-      header("Location:signup.php?error=". $lang['Error10']);
+      header("Location:../account/signup.php?error=". $lang['Error10']);
       exit();
       $status= "NOTOK";
     }
@@ -44,7 +44,7 @@ $gender=$_POST['gender'];
     $no=$count->rowCount();
 
     if($no >0 ){
-      header("Location:signup.php?error=". $lang['Error11']);
+      header("Location:../account/signup.php?error=". $lang['Error11']);
       exit();
       $status= "NOTOK";
     }
@@ -55,31 +55,31 @@ $gender=$_POST['gender'];
     $no=$count->rowCount();
 
     if($no >0 ){
-      header("Location:signup.php?error=". $lang['Error12']);
+      header("Location:../account/signup.php?error=". $lang['Error12']);
       exit();
       $status= "NOTOK";
     }
 
     if ( strlen($password) < 3 ){
-      header("Location:signup.php?error=". $lang['Error2']);
+      header("Location:../account/signup.php?error=". $lang['Error2']);
       exit();
       $status= "NOTOK";
     }
 
     if ( $password <> $password2 ){
-      header("Location:signup.php?error=". $lang['Error3']);
+      header("Location:../account/signup.php?error=". $lang['Error3']);
       exit();    
       $status= "NOTOK";
     }
 
     if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
-      header("Location:signup.php?error=". $lang['Error13']);
+      header("Location:../account/signup.php?error=". $lang['Error13']);
       exit();
       $status="NOTOK";
     }
 
     if ($agree<>"yes") {
-      header("Location:signup.php?error=". $lang['Error14']);
+      header("Location:../account/signup.php?error=". $lang['Error14']);
       exit();
       $status= "NOTOK";
     }
@@ -149,16 +149,16 @@ $gender=$_POST['gender'];
         if ($mailVerification->send()) {
           $_SESSION['userid'] = $userid;
           $_SESSION['password'] = $password;
-          header("location: user-verification.php?success=".$lang['Success3']);
+          header("location: ../account/user-verification.php?success=".$lang['Success3']);
           exit();
         } else {
-          header("location: signup.php?error=".$lang['Error22']);
+          header("location: ../account/signup.php?error=".$lang['Error22']);
         }
         //Closing smtp connection
         $mailVerification->smtpClose();
       }else{
         print_r($sql->errorInfo()); 
-        header("Location:signup.php?error=". $lang['Error4']);
+        header("Location:../account/signup.php?error=". $lang['Error4']);
 
       }
     }

@@ -1,6 +1,6 @@
 <?php 
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
     $user = $_SESSION['userid'];
 
@@ -19,7 +19,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 </head>
 <body>
      <header>
-        <?php include('header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
           <?php
@@ -53,14 +53,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                                             <p>".$lang['signUpAddress'].":<br>".$row['address']."</p>
                                             <p>".$lang['signUpEmail'].":<br>".$row['email']."</p>";
                                             if ($row['user_type']=="1") {
-                                                echo "<a href='../addPost.php'>".$lang['addPredication']."</a><br>";
+                                                echo "<a href='../predications/addPost.php'>".$lang['addPredication']."</a><br>";
                                             } elseif ($row['user_type']=="3") {
-                                                echo "<a href='../addPostCH.php'>".$lang['addPredication']."</a><br>";
+                                                echo "<a href='../predications/addPostCH.php'>".$lang['addPredication']."</a><br>";
                                             } else {
                                             }   
                                         echo
-                                            "<a href='update-profile.php'>". $lang['editPerfil'] ."</a>
-                                            <a href='logout.php'>". $lang['logout'] ."</a>
+                                            "<a href='../account/update-profile.php'>". $lang['editPerfil'] ."</a>
+                                            <a href='../account/logout.php'>". $lang['logout'] ."</a>
                                        </div>
                                   </div>";
                                     
@@ -70,8 +70,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                                                 <div class='profileContent'>
                                                 <p>".$lang['notVerified'].":<br></p>
                                                 <button class='verify'><p>".$lang['verifyButton']."</p></button><br>
-                                                <a href='update-profile.php'>". $lang['editPerfil'] ."</a>
-                                                <a href='logout.php'>". $lang['logout'] ."</a>
+                                                <a href='../account/update-profile.php'>". $lang['editPerfil'] ."</a>
+                                                <a href='../account/logout.php'>". $lang['logout'] ."</a>
                                                 "
                                                 ;
                                 }
@@ -108,7 +108,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 
     </main>
      <footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -120,7 +120,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 
 <?php
      } else {
-     header("Location:login.php");
+     header("Location:../account/login.php");
      exit();
 }
  ?>

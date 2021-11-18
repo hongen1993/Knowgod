@@ -1,6 +1,6 @@
 <?Php
-include "./languages/configuration.php"; 
-include "/includes/config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
   header("Location:perfil.php");
@@ -20,7 +20,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 </head>
   <body>
     <header>
-        <?php include('./header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
 
@@ -52,7 +52,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 
     </main>
     <footer class="main-footer">
-      <?php include('./footer.php') ?>
+      <?php include('../include/footer.php') ?>
     </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

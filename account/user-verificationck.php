@@ -1,10 +1,10 @@
 <?php 
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
-require 'includes/PHPMailer.php';
-require 'includes/SMTP.php';
-require 'includes/Exception.php';
+require '../includes/PHPMailer.php';
+require '../includes/SMTP.php';
+require '../includes/Exception.php';
 //Define name spaces
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -24,14 +24,14 @@ if(isset($_POST['check'])){
         $update_otp = "UPDATE users SET code = $code, status = '$status' WHERE code = $fetch_code";
         $update_res = mysqli_query($conn, $update_otp);
         if($update_res){
-            header("location: login.php?success=".$lang['Success7']);
+            header("location: ../account/login.php?success=".$lang['Success7']);
             exit();
         }else{
-    header("Location:user-verification.php?error=". $lang['Error19']);
+    header("Location:../account/user-verification.php?error=". $lang['Error19']);
     exit();
         }
     }else{
-  header("Location:user-verification.php?error=". $lang['Error21']);
+  header("Location:../account/user-verification.php?error=". $lang['Error21']);
   exit();
     }
 }
@@ -87,19 +87,19 @@ if(isset($_POST['checkB'])){
 				//Finally send email
 				if ($mail->send()) {
 					$_SESSION['email'] = $email;
-					header("location:user-verification.php?success=". $lang['Success5']);
+					header("location:../account/user-verification.php?success=". $lang['Success5']);
 					exit();
 				} else {
-					header("location:user-verification.php?error=". $lang['Error22']);
+					header("location:../account/user-verification.php?error=". $lang['Error22']);
 				}
 				//Closing smtp connection
 				$mail->smtpClose();
 			} else {
-				header("location:user-verification.php?error=". $lang['Error20']);
+				header("location:../account/user-verification.php?error=". $lang['Error20']);
 					exit();
 			}
 	}else{
-		header("Location:user-verification.php?error=". $lang['Error18']);
+		header("Location:../account/user-verification.php?error=". $lang['Error18']);
 		exit();
 	}
 }

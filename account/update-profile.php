@@ -1,6 +1,6 @@
 <?Php
-include "languages/configuration.php"; 
-require  "config.php";
+include "../languages/configuration.php"; 
+require  "../include/config.php";
 if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
     $user = $_SESSION['userid'];
     $sql = "SELECT * FROM users WHERE userid ='$user'";
@@ -20,7 +20,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 </head>
 <body>
 	<header>
-        <?php include('header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
 	<main>
         <div class='profile'>
@@ -72,10 +72,10 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 
                             <label>". $lang['signUpGender'] .":</label><br>
                             $ckb<br>
-                            <a href='change-password.php'>". $lang['changePassword'] ."</a><br>
+                            <a href='../account/change-password.php'>". $lang['changePassword'] ."</a><br>
                                 
                             <input type=submit value=".$lang['edit'].">
-                            <a href='perfil.php' class='ca'>". $lang['cancel']."</a>
+                            <a href='../account/perfil.php' class='ca'>". $lang['cancel']."</a>
                             </form>
                             ";
     }else{
@@ -83,7 +83,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                 <label>". $lang['signUpEmail'] .":</label>
                 <input type=text name=email value='$row->email'><br>
                 <input type=submit value=".$lang['edit'].">
-                <a href='perfil.php' class='ca'>". $lang['cancel']."</a>
+                <a href='../account/perfil.php' class='ca'>". $lang['cancel']."</a>
             </form>
         ";
     }                        
@@ -92,7 +92,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
         </div>
     </main>
 	<footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
@@ -102,5 +102,5 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 <?php
 
 }else{
-    header("location:login.php");
+    header("location:../account/login.php");
 } ?>

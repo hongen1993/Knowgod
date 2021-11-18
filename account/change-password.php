@@ -1,6 +1,6 @@
 <?Php
-include "languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
     ?>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 </head>
 <body>
 	<header>
-        <?php include('header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
 	<main>
         <div class='profile'>
@@ -43,14 +43,14 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
                     <input type ='password' class='bginput' name='password2'><br>
 
                     <input type=submit value='". $lang['confirm'] ."'>
-                    <a href='update-profile.php' class='ca'>". $lang['cancel']."</a>
+                    <a href='../account/update-profile.php' class='ca'>". $lang['cancel']."</a>
                     "; 
                 ?>
             </div>
 </div>
     </main>
 	<footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
@@ -63,5 +63,5 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
 </html>
 <?php
 }else{
-    header("location:login.php");
+    header("location:../account/login.php");
 } ?>

@@ -1,12 +1,12 @@
 <?Php
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
-@$count=$dbo->prepare("update users set status='OFF' where userid='$_SESSION[userid]'");
-@$count->execute();
+/* @$count=$dbo->prepare("UPDATE users SET status='OFF' WHERE userid='$_SESSION[userid]'");
+@$count->execute(); */
 
 session_unset();
 session_destroy();
 
-header("Location:login.php");
+header("Location:../account/login.php");
 ?>

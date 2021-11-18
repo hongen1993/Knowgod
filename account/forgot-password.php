@@ -1,6 +1,6 @@
 <?Php
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ include "config.php";
 </head>
   <body>
     <header>
-        <?php include('./header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
 <?Php
@@ -35,7 +35,7 @@ include "config.php";
 
     <div class='forgotPassForm'>
 
-      <form action='forgot-passwordck.php' method=post>
+      <form action='../account/forgot-passwordck.php' method=post>
 
         <h2>". $lang['forgotPass'] ."</h2>
         
@@ -45,7 +45,7 @@ include "config.php";
         <input type ='text' class='bginput' name='email' ><br>
 
         <input id='forgotPassSubmit' type='submit' name='check-email' value='". $lang['send'] ."'>
-        <a href=login.php>". $lang['cancel'] ."</a>
+        <a href=../account/login.php>". $lang['cancel'] ."</a>
 
       <form>
 
@@ -55,7 +55,7 @@ include "config.php";
 
 </main>
     <footer class="main-footer">
-      <?php include('footer.php') ?>
+      <?php include('../include/footer.php') ?>
     </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

@@ -1,6 +1,6 @@
 <?Php
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 $userid=$_POST['userid'];
 $password=$_POST['password'];
@@ -13,7 +13,7 @@ $count->bindParam(":userid",$userid,PDO::PARAM_STR);
     if($count->execute()){
         $no=$count->rowCount();
         if($no <> 1 ) {
-            header("Location:login.php?error=". $lang['Error15']);
+            header("Location:../account/login.php?error=". $lang['Error15']);
             exit();
         }else {
             $row = $count->fetch(PDO::FETCH_OBJ);
@@ -21,15 +21,15 @@ $count->bindParam(":userid",$userid,PDO::PARAM_STR);
                 $_SESSION['id']=session_id();
                 $_SESSION['userid']=$row->userid;
                 $_SESSION['mem_id']=$row->mem_id;
-                header("Location:perfil.php");
+                header("Location:../account/perfil.php");
                 exit();
             }else{
-                header("Location:login.php?error=". $lang['Error16']);
+                header("Location:../account/login.php?error=". $lang['Error16']);
                 exit();
             }
         }
     }else{
-        header("Location:login.php?error=". $lang['Error4']);
+        header("Location:../account/login.php?error=". $lang['Error4']);
         exit();
     }
     ?>

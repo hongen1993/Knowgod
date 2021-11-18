@@ -1,6 +1,6 @@
 <?php
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@ include "config.php";
 </head>
 <body>
      <header>
-          <?php include('header.php') ?>
+          <?php include('../include/header.php') ?>
     </header>
     <main>
         <div class="formError">
@@ -26,7 +26,7 @@ include "config.php";
         </div>
         <div class="signUpForm">
 
-            <form name=form1 method=post action=signupck.php onsubmit='return validate(this)'>
+            <form name=form1 method=post action=../account/signupck.php onsubmit='return validate(this)'>
 
                 <h2><?php echo $lang['createACC'] ?></h2>
 
@@ -77,7 +77,7 @@ include "config.php";
         </div>  
     </main>
     <footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

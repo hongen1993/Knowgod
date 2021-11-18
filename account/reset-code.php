@@ -1,11 +1,11 @@
 <?php 
-    include "./languages/configuration.php"; 
-    include "config.php";
+    include "../languages/configuration.php"; 
+    include "../include/config.php";
     
     $email = $_SESSION['email'];
 
     if($email == false){
-    header('Location: login.php');
+    header('Location: ../account/login.php');
     }
 ?>
 
@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <?php include('./header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
         <?php 
@@ -40,21 +40,21 @@
             }
         ?>
         <div class="resetCode">
-            <form action="forgot-passwordck.php" method="POST" autocomplete="off">
+            <form action="../account/forgot-passwordck.php" method="POST" autocomplete="off">
                 <h2 class="text-center"><?php echo $lang['verificationCode']?></h2>
                 <input  type="number" name="otp" placeholder="<?php echo $lang['enterCode']?>" required>
                 <input class="form-control button" type="submit" name="check-reset-otp" value="<?php echo $lang['confirm']?>">
             </form>
-            <form action="forgot-passwordck.php" method="POST">
+            <form action="../account/forgot-passwordck.php" method="POST">
                 <input type="submit" style="color:blue" name="checkC" value="<?php echo $lang['resend']?>">
             </form>
             <button>
-              <a href='perfil.php'><?php echo $lang['cancel']?></a>
+              <a href='../account/perfil.php'><?php echo $lang['cancel']?></a>
             </button>
         </div>
     </main>
     <footer class="main-footer">
-      <?php include('footer.php') ?>
+      <?php include('../include/footer.php') ?>
     </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

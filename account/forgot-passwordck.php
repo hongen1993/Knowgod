@@ -1,14 +1,14 @@
 <?Php
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 $email = "";
 $name = "";
 $errors = array();
 
-require 'includes/PHPMailer.php';
-require 'includes/SMTP.php';
-require 'includes/Exception.php';
+require '../includes/PHPMailer.php';
+require '../includes/SMTP.php';
+require '../includes/Exception.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -60,19 +60,19 @@ if(isset($_POST['check-email'])){
 				//Finally send email
 				if ($mail->send()) {
 					$_SESSION['email'] = $email;
-					header("location:reset-code.php?success=". $lang['Success5']);
+					header("location:../account/reset-code.php?success=". $lang['Success5']);
 					exit();
 				} else {
-					header("location:forgot-password.php?error=". $lang['Error22']);
+					header("location:../account/forgot-password.php?error=". $lang['Error22']);
 				}
 				//Closing smtp connection
 				$mail->smtpClose();
 			} else {
-				header("location:forgot-password.php?error=". $lang['Error20']);
+				header("location:../account/forgot-password.php?error=". $lang['Error20']);
 					exit();
 			}
 	}else{
-		header("Location:forgot-password.php?error=". $lang['Error18']);
+		header("Location:../account/forgot-password.php?error=". $lang['Error18']);
 		exit();
 	}
 }
@@ -87,10 +87,10 @@ if(isset($_POST['check-email'])){
             $fetch_data = mysqli_fetch_assoc($code_res);
             $email = $fetch_data['email'];
             $_SESSION['email'] = $email;
-			header("Location:new-password.php?success=". $lang['Success6']);
+			header("Location:../account/new-password.php?success=". $lang['Success6']);
             exit();
         } else {
-			header("Location:forgot-password.php?error=". $lang['Error22']);
+			header("Location:../account/forgot-password.php?error=". $lang['Error22']);
 			exit();
         }
     }
@@ -103,7 +103,7 @@ if(isset($_POST['check-email'])){
         $password = mysqli_real_escape_string($conn, $_POST['password']);
         $password2 = mysqli_real_escape_string($conn, $_POST['password2']);
         if($password !== $password2){
-			header("Location:new-password.php?error=". $lang['Error3']);
+			header("Location:../account/new-password.php?error=". $lang['Error3']);
 			exit();
         }else{
             $code = 0;
@@ -112,11 +112,11 @@ if(isset($_POST['check-email'])){
             $update_pass = "UPDATE users SET code = $code, password = '$password' WHERE email = '$email'";
             $run_query = mysqli_query($conn, $update_pass);
             if($run_query){
-				header("Location:login.php?success=". $lang['Success']);
+				header("Location:../account/login.php?success=". $lang['Success']);
             	exit();
             }else{
                 $errors['db-error'] =  $lang['emailPassFail'];
-				header("Location:new-password.php?error=". $lang['Error4']);
+				header("Location:../account/new-password.php?error=". $lang['Error4']);
 				exit();
             }
         }
@@ -168,19 +168,19 @@ if(isset($_POST['check-email'])){
                     //Finally send email
                     if ($mail->send()) {
                         $_SESSION['email'] = $email;
-                        header("location:reset-code.php?success=". $lang['Success5']);
+                        header("location:../account/reset-code.php?success=". $lang['Success5']);
                         exit();
                     } else {
-                        header("location:reset-code.php?error=". $lang['Error22']);
+                        header("location:../account/reset-code.php?error=". $lang['Error22']);
                     }
                     //Closing smtp connection
                     $mail->smtpClose();
                 } else {
-                    header("location:reset-code.php?error=". $lang['Error20']);
+                    header("location:../account/reset-code.php?error=". $lang['Error20']);
                         exit();
                 }
         }else{
-            header("Location:reset-code.php?error=". $lang['Error18']);
+            header("Location:../account/reset-code.php?error=". $lang['Error18']);
             exit();
         }
     }

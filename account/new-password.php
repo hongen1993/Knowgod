@@ -1,10 +1,10 @@
 <?php 
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 $email = $_SESSION['email'];
 if($email == false){
-  header('Location: login.php');
+  header('Location: ../account/login.php');
 }
 ?>
 
@@ -21,7 +21,7 @@ if($email == false){
 </head>
 <body>
     <header>
-        <?php include('./header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
         <?php 
@@ -36,22 +36,23 @@ if($email == false){
             } 
         ?>
         <div class="newPass">
-            <form action="forgot-passwordck.php" method="POST" autocomplete="off">
-                <h2 class="text-center"><?php echo $lang['newPass'] ?></h2>
+            <form action="../account/forgot-passwordck.php" method="POST" autocomplete="off">
+                <h2><?php echo $lang['newPass'] ?></h2>
 
                 <label><?php echo $lang['newPass'] ?></label>
-                <input class="form-control" type="password" name="password" required>
+                <input type="password" name="password">
 
                 <label><?php echo $lang['confirmNewPass'] ?></label>
-                <input class="form-control" type="password" name="password2" required>
+                <input type="password" name="password2">
 
-                <input class="form-control button" type="submit" name="change-password" value="<?php echo $lang['confirm'] ?>">
+                <input id="forgotPassSubmit" type="submit" name="change-password" value="<?php echo $lang['confirm'] ?>">
+                <a href='../account/forgot-password.php'><?php echo $lang['cancel']?></a>
             </form>
          </div>
      </div>
     </main>
     <footer class="main-footer">
-      <?php include('footer.php') ?>
+      <?php include('../include/footer.php') ?>
     </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
       <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

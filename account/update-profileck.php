@@ -1,6 +1,6 @@
 <?Php
-include "languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 $todo=$_POST['todo'];
 $name=$_POST['name'];
@@ -14,16 +14,16 @@ $gender=$_POST['gender'];
         $status = "OK";
 
         if (strlen($name) < 1) {
-            header("Location:update-profile.php?error=". $lang['Error5']);
+            header("Location:../account/update-profile.php?error=". $lang['Error5']);
             $status= "NOTOK";
         }else if(strlen($surname) < 1){
-            header("Location:update-profile.php?error=". $lang['Error6']);
+            header("Location:../account/update-profile.php?error=". $lang['Error6']);
             $status= "NOTOK";
         }else if(strlen($address) < 1){
-            header("Location:update-profile.php?error=". $lang['Error7']);
+            header("Location:../account/update-profile.php?error=". $lang['Error7']);
             $status= "NOTOK";
         }else if(strlen($email) < 1){
-            header("Location:update-profile.php?error=". $lang['Error8']);
+            header("Location:../account/update-profile.php?error=". $lang['Error8']);
             $status= "NOTOK";
         }
         // you can add email validation here if required.
@@ -40,12 +40,12 @@ $gender=$_POST['gender'];
             $sql->bindParam(':gender',$gender,PDO::PARAM_STR);
 
             if ($sql->execute()) {
-                header("Location:perfil.php?success=". $lang['Success2']);
+                header("Location:../account/perfil.php?success=". $lang['Success2']);
                 exit();    
             }
             else {
                 print_r($sql->errorInfo());
-                header("Location:update-profile.php?error=". $lang['Error4']);
+                header("Location:../account/update-profile.php?error=". $lang['Error4']);
             }
         }
     }
