@@ -35,7 +35,7 @@ include "../include/config.php";
 
     <div class='forgotPassForm'>
 
-      <form action='../account/forgot-passwordck.php' method=post>
+      <form action='forgot-passwordck.php' method=post>
 
         <h2>". $lang['forgotPass'] ."</h2>
         

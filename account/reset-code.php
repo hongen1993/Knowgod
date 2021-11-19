@@ -40,12 +40,12 @@
             }
         ?>
         <div class="resetCode">
-            <form action="../account/forgot-passwordck.php" method="POST" autocomplete="off">
+            <form action="forgot-passwordck.php" method="POST" autocomplete="off">
                 <h2 class="text-center"><?php echo $lang['verificationCode']?></h2>
                 <input  type="number" name="otp" placeholder="<?php echo $lang['enterCode']?>" required>
                 <input class="form-control button" type="submit" name="check-reset-otp" value="<?php echo $lang['confirm']?>">
             </form>
-            <form action="../account/forgot-passwordck.php" method="POST">
+            <form action="forgot-passwordck.php" method="POST">
                 <input type="submit" style="color:blue" name="checkC" value="<?php echo $lang['resend']?>">
             </form>
             <button>

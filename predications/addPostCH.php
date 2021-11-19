@@ -1,9 +1,11 @@
 <?php 
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
+
 if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") {
 
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,7 +20,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") 
 <body>
    
      <header>
-          <?php include('./header.php') ?>
+          <?php include('../include/header.php') ?>
     </header>
     <main>
          <div class="postFormError">
@@ -53,7 +55,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") 
           </div>
     </main>
     <footer class="main-footer">
-        <?php include('./footer.php') ?>
+          <?php include('../include/footer.php') ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
@@ -62,7 +64,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") 
 
 <?php 
 }else{
-     header("Location:login.php");
+     header("Location:../account/login.php");
      exit();
 }
  ?>

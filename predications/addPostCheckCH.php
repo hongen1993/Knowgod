@@ -1,6 +1,6 @@
 <?php 
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME); 
 
@@ -20,13 +20,13 @@ $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME);
         $link = validate($_POST['link']);
 
         if (empty($title)) {
-            header("Location:addPost.php?error=". $lang['postError']);
+            header("Location:../predications/addPost.php?error=". $lang['postError']);
             exit();
         } elseif (empty($content)) {
-            header("Location:addPost.php?error=". $lang['postError2']);
+            header("Location:../predications/addPost.php?error=". $lang['postError2']);
             exit();
         } elseif (empty($link)) {
-            header("Location:addPost.php?error=". $lang['postError3']);
+            header("Location:../predications/addPost.php?error=". $lang['postError3']);
             exit();
         }
      else {
@@ -36,21 +36,21 @@ $conex = new mysqli(DBHOST, DBUSER, DBPWD, DBNAME);
         $result = mysqli_query($conex, $mysqli);
 
         if (mysqli_num_rows($result) > 0) {
-            header("Location:addPostCH.php?error=El título escogido ya existe");
+            header("Location:../predications/addPostCH.php?error=El título escogido ya existe");
             exit();
         } else {
             $mysqli2 = "INSERT INTO postb(title, content, link) VALUES('$title', '$content', '$link')";
             $result2 = mysqli_query($conex, $mysqli2);
             if ($result2) {
-                header("Location:addPostCH.php?success=Su predicación ha sido añadido exitosamente");
+                header("Location:../predications/addPostCH.php?success=Su predicación ha sido añadido exitosamente");
                 exit();
             } else {
-                header("Location:addPostCH.php?error=Error desconocido");
+                header("Location:../predications/addPostCH.php?error=Error desconocido");
                 exit();
             }
         }
     }
  } else {
-        header("Location:./addPost.php");
+        header("Location:../predications/addPost.php");
         exit();
     }

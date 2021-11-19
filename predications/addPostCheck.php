@@ -1,6 +1,6 @@
 <?php 
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 $title = $_POST['title'];
 $link = $_POST['link'];
@@ -11,7 +11,7 @@ $content = $_POST['content'];
         $status = "OK";
 
         if (!isset($title)) {
-            header("Location:addPost.php?error=". $lang['postError']);
+            header("Location:../predications/addPost.php?error=". $lang['postError']);
             exit();
             $status= "NOTOK";
         }
@@ -22,7 +22,7 @@ $content = $_POST['content'];
         $no=$count->rowCount();
 
         if (!isset($link)) {
-            header("Location:addPost.php?error=". $lang['postError2']);
+            header("Location:../predications/addPost.php?error=". $lang['postError2']);
             exit();
             $status= "NOTOK";
         }
@@ -33,13 +33,13 @@ $content = $_POST['content'];
         $no=$count->rowCount();
 
         if (!isset($content)) {
-            header("Location:addPost.php?error=". $lang['postError2']);
+            header("Location:../predications/addPost.php?error=". $lang['postError2']);
             exit();
             $status= "NOTOK";
         }
 
         if ($no >0) {
-            header("Location:addPost.php?error=". $lang['postError4']);
+            header("Location:../predications/addPost.php?error=". $lang['postError4']);
             exit();
             $status= "NOTOK";
         }
@@ -51,15 +51,15 @@ $content = $_POST['content'];
             $sql->bindParam(':content', $content, PDO::PARAM_STR);
             
             if ($sql->execute()) {
-                header("Location:addPost.php?success=". $lang['postSuccess']);
+                header("Location:../predications/addPost.php?success=". $lang['postSuccess']);
                 exit();
             } else {
-                header("Location:addPost.php?error=". $lang['postError5']);
+                header("Location:../predications/addPost.php?error=". $lang['postError5']);
                 exit();
             }
         } else {
             print_r($sql->errorInfo());
-            header("Location:./addPost.php");
+            header("Location:../predications/addPost.php");
             exit();
         }
     }

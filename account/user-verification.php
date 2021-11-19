@@ -34,12 +34,12 @@ include "../include/config.php";
       <?php } ?>
 
       <div class="codeVerification">
-            <form action="../account/user-verificationck.php" method="POST" autocomplete="off">
+            <form action="user-verificationck.php" method="POST" autocomplete="off">
                 <h2 class="text-center"><?php echo $lang['verificationCode'] ?></h2>
                 <input type="number" name="otp" placeholder="<?php echo $lang['enterCode']?>" required>
                 <input type="submit" style="color:green" name="check" value="<?php echo $lang['confirm']?>">
             </form>
-            <form action="../account/user-verificationck.php" method="POST">
+            <form action="user-verificationck.php" method="POST">
                 <input type="submit" style="color:blue" name="checkB" value="<?php echo $lang['resend']?>">
             </form>
             <button>

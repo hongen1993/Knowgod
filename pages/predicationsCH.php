@@ -1,5 +1,5 @@
 <?php 
-include "languages/configuration.php"; 
+include "../languages/configuration.php"; 
 ?>
 
 <!DOCTYPE html>
@@ -15,20 +15,20 @@ include "languages/configuration.php";
 </head>
 <body>
     <header>
-        <?php include('header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <?php 
     
-    require_once 'modelCH.php'; 
+    require_once '../predications/modelCH.php'; 
     $lastPredicationsCH = lastPredicationCH();
-    require 'lastPredicationCH.php'; 
+    require '../predications/lastPredicationCH.php'; 
 
     $postsCH = getPostsCH(); 
-    require 'listCH.php'; 
+    require '../predications/listCH.php'; 
     ?>
     
     <footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>

@@ -1,6 +1,6 @@
 <?php 
-include "./languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,7 +15,7 @@ include "config.php";
 </head>
 <body>
      <header>
-        <?php include('header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
         <div class="terms">
@@ -32,7 +32,7 @@ include "config.php";
         </div>
     </main>
      <footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>

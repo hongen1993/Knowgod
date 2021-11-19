@@ -36,7 +36,7 @@ if($email == false){
             } 
         ?>
         <div class="newPass">
-            <form action="../account/forgot-passwordck.php" method="POST" autocomplete="off">
+            <form action="forgot-passwordck.php" method="POST" autocomplete="off">
                 <h2><?php echo $lang['newPass'] ?></h2>
 
                 <label><?php echo $lang['newPass'] ?></label>

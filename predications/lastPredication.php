@@ -7,7 +7,7 @@
     <?php foreach($lastPredications as $lastPredication): ?>
             <li>
                 <div class="predications">
-                    <a href="predication.php?id=<?php echo $lastPredication['id']?>">
+                    <a href="../predications/predication.php?id=<?php echo $lastPredication['id']?>">
                         <h3 class="predicationTitle"><?php echo $lastPredication['title'] ?></h3>
                     </a>
                     <div>

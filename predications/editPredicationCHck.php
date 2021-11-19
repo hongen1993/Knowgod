@@ -1,6 +1,6 @@
 <?Php
-include "languages/configuration.php"; 
-include "config.php";
+include "../languages/configuration.php"; 
+include "../include/config.php";
 
 $todo=$_POST['todo'];
 $id=$_POST['id'];
@@ -13,13 +13,13 @@ $content=$_POST['content'];
         $status = "OK";
 
         if (strlen($title) < 1) {
-            header("Location:editPredicationCH.php?error=". $lang['Error24']);
+            header("Location:../predications/editPredicationCH.php?error=". $lang['Error24']);
             $status= "NOTOK";
         }else if(strlen($link) < 1){
-            header("Location:editPredicationCH.php?error=". $lang['Error25']);
+            header("Location:../predications/editPredicationCH.php?error=". $lang['Error25']);
             $status= "NOTOK";
         }else if(strlen($content) < 1){
-            header("Location:editPredicationCH.php?error=". $lang['Error26']);
+            header("Location:../predications/editPredicationCH.php?error=". $lang['Error26']);
             $status= "NOTOK";
         }
 
@@ -31,12 +31,12 @@ $content=$_POST['content'];
             $sqlPredication->bindParam(':content',$content,PDO::PARAM_STR);
 
             if ($sqlPredication->execute()) {            
-                header("Location:predicationsCH.php?success=". $lang['Success8']);
+                header("Location:../pages/predicationsCH.php?success=". $lang['Success8']);
                 exit();    
             }
             else {
                 print_r($sqlPredication->errorInfo());
-                header("Location:editPredicationCH.php?error=". $lang['Error4']);
+                header("Location:../predications/editPredicationCH.php?error=". $lang['Error4']);
             }
         }
     }

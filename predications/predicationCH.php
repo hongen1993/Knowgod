@@ -1,6 +1,6 @@
 <?php if(isset($_GET{'id'})){
-    include 'languages/configuration.php';
-    require_once 'config.php'; 
+    include '../languages/configuration.php';
+    require_once '../include/config.php'; 
     if (isset($_SESSION['userid'])) {
         $user = $_SESSION['userid'];
         $sql = "SELECT * FROM users WHERE userid ='$user'";
@@ -24,7 +24,7 @@
 </head>
 <body>
     <header>
-        <?php include('header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
         <div class="predications">
@@ -36,14 +36,14 @@
                         if ($row['user_type']!=="2") {
                         echo "
                             <div class='predicationEdit'>
-                                <a href='editPredication.php?id=".$rowPredication['id']."'>
+                                <a href='../predications/editPredication.php?id=".$rowPredication['id']."'>
                                     <i class='far fa-edit'></i>                
                                 </a>
                             </div>";
                         } else {
                         }
                     }else{
-                        header("location:perfil.php?error=". $lang['Error27']);
+                        header("location:../account/perfil.php?error=". $lang['Error27']);
                     }
                 }
                 mysqli_free_result($result);
@@ -74,7 +74,7 @@
          </div>
     </main>
     <footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
@@ -98,7 +98,7 @@
 </html>
 <?php
         } else {
-            header("Location:login.php?error=". $lang['Error28']);
+            header("Location:../account/login.php?error=". $lang['Error28']);
             exit();
         }
     }

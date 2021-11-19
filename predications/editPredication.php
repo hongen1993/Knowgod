@@ -1,7 +1,7 @@
 <?php 
 if (isset($_GET{'id'})) {
-    include 'languages/configuration.php';
-    require_once 'config.php';
+    include '../languages/configuration.php';
+    require_once '../include/config.php';
     if (isset($_SESSION['userid'])) {
         $user = $_SESSION['userid'];
         $sql = "SELECT * FROM users WHERE userid ='$user'";
@@ -23,7 +23,7 @@ if (isset($_GET{'id'})) {
 </head>
 <body>
     <header>
-        <?php include('header.php') ?>
+        <?php include('../include/header.php') ?>
     </header>
     <main>
         <div class='predicationEditForm'>
@@ -70,7 +70,7 @@ if (isset($_GET{'id'})) {
         mysqli_close($conn); ?>       
     </main>
     <footer class="main-footer">
-        <?php include('footer.php') ?>
+        <?php include('../include/footer.php') ?>
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
@@ -78,7 +78,7 @@ if (isset($_GET{'id'})) {
 </html>
 <?php
     } else {
-        header("Location:login.php");
+        header("Location:../account/login.php");
         exit();
     }
 }

@@ -1,5 +1,5 @@
 <?php 
-    require_once 'model.php'; 
+    require_once '../predications/model.php'; 
 ?>
 
     <h1 class="predicationsTitle"><?php echo $lang['predicationTitle'] ?></h1> 
@@ -8,7 +8,7 @@
             <li>
             
                 <div class="predications">
-                    <a class="predicationA" href="predication.php?id=<?php echo $post['id']?>">
+                    <a class="predicationA" href="../predications/predication.php?id=<?php echo $post['id']?>">
                             <h3 class="predicationTitleB"><?php echo $post['title'] ?></h3>
                         <div class="predicationContentB">
                             <?php echo $post['content'] ?>

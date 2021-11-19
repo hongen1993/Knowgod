@@ -26,32 +26,32 @@ include "../include/config.php";
         </div>
         <div class="signUpForm">
 
-            <form name=form1 method=post action=../account/signupck.php onsubmit='return validate(this)'>
+            <form name="form1" method="post" action="signupck".php onsubmit='return validate(this)'>
 
                 <h2><?php echo $lang['createACC'] ?></h2>
 
-                <input type=hidden name=todo value=post>
+                <input type="hidden" name="todo" value="post">
 
                 <label><?php echo $lang['signUpUsername'] ?></label>
-                <input type=text name=userid><br>
+                <input type="text" name="userid"><br>
 
                 <label><?php echo $lang['signUpPass'] ?></label>
-                <input type=password name='password'><br>
+                <input type="password" name='"password"'><br>
 
                 <label><?php echo $lang['signUpPassB'] ?></label>
-                <input type=password name='password2'><br>
+                <input type="password" name='"password2"'><br>
 
                 <label><?php echo $lang['signUpEmail'] ?></label>
-                <input type=email name=email><br>
+                <input type="email" name="email"><br>
 
                 <label><?php echo $lang['signUpName'] ?></label>
-                <input type=text name=name><br>
+                <input type="text" name="name"><br>
 
                 <label><?php echo $lang['signUpSurname'] ?></label>
-                <input type=text name=surname><br>
+                <input type="text" name="surname"><br>
 
                 <label><?php echo $lang['signUpAddress'] ?></label>
-                <input type=text name=address><br>
+                <input type="text" name="address"><br>
 
                 <label><?php echo $lang['signUpGender'] ?></label><br>
 

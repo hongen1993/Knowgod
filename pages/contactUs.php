@@ -26,7 +26,7 @@ include "../languages/configuration.php";
             <p class="error"><?php echo $_GET['error']; ?></p>
           <?php } ?>
           <h1><?php echo $lang['contactUs'] ?></h1>
-          <form class="contact-box" action="../pages/contactUsck.php" method="post">
+          <form class="contact-box" action="contactUsck.php" method="post">
             <ul>
               <li class="stepOne">
                 <label for="email"><?php echo $lang['contactUsEmail'] ?></label>

@@ -1,5 +1,5 @@
 <?php 
-    require_once 'model.php'; 
+    require_once '../predications/model.php'; 
 ?>
 
     <h1 class="predicationsTitle"><?php echo $lang['mostRecent'] ?></h1> 
@@ -7,7 +7,7 @@
     <?php foreach($lastPredicationsCH as $lastPredicationCH): ?>
             <li>
                 <div class="predications">
-                    <a href="predication.php?id=<?php echo $lastPredicationCH['id']?>">
+                    <a href="../predications/predication.php?id=<?php echo $lastPredicationCH['id']?>">
                         <h3 class="predicationTitle"><?php echo $lastPredicationCH['title'] ?></h3>
                     </a>
                     <div>
