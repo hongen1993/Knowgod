@@ -121,19 +121,21 @@ include "../languages/configuration.php";
   </div>
 
   <!-- Menu -->
-  
-  <button id="whoIs" class="whoIs">
-      <p><?php echo $lang['menu-A'] ?></p>
-  </button>
-  <button class="listenTo">
-      <p><?php echo $lang['menu-B'] ?></p>
-  </button>
-  <button class="contactUs">
-      <p><?php echo $lang['menu-C'] ?></p>
-  </button>
-  <button class="aboutUs">
-      <p><?php echo $lang['menu-D'] ?></p>
-  </button>
+  <div class="selectMenu">
+
+    <button id="whoIs" class="whoIs">
+        <p><?php echo $lang['menu-A'] ?></p>
+    </button>
+    <button class="listenTo">
+        <p><?php echo $lang['menu-B'] ?></p>
+    </button>
+    <button class="contactUs">
+        <p><?php echo $lang['menu-C'] ?></p>
+    </button>
+    <button class="aboutUs">
+        <p><?php echo $lang['menu-D'] ?></p>
+    </button>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/src/assets/js/enterB.js"></script>

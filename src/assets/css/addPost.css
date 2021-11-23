@@ -7,7 +7,6 @@ body{
   .addPostForm {
       position: relative;
       left:10%;
-      height: 75vh;
       width: 80vw;
       border: 2px solid #ccc;
       padding: 30px 15px 20px 15px;
@@ -40,6 +39,7 @@ body{
       background: #555;
       padding: 10px 15px;
       color: #fff;
+      left: .5em;
       border-radius: 5px;
       margin-right: 10px;
       border: none;
@@ -69,13 +69,13 @@ body{
   }
   
   .addPostForm .ca {
-      left: 8em;
-    position: absolute;
+    left: .5em;
+    position: relative;
     font-size: .75em;
-      display: inline-block;
-      padding-top: 1.3em;
-      text-decoration: none;
-      color: #444;
+    display: inline-block;
+    padding-top: 1em;
+    text-decoration: none;
+    color: #444;
   }
   .addPostForm .ca:hover {
       text-decoration: underline;

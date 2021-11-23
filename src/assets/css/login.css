@@ -5,7 +5,6 @@ body{
 	position: relative;
 	top: 25%;
 	left:10%;
-  	height: 58vh;
 	width: 80vw;
 	border: 2px solid #ccc;
 	padding: 30px 15px 20px 15px;
@@ -95,7 +94,6 @@ body{
 	text-align: center;
 	top: 25%;
 	left:10%;
-  	height: 58vh;
 	width: 80vw;
 	border: 2px solid #ccc;
 	padding: 30px 15px 20px 15px;

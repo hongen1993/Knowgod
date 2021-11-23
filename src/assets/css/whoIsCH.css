@@ -10,7 +10,7 @@
 /* whoIS */
 
 main{
-  height: 225em;
+  height: 215em;
   margin:1em;
 }
 .background{
@@ -195,4 +195,10 @@ a{
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
   } */
+}
+}@media only screen and (min-width:375px)  {
+  main{
+    height: 210em;
+    margin:1em;
+  }
 }

@@ -111,23 +111,23 @@
     box-shadow:0 3px 50px rgb(0 0 0 / 30%);
   }85%{
     height: 15vh;
-    width: 190vw;
+    width: 220vw;
     top: 29%;
     transform: translate(-50%, 87%) rotate(90deg);
   }93%{
     height: 15vh;
-    width: 190vw;
+    width: 220vw;
     transform: translate(-50%, 87%) rotate(90deg);
     box-shadow:0 0px 5px rgb(0 0 0 / 30%);
   }99%{
     height: 15vh;
-    width: 190vw;
+    width: 220vw;
     top: 29%;
     transform: translate(-50%, 87%) rotate(90deg);
     box-shadow:0 0px 5px rgb(0 0 0 / 30%);
   }100%{
     height: 15vh;
-    width: 190vw;
+    width: 220vw;
     top: 29%;
     transform: translate(-50%, 87%) rotate(90deg);
     box-shadow:0 0px 5px rgb(0 0 0 / 15%);
@@ -1886,16 +1886,16 @@
     opacity: 0;
   }
 }
-
+.selectMenu{
+  width: 100%;
+}
 .whoIs{
   display:none;
   opacity: 0;
-  position: absolute;
   background:white;
   height: 3em;
   width: 10em;
-  top: 22%;
-  left: 31.4%;
+  margin: 15% auto;
   border: 1px solid black;
   font-family: 'Dancing Script', sans-serif;
   animation: menuAppear 2s linear forwards;
@@ -1917,12 +1917,10 @@
 .listenTo{
   display:none;
   opacity: 0;
-  position: absolute;
   background:white;
   height: 3em;
   width: 10em;
-  top: 37%;
-  left: 31.4%;
+  margin: 20% auto;
   border: 1px solid black;
   animation: menuAppear 2s linear forwards;
   font-family: 'Dancing Script', sans-serif;
@@ -1935,12 +1933,10 @@
 .listenToCH{
   display:none;
   opacity: 0;
-  position: absolute;
   background:white;
   height: 3em;
   width: 10em;
-  top: 37%;
-  left: 31.4%;
+  margin: 20% auto;
   border: 1px solid black;
   animation: menuAppear 2s linear forwards;
   font-family: 'Dancing Script', sans-serif;
@@ -1953,12 +1949,10 @@
 .contactUs{
   display:none;
   opacity: 0;
-  position: absolute;
   background:white;
   height: 3em;
   width: 10em;
-  top: 52%;
-  left: 31.4%;
+  margin: 20% auto;
   border: 1px solid black;
   animation: menuAppear 2s linear forwards;
   font-family: 'Dancing Script', sans-serif;
@@ -1971,12 +1965,10 @@
 .aboutUs{
   display:none;
   opacity: 0;
-  position: absolute;
   background:white;
   height: 3em;
   width: 10em;
-  top: 67%;
-  left: 31.4%;
+  margin: 20% auto;
   border: 1px solid black;
   animation: menuAppear 2s linear forwards;
   font-family: 'Dancing Script', sans-serif;
@@ -2067,5 +2059,27 @@
 @keyframes menuD{
   0%{}100%{}
 
+}
+}@media only screen and (min-width:414px)  {
+.box{
+  height: 12vh;
+}
+.box-B{
+  height: 12vh;
+}
+.inBox{
+  height: 8vh;
+}
+.inBox-B{
+  height: 8vh;
+}
+.boxOn{
+  width: 220vw;
+}
+.selectCH{
+  font-size: 2em;
+}
+.selectES{
+  font-size: 2em;
 }
 }

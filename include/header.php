@@ -9,16 +9,16 @@
                         <i class="fas fa-bars fa-lg"></i>
                 </button>
                 <div class="user">
-                    <a href="/account/perfil.php"><i class="fas fa-user"></i></a>
+                    <a href="../account/perfil.php"><i class="fas fa-user"></i></a>
                 </div>
                 <div class="language">
-                    <a href="index.php"><i class="fas fa-language"></i></a>    
+                    <a href="../index.php"><i class="fas fa-language"></i></a>    
                 </div>
                 <div class="dropdown-content">
-                        <a href="/pages/whoIs.php"><?php echo $lang['menu-A'] ?></a>
+                        <a href="../pages/whoIs.php"><?php echo $lang['menu-A'] ?></a>
                         <?php echo $lang['menu-BB'] ?></a>
-                        <a href="/pages/contactUs.php"><?php echo $lang['menu-C'] ?></a>
-                        <a href="/pages/pastor.php"><?php echo $lang['menu-D'] ?></a>
+                        <a href="../pages/contactUs.php"><?php echo $lang['menu-C'] ?></a>
+                        <a href="../pages/pastor.php"><?php echo $lang['menu-D'] ?></a>
                 </div>
             </div>
         </div>

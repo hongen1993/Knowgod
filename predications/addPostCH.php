@@ -50,7 +50,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") 
                     <input type="text" name="content"><br>
 
                     <button type="submit"><?php echo $lang['addPost'] ?></button>
-                    <a href="perfil.php" class="ca"><?php echo $lang['cancel'] ?></a>
+                    <a href="../account/perfil.php" class="ca"><?php echo $lang['cancel'] ?></a>
                </form>
           </div>
     </main>

@@ -3,7 +3,7 @@
     ?>
 
     <h1 class="predicationsTitle"><?php echo $lang['predicationTitle'] ?></h1> 
-    <ul>
+    <ul class="predicationsList">
     <?php foreach($postsCH as $postCH): ?>
             <li>
                 <div class="predications">
