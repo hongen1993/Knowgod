@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+@media only screen and (min-width:360px)  {
 
 header{
   margin:1em;
@@ -12,6 +13,7 @@ header{
 body{
   font-family: Viaoda Libre;
 }
+
 .user{
   display: none;
   position: absolute;
@@ -39,8 +41,8 @@ body{
 .dropbtn {
     background-color: white;
     color: rgba(0,0,0,0.7);
-    padding: 16px;
-    font-size: 16px;
+    padding: 1em;
+    font-size: 1em;
     border: none;
     cursor: pointer;
   }
@@ -55,14 +57,14 @@ body{
     position: absolute;
     left: -7em;
     background-color: rgba(255,255,255,0.9);
-    min-width: 160px;
+    min-width: 10em;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: .75em 1em;
     text-decoration: none;
     display: block;
   }
@@ -77,3 +79,27 @@ body{
   .dropdown:hover .user, .dropdown:hover .language{
     display: block;
   }
+}
+@media only screen and (min-width:414px)  {
+  .menu{
+    top: 2.4em;
+  }
+  .logo img{
+    margin-top: .5em;
+  }
+  .dropbtn{
+    font-size: 1.2em;
+  }
+  .user{
+    font-size: 1.2em;
+  }
+  .language{
+    font-size: 1.2em;
+  }
+  .dropdown-content{
+    font-size: 1.25em;
+  }
+  .dropdown-content a{
+    padding: 1.25em 1em;
+  }
+}

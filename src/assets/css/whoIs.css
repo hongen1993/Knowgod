@@ -109,14 +109,11 @@ a{
   .animation-element.slide-left.testimonial:active {
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
   }
-  /*media queries for small devices*/
-  @media screen and (max-width: 678px) {
-    /*testimonials*/
     .animation-element.slide-left.testimonial,
     .animation-element.slide-left.testimonial:nth-of-type(odd),
     .animation-element.slide-left.testimonial:nth-of-type(even) {
       width: 100%;
-      margin: 0px 0px 20px 0px;
+      margin: 0px 0px 1.3em 0px;
     }
     .animation-element.slide-left.testimonial .right,
     .animation-element.slide-left.testimonial .left,
@@ -129,15 +126,11 @@ a{
       height: 85px;
       margin-bottom: 5px;
     }
-  }
-  /*media queries for small devices*/
-  @media screen and (max-width: 678px) {
-    /*testimonials*/
     .animation-element.slide-right.testimonial,
     .animation-element.slide-right.testimonial:nth-of-type(odd),
     .animation-element.slide-right.testimonial:nth-of-type(even) {
       width: 100%;
-      margin: 0px 0px 20px 0px;
+      margin: 0px 0px 1.3em 0px;
     }
     .animation-element.slide-right.testimonial .right,
     .animation-element.slide-right,
@@ -150,7 +143,7 @@ a{
       height: 85px;
       margin-bottom: 5px;
     }
-  }
+
 
    /*animation slide right styled for testimonials*/
 
@@ -194,5 +187,35 @@ a{
   main{
     height: 210em;
     margin:1em;
+  }
+}@media only screen and (min-width:414px)  {
+  main{
+    height: 255em;
+  }
+  h1{
+    font-size: 2em;
+    margin:9.5em 0.75em 9em;
+  }
+  h2{
+    font-size: 1.8em;
+  }
+  p{
+    font-size: 1.5em;
+  }
+  .background{
+    height: 60%;
+  }
+  .backgroundOverLayer{
+    top: 30%;
+  }
+  .animation-element.slide-left.testimonial:nth-of-type(odd),
+  .animation-element.slide-left.testimonial:nth-of-type(even) {
+    width: 100%;
+    margin: 0px 0px 2.2em 0px;
+  }    
+  .animation-element.slide-right.testimonial:nth-of-type(odd),
+  .animation-element.slide-right.testimonial:nth-of-type(even) {
+    width: 100%;
+    margin: 0px 0px 2.2em 0px;
   }
 }
