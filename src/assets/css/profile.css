@@ -1,58 +1,66 @@
+@media only screen and (min-width:360px)  {
 
-.profile{
-    position: relative;
-    width: 75%;
-    margin: 20px auto;
-    margin-bottom: 15vh;
-    border-radius: 5px;
-    text-align: center;
-    box-shadow: 0 2.5px 5px #ccc;
-    font-size: 1.15em;
-  }
-.profileContent{
-    padding: 1em;
-}
-.profileContent input{
-    width: 50%;
-}
-.profileContent p{
-  margin:.25em;
-}
-.photo {
-    position: relative;
-    height: 80px;
-    width: 80px;
-    left: 36%;
-    border-radius: 5px;
-    margin: 20px 0 20px 0;
-    display: block;
-    background: #ddd url(https://www.adtechnology.co.uk/images/UGM-default-user.png);
-    border-radius: 100%;
-}
-.photo:after {
-    content: " Add Profile Pic ";
-    text-align: center;
-    position: absolute;
-    left: 0;
-    z-index: 2;
-    padding: 35% 0 65%;
-    height: 0;
-    width: 100%;
-    opacity: 0;
-    color: #222;
-    background-color: rgba(0,0,0,0.25);
-    background-size: 100%;
-    transition: 0.35s ease-in-out;
-    overflow: hidden;
-    border-radius: 100%;
-}
-.success{
-    color:green;
-    text-align: center;
-    margin: 0em 2em;
-}
-.error{
-    color: red;
-    text-align: center;
-    margin: 0em 2em;
+    .profile{
+        position: relative;
+        width: 75%;
+        margin: 20px auto;
+        margin-bottom: 15vh;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 0 2.5px 5px #ccc;
+        font-size: 1.15em;
+    }
+    .profileContent{
+        padding: 1em;
+    }
+    .profileContent input{
+        width: 50%;
+    }
+    .profileContent p{
+    margin:.25em;
+    }
+    .photo {
+        position: relative;
+        height: 80px;
+        width: 80px;
+        left: 36%;
+        border-radius: 5px;
+        margin: 20px 0 20px 0;
+        display: block;
+        background: #ddd url(https://www.adtechnology.co.uk/images/UGM-default-user.png);
+        border-radius: 100%;
+    }
+    .photo:after {
+        content: " Add Profile Pic ";
+        text-align: center;
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        padding: 35% 0 65%;
+        height: 0;
+        width: 100%;
+        opacity: 0;
+        color: #222;
+        background-color: rgba(0,0,0,0.25);
+        background-size: 100%;
+        transition: 0.35s ease-in-out;
+        overflow: hidden;
+        border-radius: 100%;
+    }
+    .success{
+        color:green;
+        text-align: center;
+        margin: 0em 2em;
+    }
+    .error{
+        color: red;
+        text-align: center;
+        margin: 0em 2em;
+    }
+
+}@media only screen and (min-width:414px)  {
+    .profile{
+    margin: 3em auto;
+    margin-bottom: 10vh;
+    }
 }

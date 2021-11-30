@@ -1,4 +1,4 @@
-
+@media only screen and (min-width:360px)  {
 section {
     padding: 60px 0;
     min-height: 100vh;
@@ -94,7 +94,7 @@ ul {
 }
 .footer-content .footer-title{
   position: relative;
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 35px;
   font-family: 'Playfair Display', serif;
   color: #ffffff;
@@ -184,4 +184,19 @@ ul {
 #direction{
   font-size: 1em;
   text-align: center;
+}
+}
+@media only screen and (min-width:414px)  {
+  .footer-content .footer-title {
+    font-size: 1.75em;
+  }
+  .text p{
+    font-size: 1.5em;
+  }
+  #direction{
+    font-size: 1.4em;
+  }
+  .footer-bottom{
+    font-size: 1.1em;
+  }
 }

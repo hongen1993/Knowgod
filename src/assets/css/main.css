@@ -2165,4 +2165,57 @@
     box-shadow:0 0px 5px rgb(0 0 0 / 15%);
   }
 }
+  .line{
+    font-size: 2em;
+  }
+  .lineTwo{
+    font-size: 2em;
+  }
+  .lineThree{
+    font-size: 2em;
+  }
+  .lineFour{
+    font-size: 2em;
+  }
+  .efectoMB{
+    width: 23em;
+    left: 3%;
+  }
+  .efectoMTB{
+    width: 23em;
+    left: 8%;
+  }
+  .efectoMThreeB{
+    width: 17.3em;
+  }
+  .efectoMFB{
+    width: 10.5em;
+    left: 62%;
+  }
+  #skipB{
+    font-size: 2em;
+  }
+  .selectMenu{
+    top: -1em;
+    position: relative;
+  }
+  .selectMenu p{
+    font-size: 2em;
+  }
+  .whoIs {
+    height: 5.5em;
+    width: 17em;
+  }
+  .listenTo {
+    height: 5.5em;
+    width: 17em;
+  }
+  .contactUs {
+    height: 5.5em;
+    width: 17em;
+  }
+  .aboutUs {
+    height: 5.5em;
+    width: 17em;
+  }
 }
