@@ -220,7 +220,7 @@ $lang = array(
     "contactUsSubjectInput" => "Introduzca el asunto",
     "contactUsSubjectNext" => "Siguiente",
 
-    "contactUsEmail" => "Introduzca su correo electronico, para poder contactar con usted:",
+    "contactUsEmail" => "Introduzca su correo electronico para poder contactar con usted",
     "contactUsEmailInput" => "Introduzca su correo electronico",
     "contactUsEmailNext" => "Siguiente",
     "contactUsEmailBack" => "Atras",

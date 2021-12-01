@@ -52,7 +52,7 @@ if (isset($_GET{'id'})) {
                                         <input type=text name=link value='$rowPredication->link'><br>
                                         <label>". $lang['descriptionForPredication'] .":</label>
                                         <input type=text name=content value='$rowPredication->content'><br>
-                                        <input type=submit value=".$lang['edit'].">
+                                        <input id=editPredicationButton type=submit value=".$lang['edit'].">
                                         <a href='javascript:javascript:history.go(-1)'>". $lang['cancel'] ."</a>
                                     </form>
                                 </div>

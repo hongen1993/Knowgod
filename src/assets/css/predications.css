@@ -1,3 +1,5 @@
+@media only screen and (min-width:360px)  {
+
 .predicationsTitle{
     font-size: 1.75em;
     text-align: center;
@@ -101,4 +103,35 @@
 }
 .predicationsList{
     margin-bottom: 3em;
+}
+}@media only screen and (min-width:414px)  {
+    .predicationsTitle{
+        font-size: 2em;
+    }
+    .predications h3{
+        font-size: 1.75em;    
+    }
+    .predicationContent{
+        font-size: 1.5em;
+    }
+    .predicationDate{
+        font-size: 1em;
+    }
+    .predicationContentB{
+        font-size: 1.5em;
+    }
+    .predicationDateB{
+        font-size: 1em;
+    }
+    .predicationEditForm{
+        font-size: 1.5em;
+        width: 85%;
+    }
+    .predicationEditFormContent input{
+        font-size: .75em;
+    }
+    #editPredicationButton{
+        font-size: 1em;
+        padding: .25em .75em;
+    }
 }

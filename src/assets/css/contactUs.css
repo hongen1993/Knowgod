@@ -251,5 +251,57 @@ li {
     min-height: 60vh;
     background-image: linear-gradient(
     45deg, #00aae4 0%, white 55%);
+    padding: 3em 2em 5em;
+  }
+  .contact-box{
+    width: 85vw;
+    padding: 2em 2em 3em;
+  }
+  .stepOne{
+    font-size: 1.5em;
+  }
+  .stepOne input{
+    font-size: .75em;
+  }
+  .next{
+    padding: 0.5em;
+    border-radius: 1em;
+  }
+  .stepTwo{
+    font-size: 1.5em;
+  }
+  .stepTwo input{
+    font-size: .75em;
+  }
+  .back{
+    padding: 0.25em;
+    border-radius: 1em;
+  }
+  .nextB{
+    padding: 0.25em;
+    border-radius: 1em;
+    margin-top: .5em;
+  }
+  .stepThreeB{
+    margin-top: -12em;
+    font-size: 1.5em;
+  }
+  .stepThreeB label{
+    margin: 1em;
+  }
+  #message{
+    width: 70vw;
+    font-size: .75em;
+  }
+  .backB{
+    padding: 0.25em;
+    border-radius: 1em;
+  }
+  .formButton{
+    padding: 0.25em;
+    border-radius: 1em;
+    margin-top: 1em;
+    font-size: .9em;
+
   }
 }
