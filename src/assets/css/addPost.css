@@ -83,7 +83,14 @@ body{
       text-decoration: underline;
   } 
 }@media only screen and (min-width:414px)  {
+    main{
+        height: 77.5vh;
+    }
     .addPostForm{
         margin: 3em 0em;
+        font-size: 1.35em;
+    }
+    .addPostForm .ca{
+        font-size: 1em;
     }
 }

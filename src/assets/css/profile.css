@@ -62,5 +62,17 @@
     .profile{
     margin: 3em auto;
     margin-bottom: 10vh;
+    font-size: 1.5em;
+    width: 80%;
+    }
+    .updateProf{
+    font-size: 1.1em;
+    }
+    .updateProf input{
+        font-size: .75em;
+        padding: .2em;
+    }
+    .profileContent input{
+        width: 85%;
     }
 }

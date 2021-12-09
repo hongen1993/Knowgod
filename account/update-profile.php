@@ -46,7 +46,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid'])) {
     $ckb="<input type='radio' value=male  name='gender' $ck1>Male
           <input type='radio' value=female  name='gender' $ck2>Female";
 
-    echo "<form action='update-profileck.php' method=post>
+    echo "<form action='update-profileck.php' method=post class='updateProf'>
                                 <input type=hidden name=todo value=update-profile>
                                 <h2>". $lang['editPerfil']."</h2>
                                 ";
