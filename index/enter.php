@@ -124,7 +124,7 @@ include "../languages/configuration.php";
   </div>
 
   <!-- Menu -->
-  <div class="selectMenu">
+  <div class="selectMenuCH">
   
     <button id="whoIs" class="whoIs">
         <p><?php echo $lang['menu-A'] ?></p>

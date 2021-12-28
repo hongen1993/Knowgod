@@ -1889,6 +1889,9 @@
 .selectMenu{
   width: 100%;
 }
+.selectMenuCH{
+  width: 100%;
+}
 .whoIs{
   display:none;
   opacity: 0;
@@ -2116,6 +2119,9 @@
 .selectMenu p{
   font-size: 1.5em;
 }
+.selectMenuCH p{
+  width: 100%;
+}
 @keyframes smallScale{
   0%{}30%{
     height: 11vh;
@@ -2199,10 +2205,22 @@
     top: -1em;
     position: relative;
   }
+  .selectMenuCH{
+    top: -1em;
+    position: relative;
+  }
+  
   .selectMenu p{
     font-size: 2em;
   }
+  .selectMenuCH p{
+    font-size: 1.75em;
+  }
   .whoIs {
+    height: 5.5em;
+    width: 17em;
+  }
+  .listenToCH {
     height: 5.5em;
     width: 17em;
   }
