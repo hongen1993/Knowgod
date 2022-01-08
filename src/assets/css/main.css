@@ -1226,6 +1226,20 @@
         top: 36%;
         display: none;
       }
+      .efectoMCH{
+        width: 11.5em;
+        position: absolute;
+        left: 12%;
+        top: 35%;
+        display: none;
+      }
+      .efectoMBCH{
+        width: 18.5em;
+        position: absolute;
+        left: 5%;
+        top: 36%;
+        display: none;
+      }
       .line {
         position: relative;
         width: 9.5em;
@@ -1284,6 +1298,20 @@
       top: 40%;
       display: none;
     }
+    .efectoMTCH{
+      width: 15em;
+      position: absolute;
+      left: 17.5%;
+      top: 40%;
+      display: none;
+    }
+    .efectoMTBCH{
+      width: 18.6em;
+      position: absolute;
+      left: 12%;
+      top: 40%;
+      display: none;
+    }
     .lineTwo {
       margin: 0 auto;
       color: black;
@@ -1323,6 +1351,13 @@
     /* text 3 */
 
     .efectoMThree{
+      width: 11.8em;
+      position: absolute;
+      left: 39%;
+      top: 45%;
+      display: none;
+    }
+    .efectoMThreeCH{
       width: 11.8em;
       position: absolute;
       left: 39%;
@@ -1373,6 +1408,13 @@
 
     /* text 4 */
     .efectoMF{
+      display: none;
+      position: absolute;
+      top: 57%;
+      left: 65%;
+      width: 6.2em;
+    }
+    .efectoMFCH{
       display: none;
       position: absolute;
       top: 57%;
@@ -2280,6 +2322,18 @@
   .line, .lineTwo, .lineThree, .lineFour{
     font-size: 2.25em;
   }
+  .efectoMCH{
+    width: 16em;
+  }
+  .efectoMTCH{
+    width: 21.5em;
+  }
+  .efectoMThreeCH{
+    width: 17em;
+  }
+  .efectoMFCH{
+    width: 9.5em;
+  }
 }
 @media only screen and (min-width:720px){
   .logoIntro img{
@@ -2310,11 +2364,40 @@
   .selectMenu p{
     font-size: 2.25em;
   }
-  .whoIs, .listenTo, .contactUs, .aboutUs{
+  .whoIs, .listenTo, .contactUs, .aboutUs, .listenToCH{
     height: 7.5em;
     width: 22.5em;
   }
   .selectCH, .selectES{
     font-size: 2.5em;
+  }
+  .efectoMCH{
+    width: 18em;
+    left: 14%;
+  }
+  .efectoMTCH{
+    width: 22.5em;
+    left: 19.5%;
+  }
+  .efectoMThreeCH{
+    width: 19em;
+    left: 41%;
+  }
+  .efectoMFCH{
+    width: 10.5em;
+    left: 67%;
+  }
+}@media only screen and (min-width:800px){
+  .efectoMCH{
+    left: 16%;
+  }
+  .efectoMTCH{
+    left: 21.5%;
+  }
+  .efectoMThreeCH{
+    left: 43%;
+  }
+  .efectoMFCH{
+    left: 69%;
   }
 }
