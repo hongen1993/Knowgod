@@ -85,14 +85,22 @@
 
 .selectCH{
     position: relative;
-    font-size: 1.8em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 4vh;
     letter-spacing: .5em;
     animation: flicker 2s alternate infinite;
 }
 
 .selectES{
     position: relative;
-    font-size: 1.8em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 4vh;
     letter-spacing: .2em;
     animation: flicker 2s alternate infinite;
   }
@@ -1887,6 +1895,8 @@
   }
 }
 .selectMenu{
+  position: absolute;
+  top: 10%;
   width: 100%;
 }
 .selectMenuCH{
@@ -2202,19 +2212,19 @@
     font-size: 2em;
   }
   .selectMenu{
-    top: -1em;
-    position: relative;
+    top: 10%;
+    position: absolute;
   }
   .selectMenuCH{
-    top: -1em;
-    position: relative;
+    top: 10%;
+    position: absolute;
   }
   
   .selectMenu p{
     font-size: 2em;
   }
   .selectMenuCH p{
-    font-size: 1.75em;
+    font-size: 1.65em;
   }
   .whoIs {
     height: 5.5em;
@@ -2236,5 +2246,75 @@
     height: 5.5em;
     width: 17em;
   }
-
+  .efectoM{
+    width: 14em;
+  }
+  .efectoMT{
+    width: 19em;
+  }
+  .efectoMThree{
+    width: 14.8em;
+  }
+  .efectoMF{
+    width: 8.2em;
+  }
+}@media only screen and (min-width:600px){
+  .logoIntro img{
+    height: 8.5em;
+  }
+  .efectoMB{
+    width: 26em;
+    left: 10%;
+  }
+  .efectoMTB{
+    width: 26.3em;
+    left: 15%;
+  }
+  .efectoMThreeB{
+    width: 19.5em;
+    left:25%
+  }
+  .efectoMFB{
+    left: 65%;
+  }
+  .line, .lineTwo, .lineThree, .lineFour{
+    font-size: 2.25em;
+  }
+}
+@media only screen and (min-width:720px){
+  .logoIntro img{
+    height: 12.5em;
+  }
+  .efectoMB{
+    width: 29em;
+    left: 14%;
+  }
+  .efectoMTB{
+    width: 29.5em;
+    left: 22%;
+  }
+  .efectoMThreeB{
+    width: 22em;
+    left:28%
+  }
+  .efectoMFB{
+    width: 12em;
+    left: 65%;
+  }
+  .line, .lineTwo, .lineThree, .lineFour{
+    font-size: 2.5em;
+  }
+  #skipB {
+    font-size: 2.25em;
+  }
+  .selectMenu p{
+    font-size: 2.25em;
+  }
+  .whoIs, .listenTo, .contactUs, .aboutUs{
+    height: 7.5em;
+    width: 22.5em;
+  }
+  .selectCH, .selectES{
+    font-size: 2.5em;
+  }
 }

@@ -24,7 +24,7 @@ $(document).ready( function enterB(){
     $('.efectoMFB').delay(4000).queue(function(dissappearD){$(this).addClass('dissappear');dissappearD();});
     
     $('.content').delay(5000).queue(function(opaco){$(this).css('opacity', '0');opaco();});
-    
+     
     /*     $('.crossDisplayOn').delay(6300).queue(function(crossOn){$(this).css('display', 'block');crossOn();});
     */
     

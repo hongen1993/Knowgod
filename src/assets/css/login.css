@@ -67,9 +67,9 @@ body{
 }
 
 .signInForm .ca {
-	font-size: .62em;
+	font-size: .75em;
 	display: inline-block;
-	padding: .5em;
+	padding: .25em .75em;
 	text-decoration: none;
 	color: #444;
 }
@@ -338,7 +338,8 @@ color: red;
 	}
 	.newPass{
 		font-size: 1.25em;
-		height: 47vh;
+		height: 47GIT INIT
+		vh;
 	}
 	.newPass input{
 		font-size: .75em;
@@ -346,3 +347,8 @@ color: red;
 		margin: 1em auto;
 	}
 }
+@media only screen and (min-width:720px){
+	main{
+	  font-size: 1.25em;
+	}
+  }

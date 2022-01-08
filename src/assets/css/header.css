@@ -88,13 +88,7 @@ body{
     margin-top: .5em;
     height: 6.5em;
   }
-  .dropbtn{
-    font-size: 1.2em;
-  }
-  .user{
-    font-size: 1.2em;
-  }
-  .language{
+  .dropbtn, .user, .language{
     font-size: 1.2em;
   }
   .dropdown-content{
@@ -102,5 +96,32 @@ body{
   }
   .dropdown-content a{
     padding: 1.25em 1em;
+  }
+}@media only screen and (min-width:600px){
+  .menu{
+    top: 3em;
+  }
+  .logo img{
+    height: 8.5em;
+  }
+  .dropbtn, .user, .language{
+    font-size: 1.5em;
+  }
+  .dropdown-content{
+    font-size: 1.4em;
+  }
+}
+@media only screen and (min-width:720px){
+  .menu{
+    top: 4em;
+  }
+  .logo img{
+    height: 12.5em;
+  }
+  .dropbtn, .user, .language{
+    font-size: 2em;
+  }
+  .dropdown-content{
+    font-size: 1.75em;
   }
 }

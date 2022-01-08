@@ -73,7 +73,6 @@ body{
   .addPostForm .ca {
     left: .5em;
     position: relative;
-    font-size: .75em;
     display: inline-block;
     padding-top: 1em;
     text-decoration: none;
@@ -84,7 +83,7 @@ body{
   } 
 }@media only screen and (min-width:414px)  {
     main{
-        height: 77.5vh;
+        height: 100vh;
     }
     .addPostForm{
         margin: 3em 0em;
@@ -93,4 +92,14 @@ body{
     .addPostForm .ca{
         font-size: 1em;
     }
+}@media only screen and (min-width:600px){
+    main{
+        height: 75vh;
+    }
 }
+@media only screen and (min-width:720px){
+    main{
+      font-size: 1.25em;
+      height: 65vh;
+    }
+  }

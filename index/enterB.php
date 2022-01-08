@@ -19,123 +19,44 @@ include "../languages/configuration.php";
       </a>
     </div>
   </header>
-<!-- boxes -->
+  <main>
+  <!-- boxes -->
 
-  <div class="boxOn"></div>
-  <div class="boxOn-B"></div>
+    <div class="boxOn"></div>
+    <div class="boxOn-B"></div>
 
-      <div class="crossDisplayOn">
+    <div class="efectoMB">
+      <p class="line lineborder anim-typewriterB" id="textWritter"><?php echo $lang['salmos-A'] ?></p>
+    </div>
+    <div class="efectoMTB">
+        <p class="lineTwo lineborderTwo anim-typewriterTwoB" id="textWritterTwo"><?php echo $lang['salmos-B'] ?></p>
+    </div>
+    <div class="efectoMThreeB">
+        <p class="lineThree lineborderThree anim-typewriterThreeB" id="textWritterThree"><?php echo $lang['salmos-C'] ?></p>
+    </div>
+    <div class="efectoMFB" >
+        <p class="lineFour lineborderFour anim-typewriterFourB" id="textWritterFour"><?php echo $lang['salmos-D'] ?></p>
+    </div>
+    <div id="skipB">
+      Saltar
+    </div>
+    <!-- Menu -->
+    <div class="selectMenu">
 
-<!-- cross -->
-
-        <div class="crossPointA"></div>
-            <div class="crossPointB"></div>
-            <div class="crossPointC"></div>
-            <div class="crossPointD"></div>
-
-            <div class="crossA-A"></div>
-            <div class="crossA-B"></div>
-
-            <div class="crossB-A"></div>
-            <div class="crossB-B"></div>
-            <div class="crossB-C"></div>
-
-            <div class="crossC-A"></div>
-            <div class="crossC-B"></div>
-
-            <div class="crossD-A"></div>
-            <div class="crossD-B"></div>
-            <div class="crossD-C"></div>
-
-<!-- backCross -->
-
-            <div class="backCrossPointA"></div>
-            <div class="backCrossPointB"></div>
-            <div class="backCrossPointC"></div>
-            <div class="backCrossPointD"></div>
-
-            <div class="backCrossA-A"></div>
-            <div class="backCrossA-B"></div>
-
-            <div class="backCrossB-A"></div>
-
-            <div class="backCrossC-A"></div>
-            <div class="backCrossC-B"></div>
-
-            <div class="backCrossD-A"></div>
-
-<!-- whitecross -->
-
-            <div class="verticalLine"></div>
-            <div class="horizontalLine"></div>
-            <div class="secondVerticalLine"></div>
-            <div class="secondHorizontalLine"></div>
-
-      </div>
-<!-- languages -->
-
-  <!-- Chinese -->
-
-  <div class="chineseVerse">
-
-<!--     <div class="chinese-A"></div>
-    <div class="chinese-A2"></div>
-
-    <div class="chinese-B"></div>
-    <div class="chinese-B2"></div>
-
-    <div class="chinese-C"></div>
-    <div class="chinese-C2"></div> -->
-  
+      <button id="whoIs" class="whoIs">
+          <p><?php echo $lang['menu-A'] ?></p>
+      </button>
+      <button class="listenTo">
+          <p><?php echo $lang['menu-B'] ?></p>
+      </button>
+      <button class="contactUs">
+          <p><?php echo $lang['menu-C'] ?></p>
+      </button>
+      <button class="aboutUs">
+          <p><?php echo $lang['menu-D'] ?></p>
+      </button>
   </div>
-
-  <!-- Spanish -->
-  <div class="efectoMB">
-    <p class="line lineborder anim-typewriterB" id="textWritter"><?php echo $lang['salmos-A'] ?></p>
-  </div>
-  <div class="efectoMTB">
-      <p class="lineTwo lineborderTwo anim-typewriterTwoB" id="textWritterTwo"><?php echo $lang['salmos-B'] ?></p>
-  </div>
-  <div class="efectoMThreeB">
-      <p class="lineThree lineborderThree anim-typewriterThreeB" id="textWritterThree"><?php echo $lang['salmos-C'] ?></p>
-  </div>
-  <div class="efectoMFB" >
-      <p class="lineFour lineborderFour anim-typewriterFourB" id="textWritterFour"><?php echo $lang['salmos-D'] ?></p>
-  </div>
-  <div id="skipB">
-    Saltar
-  </div>
-  <div class="spanishVerse">
-<!--     <div class="spanish-A">Aunque</div>
-    <div class="spanish-A2">ande en valle de </div>
-
-    <div class="spanish-B">sombra</div>
-    <div class="spanish-B2">de muerte, no </div>
-
-    <div class="spanish-C">temeré</div>
-    <div class="spanish-C2">mal alguno, porque tú</div>
-
-    <div class="spanish-D">estas</div>
-    <div class="spanish-D2">conmigo;<span>Sl 23:4</span></div> -->
-    
-  </div>
-
-  <!-- Menu -->
-  <div class="selectMenu">
-
-    <button id="whoIs" class="whoIs">
-        <p><?php echo $lang['menu-A'] ?></p>
-    </button>
-    <button class="listenTo">
-        <p><?php echo $lang['menu-B'] ?></p>
-    </button>
-    <button class="contactUs">
-        <p><?php echo $lang['menu-C'] ?></p>
-    </button>
-    <button class="aboutUs">
-        <p><?php echo $lang['menu-D'] ?></p>
-    </button>
-</div>
+  </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="/src/assets/js/enterB.js"></script>

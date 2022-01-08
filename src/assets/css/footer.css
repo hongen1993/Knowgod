@@ -199,4 +199,13 @@ ul {
   .footer-bottom{
     font-size: 1.1em;
   }
+}@media only screen and (min-width:600px){
+  .main-footer{
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width:720px){
+  .main-footer{
+    font-size: 1.25em;
+  }
 }

@@ -94,23 +94,27 @@ li {
   box-shadow: 0 20px 50px rgba(0,0,0,0.3);
   text-align: center;
   margin: .5em;
+  padding: .25em;
 }
 .nextB{
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0,0,0,0.3);
   text-align: center;
+  padding: .25em;
   margin-top: 1em;
 }
 .back{
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0,0,0,0.3);
   text-align: center;
+  padding: .25em;
 }
 .backB{
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0,0,0,0.3);
   text-align: center;
   margin-top: 1em;
+  padding: .25em;
 }
 .stepOne{
   text-align: center;
@@ -303,5 +307,17 @@ li {
     margin-top: 1em;
     font-size: .9em;
 
+  }
+}@media only screen and (min-width:600px){
+  .input-text{
+    width: 100%;
+  }
+  .stepThreeB{
+    margin-top: -11em;
+  }
+}
+@media only screen and (min-width:720px){
+  main{
+    font-size: 1.25em;
   }
 }

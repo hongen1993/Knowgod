@@ -75,4 +75,16 @@
     .profileContent input{
         width: 85%;
     }
-}
+}@media only screen and (min-width:600px){
+    .profile input{
+        font-size: .75em;
+        margin:.4em;
+    }
+    .profile h2{
+        margin: .2em;
+    }
+}@media only screen and (min-width:720px){
+    main{
+      font-size: 1.25em;
+    }
+  }

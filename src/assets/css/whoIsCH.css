@@ -201,4 +201,9 @@ a{
     height: 210em;
     margin:1em;
   }
+}@media only screen and (min-width:414px)  {
+  h1{
+    text-align: center;
+    font-size: 2em;
+  }
 }

@@ -135,3 +135,8 @@
         padding: .25em .75em;
     }
 }
+@media only screen and (min-width:720px){
+    main{
+      font-size: 1.25em;
+    }
+  }
