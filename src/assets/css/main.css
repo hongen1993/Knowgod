@@ -50,6 +50,7 @@
   .logoIntro{
     display: none;
     animation: logoOpacity 2s linear forwards;
+    cursor: pointer;
   }
   .logoIntro img{
     height: 5em;
@@ -1893,7 +1894,7 @@
   left: 75vw;
   font-size: 1.5em;
   animation: skip 2s alternate infinite;
-
+  cursor: pointer;
 }
 
 @keyframes skip{
@@ -1912,6 +1913,8 @@
   left: 75vw;
   font-size: 1.5em;
   animation: skip 2s alternate infinite;
+  cursor: pointer;
+
 }
 
 @keyframes skipB{
@@ -2048,7 +2051,9 @@
 .aboutUs:active{
   transform: scale(.8) !important;
 }
-
+.whoIs, .listenTo, .contactUs, .aboutUs, .listenToCH {
+  cursor: pointer;
+}
 #enterWhoIs{
   transform: scale(1);
   opacity: 1;

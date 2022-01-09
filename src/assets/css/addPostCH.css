@@ -101,3 +101,26 @@ body{
         font-size: 2em;
     }
   }
+  @media only screen and (min-width:720px){
+    main{
+        height: 50vh;
+    }
+    .addPostForm{
+      height: 40vh;
+    }
+  }
+  @media only screen and (min-width:1024px){
+    main{
+      font-size: .75em;
+      height: 85vh;
+    }
+    .addPostForm{
+        left: 30%;
+        width: 40vw;
+        height: 70vh;
+        font-size: 1em;
+    }
+    .addPostForm .ca {
+        left: 10em;
+    }
+  }

@@ -101,6 +101,8 @@ include "../languages/configuration.php";
     <script src="/src/assets/js/languageSelect.js"></script>
     <script src="/src/assets/js/menu.js"></script>
     <script src="/src/assets/js/scrollIn.js"></script>
+    <script src="/src/assets/js/headerMenu.js"></script>
+
 
     <!--Start of Tawk.to Script-->
 <!--     <script type="text/javascript">

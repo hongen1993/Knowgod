@@ -59,6 +59,8 @@ if (isset($_SESSION['id']) && isset($_SESSION['userid']) && ['user_type']!="2") 
     </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://kit.fontawesome.com/c469a8b399.js" crossorigin="anonymous"></script>
+    <script src="/src/assets/js/headerMenu.js"></script>
+
 </body>
 </html>
 

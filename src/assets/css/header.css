@@ -55,6 +55,7 @@ body{
   .dropdown-content {
     display: none;
     position: absolute;
+    text-align: center;
     left: -7em;
     background-color: rgba(255,255,255,0.9);
     min-width: 10em;
@@ -79,6 +80,10 @@ body{
   .dropdown:hover .user, .dropdown:hover .language{
     display: block;
   }
+  .show {
+    display: block;
+  }
+
 }
 @media only screen and (min-width:414px)  {
   .menu{
