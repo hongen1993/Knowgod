@@ -96,11 +96,12 @@ ul {
   position: relative;
   font-size: 1.5em;
   line-height: 35px;
-  font-family: 'Playfair Display', serif;
   color: #ffffff;
-  font-weight: 700;
   margin-bottom: 27px;
   text-align: center;
+}
+.footer-title a{
+  font-weight: 700;
 }
 .footer-content .service-widget .list li{
   display: block;
@@ -136,6 +137,7 @@ ul {
   position: relative;
   background: #13151a;
   padding: 1.3em 1em 1.2em 1em;
+  font-size: .8em;
 }
 .footer-bottom .copyright,
 .footer-bottom .copyright a,
@@ -182,7 +184,7 @@ ul {
   margin-left: 10em;
 }
 #direction{
-  font-size: 1em;
+  font-size: .75em;
   text-align: center;
 }
 }
@@ -193,11 +195,8 @@ ul {
   .text p{
     font-size: 1.5em;
   }
-  #direction{
-    font-size: 1.4em;
-  }
   .footer-bottom{
-    font-size: 1.1em;
+    font-size: 1em;
   }
 }@media only screen and (min-width:600px){
   .main-footer{
@@ -207,5 +206,25 @@ ul {
 @media only screen and (min-width:720px){
   .main-footer{
     font-size: 1.25em;
+  }
+}
+@media only screen and (min-width:1024px){
+  .footer-widget{
+    text-align: center;  
+  }
+  .logo-widget .text p:nth-child(2), .logo-widget p:nth-child(4) {
+    margin-left: 25em;
+  }
+  .footer-content{
+    margin: 0em .5em;
+  }
+  .footer-bottom .footer-nav, .copyright {
+    text-align: center;
+  }
+  .main-footer{
+    font-size: .75em;
+  }
+  .footer-content:before{
+    height: 90%;
   }
 }

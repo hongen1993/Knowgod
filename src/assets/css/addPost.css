@@ -103,3 +103,9 @@ body{
       height: 65vh;
     }
   }
+  @media only screen and (min-width:1024px){
+    main{
+      font-size: .75em;
+      height: 95vh;
+    }
+  }

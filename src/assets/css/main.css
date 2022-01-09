@@ -2401,3 +2401,113 @@
     left: 69%;
   }
 }
+@media only screen and (min-width:800px){
+  .efectoMB{
+    left: 25%;
+  }
+  .efectoMTB{
+    left: 30%;
+  }
+  .efectoMThreeB{
+    left:35%
+  }
+  .efectoMFB{
+    left: 70%;
+  }
+  .efectoMCH{
+    left: 16%;
+  }
+  .efectoMTCH{
+    left: 21.5%;
+  }
+  .efectoMThreeCH{
+    left: 43%;
+  }
+  .efectoMFCH{
+    left: 69%;
+  }
+  .whoIs, .listenTo, .contactUs, .aboutUs, .listenToCH{
+    height: 5.5em;
+    width: 20.5em;
+  }
+  .whoIs{
+    margin:5% auto;
+  }
+  .listenTo, .contactUs, .aboutUs, .listenToCH{
+    margin:7.5% auto;
+  }
+  #skipB{
+    top: 85vh;
+  }
+}
+@media only screen and (min-width:1024px){
+  .logoIntro img{
+    height: 7.5em;
+  }
+  .line, .lineTwo, .lineThree, .lineFour {
+    font-size: 1.5em;
+  }
+  .efectoMB{
+    width: 17.5em;
+    left: 35%;
+  }
+  .efectoMTB{
+    width: 17.5em;
+    left: 39%;
+  }
+  .efectoMThreeB{
+    width: 13em;
+    left: 41%;
+  }
+  .efectoMFB{
+    width: 7em;
+    left: 75%;
+  }
+  #skipB {
+    font-size: 1.25em;
+    top: 90vh;
+    left: 90vw;
+  }
+  .whoIs, .listenTo, .contactUs, .aboutUs, .listenToCH{
+    margin:5% auto;
+    height: 3.5em;
+    width: 12em;
+  }
+  .selectMenu p {
+  font-size: 1.25em;
+  }
+  .efectoMCH {
+    width: 11em;
+    left: 36%;
+  }
+  .efectoMTCH{
+    width: 14.25em;
+    left: 41.5%;
+  }
+  .efectoMThreeCH {
+    width: 11.25em;
+    left: 50%;
+  }
+  .efectoMFCH{
+    width: 6.25em;
+    left: 75%;
+  }
+  #skip{
+    top: 87vh;
+    left: 87vw;
+  }
+  .selectMenuCH p {
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width:1280px){
+  .efectoMB{
+    left: 37.5%;
+  }
+  .efectoMTB{
+    left: 40.5%;
+  }
+  .efectoMThreeB{
+    left: 42.5%;
+  }
+}

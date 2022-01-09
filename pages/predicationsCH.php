@@ -17,6 +17,7 @@ include "../languages/configuration.php";
     <header>
         <?php include('../include/header.php') ?>
     </header>
+    <main>
     <?php 
     
     require_once '../predications/modelCH.php'; 
@@ -26,7 +27,7 @@ include "../languages/configuration.php";
     $postsCH = getPostsCH(); 
     require '../predications/listCH.php'; 
     ?>
-    
+    </main>
     <footer class="main-footer">
         <?php include('../include/footer.php') ?>
     </footer>

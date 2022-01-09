@@ -170,3 +170,42 @@ textarea {
   width: 100%;
   min-height: 15em;
 } */
+
+@media only screen and (min-width:414px){
+  main{
+    height: 150vh;
+    }
+}
+@media only screen and (min-width:600px){
+  main{
+    height: 110vh;
+    }
+}
+@media only screen and (min-width:720px){
+  main{
+    height: 105vh;
+    font-size: 1.5em;
+    }
+}
+@media only screen and (min-width:1024px){
+  main{
+    height: 140vh;
+    font-size: .75em;
+    }
+    .signUpForm input{
+      height: 1em;
+    }
+    #terms{
+      top: -.5vh;
+    }
+    .terms{
+      left: 6%;
+    }
+    #genderLabel{
+      top: -.3vh;
+    }
+    .signUpButton{
+      position: relative;
+      left: 2vw;
+    }
+}

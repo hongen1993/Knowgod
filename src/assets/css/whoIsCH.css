@@ -209,3 +209,13 @@ a{
     height: 157em;
   }
 }
+@media only screen and (min-width:1024px){
+  main{
+    height: 130em;
+    font-size: .75em;
+  }
+  .backgroundOverLayer{
+    top: -200%;
+    height: 300%;
+}
+}

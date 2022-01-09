@@ -125,3 +125,20 @@ body{
     font-size: 1.75em;
   }
 }
+@media only screen and (min-width:1024px){
+  .menu{
+    top: 3em;
+  }
+  .logo img{
+    height: 7.5em;
+    margin-top: 0em;
+  }
+  .dropbtn, .user, .language{
+    font-size: 1em;
+  }
+  .dropdown-content{
+    font-size: 1em;
+  }
+  
+
+}

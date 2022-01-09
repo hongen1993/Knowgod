@@ -14,12 +14,12 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-12 footer-widget">
                         <div class="contact-widget footer-widget">
-                            <div class="footer-title"><a href="contactUs.php"><?php echo $lang['footerBTitle'] ?></a></div>
+                            <div class="footer-title"><a href="contactUs.php"><?php echo $lang['footerBTitle'] ?></a>
                             <div class="text">
                                 <p id="direction"><?php echo $lang['footerBA'] ?></p>
                                 <p id="direction"><?php echo $lang['footerBB'] ?></p>
                             </div>
-                        </div>
+                        
                     </div>
 <!--                     <div class="footer-social">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>

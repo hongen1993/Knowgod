@@ -194,7 +194,7 @@ a{
   }
 }@media only screen and (min-width:414px)  {
   main{
-    height: 255em;
+    height: 270em;
   }
   h1{
     font-size: 2em;
@@ -228,5 +228,18 @@ a{
 @media only screen and (min-width:800px){
   main{
     height: 212em;  
+  }
+}
+@media only screen and (min-width:1024px){
+  main{
+    height: 165em;  
+    font-size: .75em;
+  }
+  .backgroundOverLayer{
+      top: -200%;
+      height: 300%;
+  }
+  .background h1{
+    font-size: 2em;
   }
 }

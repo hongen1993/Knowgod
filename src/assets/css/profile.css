@@ -88,3 +88,11 @@
       font-size: 1.25em;
     }
   }
+  @media only screen and (min-width:1024px){
+    main{
+      font-size: .75em;
+    }
+    .profileContent input {
+        width: 50%;
+    }
+  }
