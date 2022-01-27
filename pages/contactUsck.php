@@ -34,7 +34,7 @@ use PHPMailer\PHPMailer\Exception;
     //Set gmail username
     $mail->Username = 'knowgodweb@gmail.com';
     //Set gmail password
-    $mail->Password = 'Jol@n520';
+    $mail->Password = '****';
     //Set UTF8
     $subject = utf8_decode($subject);
     $mail->Subject = $subject;
